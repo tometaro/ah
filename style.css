@@ -695,3 +695,18 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*--------------------------------------------------------------
+# conpornent
+--------------------------------------------------------------*/
+.siteHeader {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background: #ECEFF1; }
+  .siteHeader h1 {
+    font-size: 20px; }
+  .siteHeader-branding {
+    margin: 0 auto;
+    width: 1000px;
+    position: relative; }
