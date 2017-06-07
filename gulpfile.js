@@ -7,6 +7,11 @@ gulp.task("browser-sync", function() {
     browserSync.init({
         proxy: "http://tome.dev/"
     });
+    // browserSync({
+    //     server: {
+    //         baseDir: "./"
+    //     }
+    // });
 });
 
 //変更があれば自動でリロードする
@@ -23,6 +28,6 @@ gulp.task('sass', function () {
 
 //タスク監視
 gulp.task('default', ['browser-sync'], function () {
-  gulp.watch('./**/*.php', ['bs-reload']);
+  gulp.watch('./*.php', ['bs-reload']);
   gulp.watch('./sass/**/*.scss', ['sass','bs-reload']);
 });
