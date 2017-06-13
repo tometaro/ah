@@ -149,3 +149,12 @@ function my_scripts() {
 	wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/custom-script.js', array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
+
+/**
+ * common-script.
+ */
+
+function add_scripts() {
+wp_enqueue_script( 'smart-script', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '20160608', true );
+}
+add_action('wp_print_scripts', 'add_scripts');

@@ -1,81 +1,83 @@
-.siteHeader {
+// .siteHeader {
+//     position: fixed;
+//     width: 100%;
+//     height: 60px;
+//     z-index: 9999;
+//     background :$color__whiteBlue;
+
+//      &-Inner {
+//         margin: 0 auto;
+//         width: 1000px;
+//      }
+
+//     &-branding {
+//         float: left;
+//     }
+
+//     &-title{
+//       font-size:20px;
+//       line-height: 60px;
+//       display: inline-block;
+//     }
+
+//     &-icon {
+//       line-height: 60px;
+//       display: inline-block;
+//     }
+// }
+
+.Header {
     position: fixed;
     width: 100%;
-    height: 60px;
+    padding: 20px 0;
     z-index: 9999;
-    background :$color__whiteBlue;
+    width: 100%;
+    transition: 1s ease-in-out;
 
-    &-branding {
+    &-Inner {
         margin: 0 auto;
-        width: auto;
+        width: 1000px;
         position: relative;
-        float: left;
     }
 
-    &-title{
-      font-size:20px;
-      line-height: 60px;
-      display: inline-block;
+    &-Title,
+    &-Text {
+        color: #333;
+        transition: 1s ease-in-out;
     }
 
-    &-icon {
-      line-height: 60px;
-      display: inline-block;
+    &-SpMenu {
+        background: #333;
+    }
+
+    &-Bg {
+        background: rgba(51,51,51,0.9);
+        transition: 1s ease-in-out;
+
+        .Header-Title,
+        .Header-Text {
+            color: #fff;
+            transition: 1s ease-in-out;
+        }
+
+        .Header-SpMenu {
+            background: #fff;;
+        }
     }
 }
 
-// .Header {
-//     position: fixed;
-//     width: 100%;
-//     padding: 20px 0;
-//     z-index: 9999;
-//     width: 100%;
-//     transition: 1s ease-in-out;
+@media only screen and (max-width: 768px) {
+  .Header, .Header-Inner {
+    width: 100%;
+  }
+  .Header{
 
-//     &-Inner {
-//         margin: 0 auto;
-//         width: 1000px;
-//         position: relative;
-//     }
+    &-Text {
+        color: #fff;;
+    }
 
-//     &-Title,
-//     &-Text {
-//         color: #333;
-//         transition: 1s ease-in-out;
-//     }
+  }
 
-//     &-SpMenu {
-//         background: #333;
-//     }
-
-//     &-Bg {
-//         background: rgba(51,51,51,0.9);
-//         transition: 1s ease-in-out;
-
-//         .Header-Title,
-//         .Header-Text {
-//             color: $color-white;
-//             transition: 1s ease-in-out;
-//         }
-
-//         .Header-SpMenu {
-//             background: $color-white;
-//         }
-//     }
-// }
-
-// @media only screen and (max-width: 768px) {
-//   .Header, .Header-Inner {
-//     width: 100%;
-//   }
-//   .Header{
-
-//     &-Text {
-//         color: $color-white;
-//     }
-
-//   }
-
-// }
+}
 
 
