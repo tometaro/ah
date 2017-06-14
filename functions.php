@@ -150,11 +150,14 @@ function my_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts' );
 
-/**
- * common-script.
- */
-
-function add_scripts() {
-wp_enqueue_script( 'smart-script', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '20160608', true );
+// admin bar to the bottom
+function oz_admin_bar_to_the_bottom() {
+  echo '<style type="text/css">
+  #wpadminbar {
+    top: auto !important;
+    bottom: 0;
+  }
+  </style>';
 }
-add_action('wp_print_scripts', 'add_scripts');
+// on frontend area
+add_action( 'wp_head', 'oz_admin_bar_to_the_bottom' );

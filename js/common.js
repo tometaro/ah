@@ -1,45 +1,45 @@
 
 //スクロールヘッダー
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 100) {
-    $('.Header').addClass('Header-Bg');
+jQuery(window).scroll(function() {
+  if (jQuery(window).scrollTop() > 100) {
+    jQuery('.Header').addClass('Header-Bg');
   } else {
-    $('.Header').removeClass('Header-Bg');
+    jQuery('.Header').removeClass('Header-Bg');
   }
 });
 
 //ハンバーガーメニュー
-$('.Navi-Toggle').on("click", function() {
-  $('.Header').toggleClass('Navi-Open');
+jQuery('.Navi-Toggle').on("click", function() {
+  jQuery('.Header').toggleClass('Navi-Open');
   return false;
 });
 
 //ナビゲーション外タッチで閉じる
-$(".Navi-Shadow").click(function() {
-  $('.Header').removeClass('Navi-Open');
+jQuery(".Navi-Shadow").click(function() {
+  jQuery('.Header').removeClass('Navi-Open');
   return false;
 });
 
 //タブ
-$('.Tab-Btn').on('click',function(){
-  var index = $('.Tab-Btn').index(this);
-  $('.Tab-Inner').css('display','none');
-  $('.Tab-Inner').eq(index).css('display','block');
-  $('.Tab-Btn').removeClass('Tab-Btn--Active');
-  $(this).addClass('Tab-Btn--Active');
+jQuery('.Tab-Btn').on('click',function(){
+  var index = jQuery('.Tab-Btn').index(this);
+  jQuery('.Tab-Inner').css('display','none');
+  jQuery('.Tab-Inner').eq(index).css('display','block');
+  jQuery('.Tab-Btn').removeClass('Tab-Btn--Active');
+  jQuery(this).addClass('Tab-Btn--Active');
 });
 
 //アコーディオン
-$(".Accordion dt").on("click", function() {
-  $(this).next().slideToggle();
+jQuery(".Accordion dt").on("click", function() {
+  jQuery(this).next().slideToggle();
 });
 
 //カルーセル
 
-var slideWidth = $('.Carousel-Wrapper li').outerWidth();  // .slideの幅を取得して代入
-var slideNum = $('.Carousel-Wrapper li').length;  // .slideの数を取得して代入
+var slideWidth = jQuery('.Carousel-Wrapper li').outerWidth();  // .slideの幅を取得して代入
+var slideNum = jQuery('.Carousel-Wrapper li').length;  // .slideの数を取得して代入
 var slideSetWidth = slideWidth * slideNum;  // .slideの幅×数で求めた値を代入
-$('.Carousel-Wrapper').css('width', slideSetWidth); // .slideSetのスタイルシートにwidth: slideSetWidthを指定
+jQuery('.Carousel-Wrapper').css('width', slideSetWidth); // .slideSetのスタイルシートにwidth: slideSetWidthを指定
 
 var slideCurrent = 0; // 現在地を示す変数
 
@@ -55,19 +55,19 @@ var sliding = function(){
 
   }
 
-  $('.Carousel-Wrapper').stop().animate({
+  jQuery('.Carousel-Wrapper').stop().animate({
     left: slideCurrent * -slideWidth
   });
 }
 
 // 前へボタンが押されたとき
-$('.Carousel-Button-Prev').click(function(){
+jQuery('.Carousel-Button-Prev').click(function(){
   slideCurrent--;
   sliding();
 });
 
 // 次へボタンが押されたとき
-$('.Carousel-Button-Next').click(function(){
+jQuery('.Carousel-Button-Next').click(function(){
   slideCurrent++;
   sliding();
 });
