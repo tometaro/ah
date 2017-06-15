@@ -504,18 +504,23 @@ object {
   padding: 20px 0;
   z-index: 9999;
   width: 100%;
-  transition: 1s ease-in-out; }
+  top: 0;
+  transition: 1s ease-in-out;
+  background-color: #ECEFF1; }
   .Header-Inner {
     margin: 0 auto;
     width: 1000px;
     position: relative; }
-  .Header-Title, .Header-Text {
+  .Header-Title {
     color: #333;
+    font-size: 16px;
     transition: 1s ease-in-out; }
+  .Header-text {
+    display: none; }
   .Header-SpMenu {
     background: #333; }
   .Header-Bg {
-    background: #eee;
+    background-color: #ECEFF1;
     transition: 1s ease-in-out; }
     .Header-Bg .Header-Title,
     .Header-Bg .Header-Text {
@@ -537,7 +542,7 @@ object {
   bottom: 0;
   font-size: 13px;
   letter-spacing: .3em;
-  line-height: 30px; }
+  line-height: 24px; }
   .Navi ul li {
     float: left;
     position: relative; }
@@ -574,7 +579,7 @@ object {
 @media only screen and (max-width: 768px) {
   .Navi {
     position: fixed;
-    transform: translateX(-800px);
+    transition-duration: 5.0s;
     top: 0;
     width: 100%;
     height: 100%;
@@ -599,8 +604,8 @@ object {
       display: block; }
     .Navi-Open .Navi {
       -webkit-overflow-scrolling: touch;
-      transform: translateX(0);
       opacity: 1;
+      transition-duration: 0.5s;
       z-index: 10; }
     .Navi-Open span:nth-child(1) {
       top: 6px;
@@ -615,8 +620,12 @@ object {
       -moz-transform: rotate(-45deg);
       transform: rotate(-45deg); }
     .Navi-Open ul {
-      opacity: 1; }
+      opacity: 1;
+      transition-duration: 4.0s; }
+    .Navi-Open-Inner {
+      transform: translateX(0); }
     .Navi-Inner {
+      transform: translateX(-800px);
       float: left;
       width: 70%;
       background: rgba(0, 0, 0, 0.7);
@@ -626,3 +635,6 @@ object {
       width: 30%;
       background: transparent;
       height: 100%; } }
+
+a {
+  text-decoration: none; }

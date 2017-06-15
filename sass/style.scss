@@ -110,3 +110,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "compornent/siteHeader";
 @import "compornent/siteNavi";
+
+a {
+    text-decoration: none;
+}
