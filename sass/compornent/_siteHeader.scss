@@ -7,7 +7,7 @@
     width: 100%;
     top:0;
     transition: 1s ease-in-out;
-    background-color: $color__whiteBlue;
+    background-color: $whiteBlue;
 
     &-Inner {
         margin: 0 auto;
@@ -30,7 +30,7 @@
     }
 
     &-Bg {
-        background-color: $color__whiteBlue;
+        background-color: $whiteBlue;
         transition: 1s ease-in-out;
 
         .Header-Title,
