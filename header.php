@@ -25,7 +25,7 @@
 
     <header id="masthead" class="Header site-header" role="banner">
         <div class="Header-Inner">
-            <div class="site-branding">
+            <div class="Header-Branding site-branding">
                 <?php
                 if ( is_front_page() && is_home() ) : ?>
                     <h1 class="Header-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -56,4 +56,4 @@
         </div>
     </header><!-- #masthead -->
 
-    <div id="content" class="site-content">
+    <div id="content" class="siteContent site-content">

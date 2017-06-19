@@ -28,7 +28,7 @@
     &-Toggle {
         display: none;
         float: right;
-        position: absolute;
+        position: relative;
         width: 18px;
         height: 14px;
         cursor: pointer;
@@ -123,24 +123,7 @@
             transition-duration: 0.5s;
             z-index: 10;
             transform: translateX(0);
-
-            span:nth-child(1) {
-                top: 6px;
-                -webkit-transform: rotate(45deg);
-                -moz-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-
-            span:nth-child(2) {
-                opacity: 0;
-            }
-
-            span:nth-child(3) {
-                bottom: 6px;
-                -webkit-transform: rotate(-45deg);
-                -moz-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-            }
+            margin: 0 -20px;
 
             ul {
                 opacity: 1;
@@ -149,6 +132,24 @@
 
             &-Inner {
             }
+        }
+
+        span:nth-child(1) {
+            top: 6px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        span:nth-child(2) {
+            opacity: 0;
+        }
+
+        span:nth-child(3) {
+            bottom: 6px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            transform: rotate(-45deg);
         }
     }
 }

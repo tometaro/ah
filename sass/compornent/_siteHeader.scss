@@ -2,7 +2,7 @@
 .Header {
     position: fixed;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 20px;
     z-index: 9999;
     width: 100%;
     top:0;
@@ -10,9 +10,13 @@
     background-color: $whiteBlue;
 
     &-Inner {
-        margin: 0 auto;
-        width: 1000px;
         position: relative;
+        overflow: hidden;
+    }
+
+    &-Branding {
+        width: auto;
+        float: left;
     }
 
     &-Title {
