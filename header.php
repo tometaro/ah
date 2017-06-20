@@ -60,7 +60,7 @@
 
     <section class="Hero Hero-Image">
         <div class="Hero-Title">
-            <h1>部品</h1>
+            <h1>テキスト</h1>
             <p>CONPORNENT</p>
         </div>
         <img src="<?php header_image(); ?>" alt="" />

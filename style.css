@@ -617,26 +617,24 @@ object {
   .Hero-Image {
     display: inline-block;
     position: relative;
-    border: 1px solid silver;
     width: 100%;
     height: 300px;
     overflow: hidden; }
     .Hero-Image img {
       min-width: 100%;
-      min-height: 100%; }
+      min-height: 100%;
+      position: absolute;
+      width: auto;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%); }
   .Hero-Title {
-    position: absolute;
-    text-align: center;
-    width: 50%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center; }
+    position: absolute; }
     .Hero-Title h1 {
-      font-size: 160px;
       margin-bottom: 20px; }
     .Hero-Title p {
-      letter-spacing: 0.5em;
-      font-size: 32px; }
+      letter-spacing: 0.5em; }
 
 @media only screen and (max-width: 768px) {
   .Hero-Wrapper {
@@ -649,14 +647,9 @@ object {
     float: none;
     display: block; }
     .Hero-Visual h1, .Hero-Title h1 {
-      font-size: 80px;
       margin-bottom: 20px; }
     .Hero-Visual p, .Hero-Title p {
-      letter-spacing: 0.5em;
-      font-size: 16px; } }
-
-.siteContent {
-  margin-top: 60px; }
+      letter-spacing: 0.5em; } }
 
 a {
   text-decoration: none; }
