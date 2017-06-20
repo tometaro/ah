@@ -1,0 +1,77 @@
+.Hero {
+    background: linear-gradient(-135deg, #eee, #ccc);
+    width: 100%;
+    color: #333;
+
+    &-Wrapper {
+        width: 1000px;
+        margin: 0 auto;
+        height: 610px;
+        display: table;
+
+    }
+
+    &-Image {
+        display: inline-block;
+        position: relative;
+        border: 1px solid silver;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+
+        img {
+            min-width: 100%;
+            min-height: 100%;
+        }
+    }
+
+
+    &-Title {
+        position: absolute;
+        text-align: center;
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        h1{
+            font-size: 160px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            letter-spacing: 0.5em;
+            font-size: 32px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Hero {
+
+        &-Wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        &-Visual,
+        &-Title {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            float: none;
+            display: block;
+
+            h1{
+                font-size: 80px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                letter-spacing: 0.5em;
+                font-size: 16px;
+            }
+        }
+
+    }
+}

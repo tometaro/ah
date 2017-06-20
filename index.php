@@ -14,6 +14,10 @@
 
 get_header(); ?>
 
+	<section class="siteSection">
+		<div class="siteSection-Title">テキスト</div>
+	</section>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

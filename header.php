@@ -40,6 +40,7 @@
                 <?php
                 endif; ?>
             </div><!-- .site-branding -->
+
             <div class="Navi-Toggle">
                 <span class="Header-SpMenu"></span>
                 <span class="Header-SpMenu"></span>
@@ -54,6 +55,15 @@
 
             </nav><!-- #site-navigation -->
         </div>
+
     </header><!-- #masthead -->
+
+    <section class="Hero Hero-Image">
+        <div class="Hero-Title">
+            <h1>部品</h1>
+            <p>CONPORNENT</p>
+        </div>
+        <img src="<?php header_image(); ?>" alt="" />
+    </section>
 
     <div id="content" class="siteContent site-content">

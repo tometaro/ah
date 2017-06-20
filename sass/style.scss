@@ -108,9 +108,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # conpornent
 --------------------------------------------------------------*/
-@import "compornent/style";
+// @import "compornent/style";
 @import "compornent/siteHeader";
 @import "compornent/siteNavi";
+@import "compornent/Hero";
 @import "compornent/siteContent";
 a {
     text-decoration: none;
