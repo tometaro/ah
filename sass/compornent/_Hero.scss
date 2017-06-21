@@ -1,9 +1,9 @@
-.Hero {
+.hero {
     background: linear-gradient(-135deg, #eee, #ccc);
     width: 100%;
     color: #333;
 
-    &-Wrapper {
+    &-wrapper {
         width: 1000px;
         margin: 0 auto;
         height: 610px;
@@ -11,7 +11,7 @@
 
     }
 
-    &-Image {
+    &-image {
         display: inline-block;
         position: relative;
         width: 100%;
@@ -31,7 +31,7 @@
     }
 
 
-    &-Title {
+    &-title {
         position: absolute;
 
         h1{
@@ -45,15 +45,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .Hero {
+    .hero {
 
-        &-Wrapper {
+        &-wrapper {
             width: 100%;
             height: auto;
         }
 
-        &-Visual,
-        &-Title {
+        &-visual,
+        &-title {
             width: 100%;
             height: auto;
             text-align: center;

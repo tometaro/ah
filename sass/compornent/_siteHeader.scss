@@ -1,5 +1,5 @@
 
-.Header {
+.siteHeader {
     position: fixed;
     width: 100%;
     padding: 20px 20px;
@@ -7,60 +7,92 @@
     width: 100%;
     top:0;
     transition: 1s ease-in-out;
-    background-color: $whiteBlue;
+    background: $whiteBlue;
 
-    &-Inner {
+    &-inner {
         position: relative;
         overflow: hidden;
     }
 
-    &-Branding {
+    &-branding {
         width: auto;
         float: left;
     }
 
-    &-Title {
+    &-title {
         color: #333;
         font-size: 16px;
         transition: 1s ease-in-out;
+        line-height: 20px;
+
+        a{
+            color: $gray;
+        }
     }
 
     &-text {
         display:none;
     }
 
-    &-SpMenu {
-        background: #333;
+    &-spMenu {
+        background-color: $gray;
     }
 
-    &-Bg {
-        background-color: $whiteBlue;
-        transition: 1s ease-in-out;
-
-        .Header-Title,
-        .Header-Text {
-            color: #fff;
-            transition: 1s ease-in-out;
-        }
-
-        .Header-SpMenu {
-            background: #fff;;
+    &-navi {
+        a {
+            color: $gray;
+            font-weight: 500;
         }
     }
+
+    // &-Bg {
+    //     background-color: $whiteBlue;
+    //     transition: 1s ease-in-out;
+
+    //        .Header-Navi {
+    //             a {
+    //             color: $gray;
+    //             font-weight: 500;
+    //         }
+    // }
+
+    //     .Header-Title {
+
+    //         a{
+    //             color: $gray;
+    //             transition: 1s ease-in-out;
+    //         }
+    //     }
+
+    //     .Header-SpMenu {
+    //         background-color: $gray;
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 768px) {
-  .Header, .Header-Inner {
-    width: 100%;
-  }
-  .Header{
+    .siteHeader {
+        padding: 20px 15px;
 
-    &-Text {
-        color: #fff;;
     }
 
-  }
+    .siteHeader{
+
+    &-navi {
+        a {
+            color: $white ;
+        }
+    }
+
+        // &-Bg {
+        //     .Header-Navi {
+        //         a {
+        //             color: $white ;
+        //         }
+        //     }
+
+        // }
+
+    }
 
 }
-
-

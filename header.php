@@ -23,47 +23,51 @@
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ah' ); ?></a>
 
-    <header id="masthead" class="Header site-header" role="banner">
-        <div class="Header-Inner">
-            <div class="Header-Branding site-branding">
+    <header id="masthead" class="siteHeader site-header" role="banner">
+        <div class="siteHeader-inner">
+            <div class="siteHeader-branding site-branding">
                 <?php
                 if ( is_front_page() && is_home() ) : ?>
-                    <h1 class="Header-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                    <h1 class="siteHeader-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                 <?php else : ?>
-                    <p class="Header-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                    <p class="siteHeader-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
                 <?php
                 endif;
 
                 $description = get_bloginfo( 'description', 'display' );
                 if ( $description || is_customize_preview() ) : ?>
-                    <p class="Header-text site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+                    <p class="siteHeader-text site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
                 <?php
                 endif; ?>
             </div><!-- .site-branding -->
 
-            <div class="Navi-Toggle">
-                <span class="Header-SpMenu"></span>
-                <span class="Header-SpMenu"></span>
-                <span class="Header-SpMenu"></span>
+            <div class="siteNavi-toggle">
+                <div class="siteNavi-toggleInner">
+                    <span class="siteHeader-spMenu"></span>
+                    <span class="siteHeader-spMenu"></span>
+                    <span class="siteHeader-spMenu"></span>
+                </div>
             </div>
 
-            <nav class="Navi" role="navigation">
-                <div class="Navi-Inner">
+            <nav class="siteNavi siteHeader-navi" role="navigation">
+                <div class="siteNavi-inner">
                     <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
                 </div>
-                <div class="Navi-Shadow"></div>
+                <div class="siteNavi-shadow"></div>
 
             </nav><!-- #site-navigation -->
         </div>
 
     </header><!-- #masthead -->
 
-    <section class="Hero Hero-Image">
-        <div class="Hero-Title">
-            <h1>テキスト</h1>
-            <p>CONPORNENT</p>
-        </div>
-        <img src="<?php header_image(); ?>" alt="" />
-    </section>
+    <?php if(is_front_page() ): ?><!-- フロントページのみで表示-->
+        <section class="hero hero-image">
+            <div class="hero-title">
+                <h1>テキスト</h1>
+                <p>CONPORNENT</p>
+            </div>
+            <img src="<?php header_image(); ?>" alt="" />
+        </section>
+    <?php endif; ?>
 
-    <div id="content" class="siteContent site-content">
+    <div id="content" class="siteSection site-content">

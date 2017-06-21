@@ -106,15 +106,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media/media";
 
 /*--------------------------------------------------------------
+# web font
+--------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+/*--------------------------------------------------------------
 # conpornent
 --------------------------------------------------------------*/
 // @import "compornent/style";
 @import "compornent/siteHeader";
 @import "compornent/siteNavi";
-@import "compornent/Hero";
+@import "compornent/hero";
 @import "compornent/siteContent";
+@import "compornent/siteSection";
+
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
 a {
     text-decoration: none;
 }
-
-

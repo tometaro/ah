@@ -1,0 +1,12 @@
+.siteSection {
+  width:1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .siteSection {
+    width: 100%;
+    padding: 30px 15px;
+  }
+}
