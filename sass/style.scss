@@ -119,9 +119,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "compornent/hero";
 @import "compornent/siteContent";
 @import "compornent/siteSection";
+@import "compornent/siteFooter";
+
 
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
+  margin-top: 60px;
 }
 a {
     text-decoration: none;
