@@ -161,3 +161,7 @@ function oz_admin_bar_to_the_bottom() {
 }
 // on frontend area
 add_action( 'wp_head', 'oz_admin_bar_to_the_bottom' );
+
+//320×180のサムネイルを作成
+add_image_size('thumb320',320,180,true);
+

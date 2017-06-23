@@ -110,7 +110,8 @@ textarea {
   input a,
   select a,
   textarea a {
-    color: #00BFA5; }
+    color: #0091EA;
+    transition: 0.5s; }
     body a:hover,
     button a:hover,
     input a:hover,
@@ -479,6 +480,9 @@ object {
 # web font
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # conpornent
 --------------------------------------------------------------*/
 .siteHeader {
@@ -514,6 +518,8 @@ object {
 @media only screen and (max-width: 768px) {
   .siteHeader {
     padding: 20px 15px; }
+    .siteHeader-title {
+      text-align: center; }
   .siteHeader-navi a {
     color: #fff; } }
 
@@ -625,7 +631,8 @@ object {
 .hero {
   background: linear-gradient(-135deg, #eee, #ccc);
   width: 100%;
-  color: #333; }
+  color: #333;
+  vertical-align: bottom; }
   .hero-wrapper {
     width: 1000px;
     margin: 0 auto;
@@ -669,14 +676,18 @@ object {
       letter-spacing: 0.5em; } }
 
 .siteSection {
-  width: 1000px;
-  margin: 0 auto;
+  background: #fff;
   padding: 60px 0; }
+  .siteSection-inner {
+    margin: 0 auto;
+    width: 100%; }
 
 @media only screen and (max-width: 768px) {
   .siteSection {
     width: 100%;
-    padding: 30px 15px; } }
+    padding: 30px 15px; }
+    .siteSection-inner {
+      width: 100%; } }
 
 .siteFooter {
   background: #ECEFF1;
@@ -686,9 +697,53 @@ object {
   .siteFooter {
     padding: 20px 15px; } }
 
+.article-title {
+  font-size: 3.998em; }
+
+.articleList {
+  display: table;
+  margin: 0 auto;
+  height: auto;
+  vertical-align: middle;
+  text-align: center;
+  border: 0;
+  box-sizing: border-box; }
+  .articleList__image {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 100%;
+    border-radius: 5px 5px 0 0; }
+  .articleList li {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 25px;
+    width: 300px;
+    height: auto;
+    min-height: 200px;
+    background: 0 0;
+    border-radius: 5px;
+    z-index: 0;
+    background: #FFF;
+    text-align: left; }
+  .articleList header {
+    padding: 20px; }
+  .articleList h1 {
+    font-size: 12px;
+    line-height: 2; }
+  .articleList h2 {
+    font-size: 12px;
+    line-height: 2; }
+
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
-  margin-top: 60px; }
+  margin-top: 60px;
+  background: #ECEFF1; }
 
 a {
   text-decoration: none; }

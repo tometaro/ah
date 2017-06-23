@@ -20,6 +20,24 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<div class="thumbnail_lists">
+				<ul class="articleList">
+					<?php $posts = get_posts('numberposts=5'); ?>
+						<?php foreach($posts as $post): ?>
+							<li>
+								<a href="<?php the_permalink(); ?>" class="articleList-image entry-image"><?php the_post_thumbnail( 'thumb320', array('style' => 'width:320px;height:180px;') ); ?></a>
+								<a href="<?php the_permalink(); ?>" class="entry-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-image-320.png" alt="NO IMAGE" title="NO IMAGE" style="width:320px;height:180px;" class="no-image list-no-image" /></a>
+
+								<div class="post_right">
+									<strong class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
+									<p class="time"><?php the_time('Y年m月d日（D）'); ?></p>
+									<p class="summary">【記事の要約文章】</p>
+								</div>
+							</li>
+						<?php endforeach; ?>
+					</ul>
+			</div>
+
 		<?php
 		if ( have_posts() ) :
 
