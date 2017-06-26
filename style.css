@@ -676,16 +676,23 @@ object {
       letter-spacing: 0.5em; } }
 
 .siteSection {
-  background: #fff;
-  padding: 60px 0; }
+  background: #fff; }
   .siteSection-inner {
     margin: 0 auto;
-    width: 100%; }
+    width: 100%;
+    background: #fff;
+    padding: 60px 0; }
+    .siteSection-inner:nth-child(even) {
+      background-color: #efefef; }
+    .siteSection-inner-wrapper {
+      width: 1000px; }
+  .siteSection-title {
+    font-size: 1.999em;
+    text-align: center; }
 
 @media only screen and (max-width: 768px) {
   .siteSection {
-    width: 100%;
-    padding: 30px 15px; }
+    width: 100%; }
     .siteSection-inner {
       width: 100%; } }
 
@@ -699,6 +706,9 @@ object {
 
 .article-title {
   font-size: 3.998em; }
+
+.article-section {
+  width: 1000px; }
 
 .articleList {
   display: table;

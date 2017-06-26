@@ -13,20 +13,19 @@
  */
 
 get_header(); ?>
-<div class="siteSection-inner">
-	<div class="siteSection-Title">カテゴリ</div>
-
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<div class="thumbnail_lists">
-				<ul class="articleList">
-					<?php $posts = get_posts('numberposts=5'); ?>
-						<?php foreach($posts as $post): ?>
+ 		<main id="main" class="site-main" role="main">
+			<?php $categories = get_categories(); foreach($categories as $category) :?>
+				<div class="siteSection-inner">
+					<h2 class="siteSection-title"><?php echo $category->cat_name; ?></h2>
+					<ul class="articleList">
+						<?php query_posts('showposts=5&cat='.$category->cat_ID);
+						if (have_posts()) : while (have_posts()) : the_post();
+						?>
 							<li>
 								<a href="<?php the_permalink(); ?>" class="articleList-image entry-image"><?php the_post_thumbnail( 'thumb320', array('style' => 'width:320px;height:180px;') ); ?></a>
-								<a href="<?php the_permalink(); ?>" class="entry-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/no-image-320.png" alt="NO IMAGE" title="NO IMAGE" style="width:320px;height:180px;" class="no-image list-no-image" /></a>
+								<a href="<?php the_permalink(); ?>" class="entry-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/noImage.svg" alt="NO IMAGE" title="NO IMAGE" style="width:320px;height:180px;" class="no-image list-no-image" /></a>
 
 								<div class="post_right">
 									<strong class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
@@ -34,41 +33,10 @@ get_header(); ?>
 									<p class="summary">【記事の要約文章】</p>
 								</div>
 							</li>
-						<?php endforeach; ?>
+						<?php endwhile; endif; ?>
 					</ul>
-			</div>
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
-			<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
+				</div>
+			<?php endforeach; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
