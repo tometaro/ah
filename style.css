@@ -687,7 +687,7 @@ object {
     .siteSection-inner-wrapper {
       width: 1000px; }
   .siteSection-title {
-    font-size: 1.999em;
+    font-size: 1.414em;
     text-align: center; }
 
 @media only screen and (max-width: 768px) {
@@ -718,17 +718,8 @@ object {
   text-align: center;
   border: 0;
   box-sizing: border-box; }
-  .articleList__image {
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    left: 0;
-    top: 0;
-    height: 200px;
-    width: 100%;
-    border-radius: 5px 5px 0 0; }
   .articleList li {
-    display: inline-block;
+    display: inline-grid;
     position: relative;
     top: 0;
     left: 0;
@@ -739,21 +730,18 @@ object {
     background: 0 0;
     border-radius: 5px;
     z-index: 0;
-    background: #FFF;
     text-align: left; }
-  .articleList header {
-    padding: 20px; }
-  .articleList h1 {
-    font-size: 12px;
-    line-height: 2; }
-  .articleList h2 {
-    font-size: 12px;
-    line-height: 2; }
+
+@media screen and (max-width: 480px) {
+  .articleList li {
+    margin: 25px 0; } }
 
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
   margin-top: 60px;
-  background: #ECEFF1; }
+  background: #ECEFF1;
+  word-break: break-all;
+  word-wrap: break-word; }
 
 a {
   text-decoration: none; }

@@ -62,10 +62,7 @@
 
     <?php if(is_front_page() ): ?><!-- フロントページのみで表示-->
         <section class="hero hero-image">
-            <div class="hero-title">
-<!--                 <h1>テキスト</h1>
-                <p>CONPORNENT</p> -->
-            </div>
+            <div class="hero-title"></div>
             <img src="<?php header_image(); ?>" alt="" />
         </section>
     <?php endif; ?>

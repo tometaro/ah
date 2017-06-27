@@ -7,20 +7,8 @@
   border: 0;
   box-sizing: border-box;
 
-  &__image {
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    left: 0;
-    top: 0;
-    height:200px;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-
-  }
-
   li {
-    display: inline-block;
+    display: inline-grid;
     position: relative;
     top: 0;
     left: 0;
@@ -31,27 +19,15 @@
     background: 0 0;
     border-radius: 5px;
     z-index: 0;
-    background :#FFF;
     text-align: left;
-    // border: 1px solid #ddd;
-    // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
-
-  }
-
-  header {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 12px;
-    line-height: 2;
-  }
-
-  h2 {
-    font-size: 12px;
-    line-height: 2;
   }
 
 }
 
-
+@media screen and (max-width: 480px) {
+  .articleList {
+    li {
+      margin: 25px 0;
+    }
+  }
+}

@@ -9,7 +9,7 @@
 
 ?>
 
-<article class="siteSection-inner siteSection-inner-wrapper" id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+<article class="siteSection-inner" id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
