@@ -27,6 +27,7 @@ get_header(); ?>
 
 						<?php endwhile; endif; ?>
 					</ul>
+					<a class="button" href="<?php echo get_category_link($category->cat_ID);?>">もっと見る</a>
 				</div>
 			<?php endforeach; ?>
 		</main><!-- #main -->

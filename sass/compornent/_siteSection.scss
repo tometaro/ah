@@ -1,5 +1,6 @@
 .siteSection {
   background: $white;
+  text-align:center;
 
   &-inner {
       margin: 0 auto;
@@ -19,6 +20,7 @@
   &-title {
     font-size: 1.414em;
     text-align: center;
+    margin-bottom: 25px;
   }
 
   &-category {

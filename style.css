@@ -493,7 +493,7 @@ object {
   width: 100%;
   top: 0;
   transition: 1s ease-in-out;
-  background: #ECEFF1; }
+  background: #263238; }
   .siteHeader-inner {
     position: relative;
     overflow: hidden; }
@@ -506,7 +506,7 @@ object {
     transition: 1s ease-in-out;
     line-height: 20px; }
     .siteHeader-title a {
-      color: #616161; }
+      color: #fff; }
   .siteHeader-text {
     display: none; }
   .siteHeader-spMenu {
@@ -589,7 +589,8 @@ object {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding: 16px 16px; }
         .siteNavi ul li a {
-          padding: 0; }
+          padding: 0;
+          color: #fff; }
       .siteNavi ul li:after {
         display: none; }
     .siteNavi-toggle {
@@ -676,19 +677,21 @@ object {
       letter-spacing: 0.5em; } }
 
 .siteSection {
-  background: #fff; }
+  background: #fff;
+  text-align: center; }
   .siteSection-inner {
     margin: 0 auto;
     width: 100%;
     background: #fff;
     padding: 60px 0; }
     .siteSection-inner:nth-child(even) {
-      background-color: #efefef; }
+      background-color: #F5F5F5; }
     .siteSection-inner-wrapper {
       width: 1000px; }
   .siteSection-title {
     font-size: 1.414em;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 25px; }
 
 @media only screen and (max-width: 768px) {
   .siteSection {
@@ -697,7 +700,7 @@ object {
       width: 100%; } }
 
 .siteFooter {
-  background: #ECEFF1;
+  background: #263238;
   padding: 20px; }
 
 @media only screen and (max-width: 768px) {
@@ -717,7 +720,8 @@ object {
   vertical-align: middle;
   text-align: center;
   border: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  letter-spacing: 0.05em; }
   .articleList li {
     display: inline-grid;
     position: relative;
@@ -731,6 +735,20 @@ object {
     border-radius: 5px;
     z-index: 0;
     text-align: left; }
+  .articleList-image {
+    -webkit-clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
+    clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%); }
+    .articleList-image img {
+      vertical-align: bottom; }
+  .articleList-title {
+    line-height: 2;
+    margin: 20px 0;
+    font-weight: 500; }
+    .articleList-title a {
+      color: #424242; }
+  .articleList-time {
+    color: #9E9E9E;
+    font-size: 13px; }
 
 @media screen and (max-width: 480px) {
   .articleList li {
@@ -855,6 +873,16 @@ object {
     order: 2;
     width: 100%;
     border-left-width: 1px; } }
+
+.button {
+  padding: 12px 60px;
+  color: white;
+  background: #78909C;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 25px; }
+  .button a {
+    line-height: 20px; }
 
 body {
   font-family: 'Noto Sans Japanese', sans-serif;

@@ -6,6 +6,7 @@
   text-align: center;
   border: 0;
   box-sizing: border-box;
+  letter-spacing: 0.05em;
 
   li {
     display: inline-grid;
@@ -21,6 +22,30 @@
     z-index: 0;
     text-align: left;
   }
+
+  &-image {
+    -webkit-clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
+    clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+
+  &-title {
+    line-height: 2;
+    margin: 20px 0;
+    font-weight: 500;
+    a {
+      color :#424242;
+    }
+  }
+
+  &-time {
+    color : #9E9E9E;
+    font-size: 13px;
+  }
+
 
 }
 
