@@ -19,20 +19,22 @@ get_header(); ?>
  		<main id="main" class="site-main" role="main">
  			<h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
  			<ul class="articleList">
- 			<?php query_posts('posts_per_page=2'); ?>
+
 			<?php if(have_posts()): while(have_posts()):the_post(); ?>
-  			<li>
-					<?php if(has_post_thumbnail()): ?><!-- アイキャッチがある場合 -->
-						<a href="<?php the_permalink(); ?>" class="articleList-image entry-image"><?php the_post_thumbnail( 'thumb300', array('style' => 'width:300px;height:180px;') ); ?></a>
-					<?php else: ?><!-- アイキャッチがない場合 -->
-						<a href="<?php the_permalink(); ?>" class="entry-image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/noImage.svg" alt="NO IMAGE" title="NO IMAGE" style="width:300px;height:180px;" class="no-image list-no-image" /></a>
-					<?php endif; ?>
-					<div class="post_right"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-					<p class="time"><?php the_time('Y年m月d日（D）'); ?></p>
-				</li>
+
+				<?php get_template_part( 'template-parts/articleList' ); ?>
+
 			<?php endwhile; endif; ?>
-			<?php previous_posts_link('新しい投稿ページへ'); ?>
-			<?php next_posts_link('古い投稿ページへ'); ?>
+
+			</ul>
+
+			<!--ページネーション-->
+			<div class="pagination-box right">
+			 <?php if (function_exists('responsive_pagination')) {
+			  responsive_pagination($wp_query->max_num_pages);
+			} ?>
+			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php
