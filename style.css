@@ -680,8 +680,7 @@ object {
       letter-spacing: 0.5em; } }
 
 .siteSection {
-  background: #fff;
-  text-align: center; }
+  background: #fff; }
   .siteSection-inner {
     margin: 0 auto;
     width: 100%;
@@ -713,11 +712,14 @@ object {
   .siteFooter {
     padding: 20px 15px; } }
 
-.article-title {
-  font-size: 3.998em; }
-
-.article-section {
-  width: 1140px; }
+.article {
+  width: 1040px;
+  margin: 0 auto; }
+  .article-title {
+    font-size: 3.998em; }
+  .article-content {
+    width: 770px;
+    float: left; }
 
 .articleList {
   display: table;
@@ -885,7 +887,7 @@ object {
   color: white;
   background: #78909C;
   border-radius: 4px;
-  display: inline-block;
+  display: block;
   margin-top: 25px; }
   .button a {
     line-height: 20px; }

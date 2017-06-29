@@ -1,9 +1,13 @@
-.article {
+.article{
+  width: 1040px;
+  margin: 0 auto;
+
   &-title {
     font-size: 3.998em;
   }
 
-  &-section {
-    width: 1140px;
+  &-content {
+    width: 770px;
+    float: left;
   }
 }
