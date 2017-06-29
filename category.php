@@ -17,24 +17,27 @@ get_header(); ?>
 <!--  -->
 	<div id="primary" class="content-area">
  		<main id="main" class="site-main" role="main">
- 			<h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
- 			<ul class="articleList">
+			<div class="siteSection-inner">
 
-			<?php if(have_posts()): while(have_posts()):the_post(); ?>
+	 			<h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
+	 			<ul class="articleList">
 
-				<?php get_template_part( 'template-parts/articleList' ); ?>
+				<?php if(have_posts()): while(have_posts()):the_post(); ?>
 
-			<?php endwhile; endif; ?>
+					<?php get_template_part( 'template-parts/articleList' ); ?>
 
-			</ul>
+				<?php endwhile; endif; ?>
 
-			<!--ページネーション-->
-			<div class="pagination-box right">
-			 <?php if (function_exists('responsive_pagination')) {
-			  responsive_pagination($wp_query->max_num_pages);
-			} ?>
+				</ul>
+
+				<!--ページネーション-->
+				<div class="pagination-box right">
+				 <?php if (function_exists('responsive_pagination')) {
+				  responsive_pagination($wp_query->max_num_pages);
+				} ?>
+				</div>
+
 			</div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php
