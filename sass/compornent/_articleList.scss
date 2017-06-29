@@ -9,7 +9,7 @@
   letter-spacing: 0.05em;
 
   li {
-    display: inline-grid;
+    display: inline-table;
     position: relative;
     top: 0;
     left: 0;
@@ -24,11 +24,12 @@
   }
 
   &-image {
-    -webkit-clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
-    clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
 
     img {
       vertical-align: bottom;
+          -webkit-clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
+    clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
+
     }
   }
 

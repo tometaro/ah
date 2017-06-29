@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="article site-main" role="main">
+	<div id="primary" class="siteSection-inner content-area">
+		<main id="main" class="siteSection-wrapper site-main" role="main">
 			<div class="article-content">
 			<?php
 			while ( have_posts() ) : the_post();

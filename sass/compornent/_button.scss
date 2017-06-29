@@ -3,10 +3,14 @@
   color: white;
   background: #78909C;
   border-radius: 4px;
-  display: block;
-  margin-top:25px;
+  display: inline-block;
 
   a {
     line-height: 20px;
+  }
+
+  &-wrapper {
+    text-align: center;
+    margin-top:25px;
   }
 }
