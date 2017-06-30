@@ -1,4 +1,32 @@
 .sidebar {
   width: 230px;
   float: right;
+
+  &-title {
+    margin-bottom:1em;
+  }
+
+  form{
+    label {
+      width: 70%;
+      box-sizing:border-box;
+    }
+
+    .search-submit {
+      width: 30%;
+      box-sizing:border-box;
+    }
+  }
+
+
+  li {
+    margin-bottom:1em;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
 }

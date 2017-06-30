@@ -8,10 +8,8 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="siteSection-inner content-area">
-		<main id="main" class="siteSection-wrapper site-main" role="main">
-			<div class="article-content">
+	<div id="primary" class="siteSection-wrapper content-area">
+		<main id="main" class="siteSection-content site-main" role="main">
 			<?php
 			while ( have_posts() ) : the_post();
 
@@ -27,10 +25,8 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 
-			</div>
-			<?php
-			get_sidebar();?>
 		</main><!-- #main -->
+		<?php get_sidebar();?>
 	</div><!-- #primary -->
 
 <?php

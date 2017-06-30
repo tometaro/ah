@@ -16,6 +16,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
  		<main id="main" class="site-main" role="main">
+
 			<?php $categories = get_categories(); foreach($categories as $category) :?>
 				<div class="siteSection-inner">
 					<h2 class="siteSection-title"><?php echo $category->cat_name; ?></h2>
@@ -32,6 +33,7 @@ get_header(); ?>
 					</div>
 				</div>
 			<?php endforeach; ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php

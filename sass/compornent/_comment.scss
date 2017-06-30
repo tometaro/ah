@@ -1,0 +1,13 @@
+.comment {
+  background: #eee;
+  padding: 20px;
+  margin-top: 60px
+
+  &-list {
+    border-bottom: 1px solid #ddd;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+}

@@ -60,10 +60,18 @@
 
     </header><!-- #masthead -->
 
-    <?php if(is_front_page() ): ?><!-- フロントページのみで表示-->
+    <?php if(is_front_page()): ?><!-- フロントページのみで表示-->
         <section class="hero hero-image">
             <div class="hero-title"></div>
             <img src="<?php header_image(); ?>" alt="" />
         </section>
     <?php endif; ?>
+
+    <?php if(is_single()): ?><!-- フロントページのみで表示-->
+        <section class="hero hero-image">
+            <div class="hero-title"></div>
+            <img src="<?php the_post_thumbnail('full'); ?>" alt="" />
+        </section>
+    <?php endif; ?>
+
     <div id="content" class="siteSection site-content">

@@ -14,9 +14,9 @@
 
 get_header(); ?>
 
-<!--  -->
 	<div id="primary" class="content-area">
  		<main id="main" class="site-main" role="main">
+
 			<div class="siteSection-inner">
 
 	 			<h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>

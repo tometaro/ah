@@ -1,15 +1,45 @@
 .article{
 
   &-title {
-    font-size: 2.827em;
-    border-bottom: 4px solid #eee;
-    padding-bottom:15px;
-    margin-bottom:30px;
+    font-size: 2.441em;
+    border-bottom: 4px solid #DDDDDD;
+    padding-bottom: 10px;
+    font-weight: 500;
+
   }
 
-  &-content {
-    width: 770px;
-    float: left;
-    line-height:2.0;
+  h2 {
+    font-size: 1.953em;
+    margin-bottom:0.4em;
+    background: #eee;
+    padding: 8px 0 8px 20px;
+    border-left: 4px solid #455A64;
+    font-weight: 500;
+
   }
+
+  h3 {
+    font-size: 1.563em;
+    margin-bottom:0.5em;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 1.25em;
+    margin-bottom:0.6em;
+    font-weight: 500;
+
+  }
+
+  h5 {
+    font-size: 1em;
+    margin-bottom:0.7em;
+    font-weight: 600;
+  }
+
+  h1,h2,h3,h4,h5,p {
+    margin-bottom: 1em;
+    line-height: 2.0;
+  }
+
 }
