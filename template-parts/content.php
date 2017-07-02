@@ -41,7 +41,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php ah_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

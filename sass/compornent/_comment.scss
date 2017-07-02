@@ -1,10 +1,17 @@
-.comment {
-  background: #eee;
-  padding: 20px;
+.articleComment {
+  background: $whiteGray;
+  padding: 40px;
   margin-top: 60px
 
   &-list {
     border-bottom: 1px solid #ddd;
+
+  }
+
+  li {
+    background: $white;
+    padding:40px;
+    margin-bottom: 40px;
   }
 
   p {

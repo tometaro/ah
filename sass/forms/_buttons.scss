@@ -2,11 +2,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, .8);
+   border:1px solid #78909C;
+	// border-radius: 3px;
+	background: #78909C;
+	color: $white;
 	@include font-size(0.75);
 	line-height: 1;
 	padding: .6em 1em .4em;

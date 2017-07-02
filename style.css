@@ -209,11 +209,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #78909C;
+  background: #78909C;
+  color: #fff;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -249,8 +247,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #ddd;
   padding: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
@@ -755,9 +752,13 @@ object {
   margin-bottom: 0.7em;
   font-weight: 600; }
 
-.article h1, .article h2, .article h3, .article h4, .article h5, .article p {
+.article h1, .article h2, .article h3, .article h4, .article h5 {
   margin-bottom: 1em;
   line-height: 2.0; }
+
+.article p {
+  line-height: 2.0;
+  margin-bottom: 40px; }
 
 .articleList {
   display: table;
@@ -936,12 +937,6 @@ object {
   float: right; }
   .sidebar-title {
     margin-bottom: 1em; }
-  .sidebar form label {
-    width: 70%;
-    box-sizing: border-box; }
-  .sidebar form .search-submit {
-    width: 30%;
-    box-sizing: border-box; }
   .sidebar li {
     margin-bottom: 1em; }
 
@@ -949,13 +944,39 @@ object {
   .sidebar {
     width: 100%; } }
 
-.comment {
-  background: #eee;
-  padding: 20px;
-  margin-top: 60px .comment -list;
+.articleComment {
+  background: #F5F5F5;
+  padding: 40px;
+  margin-top: 60px .articleComment -list;
     margin-top-border-bottom: 1px solid #ddd; }
-  .comment p {
+  .articleComment li {
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 40px; }
+  .articleComment p {
     margin: 15px 0; }
+
+.search-form {
+  box-sizing: border-box;
+  width: 100%;
+  height: 32px; }
+
+.search-field {
+  width: 70%;
+  box-sizing: border-box;
+  border: none;
+  float: left;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.search-submit {
+  width: 30%;
+  box-sizing: border-box;
+  float: right;
+  height: 100%;
+  background: #000;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
 
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
