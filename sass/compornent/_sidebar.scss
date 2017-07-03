@@ -7,7 +7,26 @@
   }
 
   li {
-    margin-bottom:1em;
+    padding: 20px 0;
+    display: table;
+    border-bottom :1px solid #ccc;
+    width: 100%;
+    text-align: left;
+
+
+    &::before {
+      display: table-cell;
+      vertical-align: middle;
+      content: "\f105";
+      font-family: Fontawesome;
+      padding-right: 10px;
+      color: #78909C;
+      width: 5px;
+    }
+
+    a{
+      color: $darkGray;
+    }
   }
 
 }

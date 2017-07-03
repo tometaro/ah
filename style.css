@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
    License: none (public domain)
 */
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(icon-font/dist/css/symbols.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -938,7 +939,21 @@ object {
   .sidebar-title {
     margin-bottom: 1em; }
   .sidebar li {
-    margin-bottom: 1em; }
+    padding: 20px 0;
+    display: table;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-align: left; }
+    .sidebar li::before {
+      display: table-cell;
+      vertical-align: middle;
+      content: "\f105";
+      font-family: Fontawesome;
+      padding-right: 10px;
+      color: #78909C;
+      width: 5px; }
+    .sidebar li a {
+      color: #424242; }
 
 @media only screen and (max-width: 768px) {
   .sidebar {
