@@ -937,11 +937,12 @@ object {
   width: 230px;
   float: right; }
   .sidebar-title {
-    margin-bottom: 1em; }
+    border-bottom: #eee 3px solid;
+    padding-bottom: 10px; }
   .sidebar li {
     padding: 20px 0;
     display: table;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
     width: 100%;
     text-align: left; }
     .sidebar li::before {

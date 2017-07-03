@@ -3,13 +3,15 @@
   float: right;
 
   &-title {
-    margin-bottom:1em;
+    border-bottom: #eee 3px solid;
+    padding-bottom: 10px
+    // margin-bottom:1em;
   }
 
   li {
     padding: 20px 0;
     display: table;
-    border-bottom :1px solid #ccc;
+    border-bottom :1px solid #eee;
     width: 100%;
     text-align: left;
 
