@@ -61,6 +61,17 @@
 
     </header><!-- #masthead -->
 
+    <?php if ( !is_home() && !is_front_page() ) : ?>
+    <div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
+      <div class="breadcrumbs-inner">
+        <?php if(function_exists('bcn_display'))
+        {
+        bcn_display();
+        }?>
+      </div>
+    </div>
+    <?php endif; ?>
+
     <?php if(is_front_page()): ?><!-- フロントページのみで表示-->
         <section class="hero hero-image">
             <div class="hero-title"></div>
@@ -68,10 +79,12 @@
         </section>
     <?php endif; ?>
 
-    <?php if(is_single()): ?><!-- フロントページのみで表示-->
+    <?php if(is_single()): ?><!-- 記事ページのみで表示-->
         <section class="hero hero-image">
+          <div class="hero-single">
             <div class="hero-title"></div>
             <img src="<?php the_post_thumbnail('full'); ?>" alt="" />
+          </div>
         </section>
     <?php endif; ?>
 

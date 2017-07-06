@@ -3,9 +3,11 @@
   float: right;
 
   &-title {
-    border-bottom: #eee 3px solid;
-    padding-bottom: 10px
-    // margin-bottom:1em;
+    background: $blueGray-50;
+    border-left: 4px solid $blueGray-400;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+
   }
 
   li {
@@ -16,7 +18,7 @@
     text-align: left;
 
 
-    &::before {
+    &::after {
       display: table-cell;
       vertical-align: middle;
       content: "\f105";

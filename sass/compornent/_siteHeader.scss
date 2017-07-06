@@ -7,7 +7,9 @@
     width: 100%;
     top:0;
     transition: 1s ease-in-out;
-    background: $blueGray;
+    background: $blueGray-50;
+    // border-bottom: 1px solid #ddd;
+    // box-shadow: 0 0 5px rgba(38, 50, 56, .3);
 
     &-inner {
         position: relative;
@@ -20,13 +22,12 @@
     }
 
     &-title {
-        color: #333;
         font-size: 16px;
         transition: 1s ease-in-out;
         line-height: 20px;
 
         a{
-            color: $white;
+            color: $blueGray-600;
         }
     }
 
@@ -35,12 +36,12 @@
     }
 
     &-spMenu {
-        background-color: $white;
+        background-color: $blueGray-600;
     }
 
     &-navi {
         a {
-            color: $white;
+            color: $blueGray-600;
             font-weight: 500;
         }
     }

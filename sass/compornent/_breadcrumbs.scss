@@ -1,0 +1,22 @@
+.breadcrumbs{
+  background: $white;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  &-inner {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .breadcrumbs{
+
+    &-inner {
+      width: 100%;
+      padding: 10px 15px;
+
+    }
+  }
+}

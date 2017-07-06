@@ -1,10 +1,11 @@
 .siteFooter {
-  background: $blueGray ;
+  background: $blueGray-50 ;
   padding: 20px;
-  color :$white;
+  color : $blueGray-600;
+  // border-top: solid 1px $blueGray-100;
 
   a {
-    color: $white;
+    color: $blueGray-600;
   }
 }
 

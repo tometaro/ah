@@ -108,14 +108,13 @@
             float: left;
             width: 70%;
             height: 100%;
-            background: rgba(38,50,56,.8);
+            background: rgba(38,50,56,1);
         }
 
         &-shadow {
             float: right;
             width: 30%;
             height: 100%;
-            background: rgba(0,0,0,0);
         }
     }
 
@@ -126,14 +125,11 @@
             transition-duration: 0.5s;
             z-index: 10;
             transform: translateX(0);
-            margin: 0 -20px;
+            margin: 0 -15px;
 
             ul {
                 opacity: 1;
                 transition-duration: 4.0s;
-            }
-
-            &-inner {
             }
         }
 
