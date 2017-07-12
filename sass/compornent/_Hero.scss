@@ -8,6 +8,7 @@
         margin: 0 auto;
         height: 610px;
         display: table;
+
     }
 
     &-image {
@@ -16,6 +17,7 @@
         width: 100%;
         height: 500px;
         overflow: hidden;
+        background :url(images/noImage.svg);
         background-size: cover;
         background-attachment: fixed;
 
