@@ -25,6 +25,7 @@
         font-size: 16px;
         transition: 1s ease-in-out;
         line-height: 20px;
+        float: right;
 
         a{
             color: $blueGray-600;
@@ -32,7 +33,9 @@
     }
 
     &-text {
-        display:none;
+        width: 20px;
+        height: 20px;
+        float: left;
     }
 
     &-spMenu {

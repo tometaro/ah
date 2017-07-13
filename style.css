@@ -501,11 +501,14 @@ object {
   .siteHeader-title {
     font-size: 16px;
     transition: 1s ease-in-out;
-    line-height: 20px; }
+    line-height: 20px;
+    float: right; }
     .siteHeader-title a {
       color: #546E7A; }
   .siteHeader-text {
-    display: none; }
+    width: 20px;
+    height: 20px;
+    float: left; }
   .siteHeader-spMenu {
     background-color: #546E7A; }
   .siteHeader-navi a {
@@ -800,6 +803,23 @@ object {
 @media screen and (max-width: 480px) {
   .articleList li {
     margin: 25px 0; } }
+
+.articleComment-title {
+  font-weight: 500; }
+
+.articleComment label {
+  font-weight: 500; }
+
+.articleComment textarea {
+  margin-top: 10px; }
+
+.articleComment .submit {
+  font-size: 1em;
+  padding: 12px 60px;
+  color: white;
+  background: #78909C;
+  border-radius: 4px;
+  display: inline-block; }
 
 .pagination,
 .pagination li a {

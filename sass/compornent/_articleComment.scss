@@ -1,0 +1,24 @@
+.articleComment {
+
+  &-title {
+    font-weight: 500;
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+  textarea {
+    margin-top :10px;
+  }
+
+  .submit {
+    font-size: 1em;
+    padding: 12px 60px;
+    color: white;
+    background: #78909C;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+}

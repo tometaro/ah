@@ -37,7 +37,7 @@
 
             $description = get_bloginfo( 'description', 'display' );
             if ( $description || is_customize_preview() ) : ?>
-                <p class="siteHeader-text site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+                <p class="siteHeader-text site-description"><img src="<?php bloginfo('template_directory'); ?>/images/siteLogo.svg"></p>
             <?php
             endif; ?>
             </div><!-- .site-branding -->

@@ -25,7 +25,7 @@ if ( post_password_required() ) {
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
-		<h2 class="comments-title">
+		<h2 class="articleComment-title comments-title">
 			<?php
 				printf( // WPCS: XSS OK.
 					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'ah' ) ),
@@ -79,7 +79,13 @@ if ( post_password_required() ) {
 	<?php
 	endif;
 
-	comment_form();
+	$comments_args = array(
+	  // 返信セクションのタイトルを変更
+	  'title_reply'=>'',
+		// 送信ボタンのタイトルを変更
+		'label_submit'=>'送信',
+	);
+	comment_form($comments_args);
 	?>
 
 </div><!-- #comments -->
