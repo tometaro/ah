@@ -1,24 +1,53 @@
 .articleComment {
+  background: $whiteGray;
+  padding: 80px 100px;
+  margin-top: 60px
 
-  &-title {
-    font-weight: 500;
-  }
+  // &-title {
+  //   font-weight: 500;
+  //   margin-bottom: 20px;
+  // }
 
   label {
     font-weight: 500;
+    margin-bottom: 10px;
+
   }
 
-  textarea {
-    margin-top :10px;
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+
+  }
+
+  li {
+    border-bottom: 1px solid #ddd;
+    padding:40px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 40px;
   }
 
   .submit {
+    margin: 0 auto;
     font-size: 1em;
-    padding: 12px 60px;
+    width: 300px;
+    padding: 20px 0;
     color: white;
     background: #78909C;
     border-radius: 4px;
     display: inline-block;
   }
 
+}
+
+@media only screen and (max-width: 768px) {
+  .articleComment{
+    padding: 20px;
+    margin-bottom: 40px;
+  }
 }
