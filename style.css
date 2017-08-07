@@ -884,6 +884,13 @@ object {
   .pagination .next a::after {
     content: "\f105"; }
 
+@media only screen and (max-width: 768px) {
+  .pagination .first,
+  .pagination .last {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; } }
+
 .button {
   padding: 12px 60px;
   color: white;

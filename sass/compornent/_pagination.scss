@@ -46,3 +46,14 @@
   .previous a::before { content: "\f104"; }
   .next a::after { content: "\f105"; }
 }
+
+@media only screen and ( max-width: 768px ) {
+  .pagination {
+    .first,
+    .last {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  }
+}
