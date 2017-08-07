@@ -8,6 +8,14 @@
  */
 
 get_header(); ?>
+	<?php if(is_single()): ?><!-- 記事ページのみで表示-->
+			<section class="hero hero-image hero-image-small">
+				<div class="hero-single">
+					<div class="hero-title"></div>
+					<img src="<?php the_post_thumbnail('full'); ?>" alt="" />
+				</div>
+			</section>
+	<?php endif; ?>
 	<div id="primary" class="siteSection-wrapper content-area">
 		<main id="main" class="siteSection-content site-main" role="main">
 			<?php

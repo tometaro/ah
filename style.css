@@ -647,6 +647,10 @@ object {
     background: url(images/noImage.svg);
     background-size: cover;
     background-attachment: fixed; }
+    .hero-image-small {
+      display: block;
+      width: 1040px;
+      margin: 0 auto; }
     .hero-image img {
       min-width: 100%;
       min-height: 100%;
@@ -839,66 +843,46 @@ object {
     margin-bottom: 40px; } }
 
 .pagination {
+  margin-top: 25px;
   display: flex;
   justify-content: center; }
   .pagination a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; }
-
-.pagination a {
-  font-weight: 300;
-  padding-top: 1px;
-  text-decoration: none;
-  border: 1px solid #ddd;
-  min-width: 36px;
-  min-height: 36px;
-  color: #333; }
-
-.pagination li:not([class*="current"]) a:hover {
-  background-color: #eee; }
-
-.pagination li:first-of-type a {
-  border-left-width: 1px; }
-
-.pagination li.first span,
-.pagination li.last span,
-.pagination li.previous span,
-.pagination li.next span {
-  /* screen readers only */
-  position: absolute;
-  top: -9999px;
-  left: -9999px; }
-
-.pagination li.first a::before,
-.pagination li.last a::after,
-.pagination li.previous a::before,
-.pagination li.next a::after {
-  display: inline-block;
-  font-family: Fontawesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translate(0, 0); }
-
-.pagination li.first a::before {
-  content: "\f100"; }
-
-.pagination li.last a::after {
-  content: "\f101"; }
-
-.pagination li.previous a::before {
-  content: "\f104"; }
-
-.pagination li.next a::after {
-  content: "\f105"; }
-
-.pagination li.current a {
-  background-color: #ddd;
-  cursor: default;
-  pointer-events: none; }
+    align-items: center;
+    font-weight: 300;
+    padding-top: 1px;
+    text-decoration: none;
+    background: #eee;
+    width: 40px;
+    height: 40px;
+    color: #424242; }
+  .pagination span {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  .pagination li {
+    margin: 0 10px;
+    display: inline-block;
+    font-family: Fontawesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0); }
+  .pagination .current a {
+    background-color: #ddd;
+    cursor: default;
+    pointer-events: none; }
+  .pagination .first a::before {
+    content: "\f100"; }
+  .pagination .last a::after {
+    content: "\f101"; }
+  .pagination .previous a::before {
+    content: "\f104"; }
+  .pagination .next a::after {
+    content: "\f105"; }
 
 .button {
   padding: 12px 60px;
@@ -980,7 +964,7 @@ object {
 body {
   font-family: 'Noto Sans Japanese', sans-serif;
   margin-top: 60px;
-  background: #ECEFF1;
+  background: #fff;
   word-break: break-all;
   word-wrap: break-word; }
 

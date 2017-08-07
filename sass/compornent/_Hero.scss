@@ -21,6 +21,12 @@
         background-size: cover;
         background-attachment: fixed;
 
+        &-small {
+          display: block;
+          width: 1040px;
+          margin: 0 auto;
+        }
+
         img {
             min-width: 100%;
             min-height: 100%;
