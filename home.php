@@ -19,17 +19,19 @@ get_header(); ?>
 
 			<?php $categories = get_categories(); foreach($categories as $category) :?>
 				<div class="siteSection-inner">
-					<h2 class="siteSection-title"><?php echo $category->cat_name; ?></h2>
-					<ul class="articleList">
-						<?php query_posts('showposts=5&cat='.$category->cat_ID);
-						if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<div class="siteSection-innerWrap">
+						<h2 class="siteSection-title"><?php echo $category->cat_name; ?></h2>
+						<ul class="articleList">
+							<?php query_posts('showposts=6&cat='.$category->cat_ID);
+							if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<?php get_template_part( 'template-parts/articleList' ); ?>
+								<?php get_template_part( 'template-parts/articleList' ); ?>
 
-						<?php endwhile; endif; ?>
-					</ul>
-					<div class="button-wrapper">
-						<a class="button" href="<?php echo get_category_link($category->cat_ID);?>">もっと見る</a>
+							<?php endwhile; endif; ?>
+						</ul>
+						<div class="button-wrapper">
+							<a class="button" href="<?php echo get_category_link($category->cat_ID);?>">もっと見る</a>
+						</div>
 					</div>
 				</div>
 			<?php endforeach; ?>

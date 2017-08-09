@@ -1,5 +1,5 @@
 .pagination {
-  margin-top: 25px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
 
@@ -47,13 +47,34 @@
   .next a::after { content: "\f105"; }
 }
 
-@media only screen and ( max-width: 768px ) {
-  .pagination {
-    .first,
-    .last {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
+// @media only screen and ( max-width: 768px ) {
+//   .pagination {
+//     .first,
+//     .last {
+//       position: absolute;
+//       top: -9999px;
+//       left: -9999px;
+//     }
+//   }
+// }
+
+@media only screen and ( max-width: 500px ) {
+  .pagination li {
+    /* screen readers only */
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
   }
+
+  .pagination li.current,
+  .pagination li.first,
+  .pagination li.last,
+  .pagination li.previous,
+  .pagination li.next{
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+
+  .pagination li.previous a { border-left-width: 0; }
 }

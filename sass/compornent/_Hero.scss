@@ -25,6 +25,14 @@
           display: block;
           width: 1040px;
           margin: 0 auto;
+          -webkit-clip-path: polygon(40px 0, 100% 0, 100% 0, 100% 460px, 1000px 100%, 0 100%, 0 100%, 0 40px);
+          clip-path: polygon(40px 0, 100% 0, 100% 0, 100% 460px, 1000px 100%, 0 100%, 0 100%, 0 40px);
+
+          img {
+            vertical-align: bottom;
+
+
+          }
         }
 
         img {
@@ -37,13 +45,6 @@
             top: 50%;
             transform: translate(-50%, -50%);
         }
-    }
-
-    &-single{
-
-      width: 1040px;
-      margin: 0 auto;
-
     }
 
     &-title {
@@ -84,5 +85,10 @@
             }
         }
 
+        &-image {
+          &-small {
+            width: 100%;
+          }
+        }
     }
 }

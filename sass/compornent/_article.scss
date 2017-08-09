@@ -1,11 +1,30 @@
 .article{
 
+  &-titleBlock {
+    background: rgba(51, 51, 51, .8);
+    display: block;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    z-index: 9999;
+    bottom: 100px;
+
+    a {
+      color: #fff;
+    }
+
+  }
+
   &-title {
-    font-size: 2.441em;
-    border-bottom: 4px solid #DDDDDD;
+    font-size: 25px;
     padding-bottom: 10px;
     font-weight: 500;
+  }
 
+  .marker{
+    background: linear-gradient(transparent 65%, #FFC093 0%);
+    display: inline;
+    padding: 0 2px 3px;
   }
 
   h2 {

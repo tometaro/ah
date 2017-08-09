@@ -27,15 +27,16 @@
 
     img {
       vertical-align: bottom;
-      -webkit-clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
-      clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 100%, 0 17%);
+      -webkit-clip-path: polygon(20px 0, 100% 0, 100% 0, 100% 160px, 280px 100%, 0 100%, 0 100%, 0 20px);
+      clip-path: polygon(20px 0, 100% 0, 100% 0, 100% 160px, 280px 100%, 0 100%, 0 100%, 0 20px);
 
     }
   }
 
   &-title {
     line-height: 2;
-    margin: 20px 0;
+    margin: 10px 0;
+    font-size: 14px;
     font-weight: 500;
     a {
       color :#424242;
@@ -44,7 +45,7 @@
 
   &-time {
     color : #9E9E9E;
-    font-size: 13px;
+    font-size: 12px;
   }
 
 
