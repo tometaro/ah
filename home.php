@@ -30,7 +30,7 @@ get_header(); ?>
 							<?php endwhile; endif; ?>
 						</ul>
 						<div class="button-wrapper">
-							<a class="button" href="<?php echo get_category_link($category->cat_ID);?>">もっと見る</a>
+							<a class="button" href="<?php echo get_category_link($category->cat_ID);?>">MORE</a>
 						</div>
 					</div>
 				</div>

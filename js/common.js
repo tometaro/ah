@@ -9,14 +9,14 @@ jQuery(window).scroll(function() {
 });
 
 //ハンバーガーメニュー
-jQuery('.Navi-Toggle').on("click", function() {
-  jQuery('.Header').toggleClass('Navi-Open');
+jQuery('.naviToggle').on("click", function() {
+  jQuery('.Header').toggleClass('naviToggle-Open');
   return false;
 });
 
 //ナビゲーション外タッチで閉じる
 jQuery(".Navi-Shadow").click(function() {
-  jQuery('.Header').removeClass('Navi-Open');
+  jQuery('.Header').removeClass('naviToggle-Open');
   return false;
 });
 
@@ -71,6 +71,3 @@ jQuery('.Carousel-Button-Next').click(function(){
   slideCurrent++;
   sliding();
 });
-
-
-

@@ -9,14 +9,14 @@ jQuery(function(){
   });
 
   //ハンバーガーメニュー
-  jQuery('.siteNavi-toggle').on("click", function() {
-    jQuery('.siteHeader').toggleClass('siteNavi-open');
+  jQuery('.naviToggle').on("click", function() {
+    jQuery('.siteHeader').toggleClass('naviToggle-open');
     return false;
   });
 
   //ナビゲーション外タッチで閉じる
   jQuery(".siteNavi-shadow").click(function() {
-    jQuery('.siteHeader').removeClass('siteNavi-open');
+    jQuery('.siteHeader').removeClass('naviToggle-open');
     return false;
   });
 });

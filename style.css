@@ -48,7 +48,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url(icon-font/dist/css/symbols.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -191,9 +192,7 @@ hr {
 
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Make sure images are scaled correctly. */ }
 
 figure {
   margin: 1em 0;
@@ -500,20 +499,21 @@ object {
     width: auto;
     float: left; }
   .siteHeader-title {
-    font-size: 16px;
+    font-size: 22px;
+    letter-spacing: .1em;
     transition: 1s ease-in-out;
-    line-height: 20px;
+    line-height: 28px;
     float: right; }
     .siteHeader-title a {
-      color: #546E7A; }
+      color: #000; }
   .siteHeader-text {
-    width: 20px;
-    height: 20px;
+    width: 28px;
+    height: 28px;
     float: left; }
   .siteHeader-spMenu {
-    background-color: #546E7A; }
+    background-color: #000; }
   .siteHeader-navi a {
-    color: #546E7A;
+    color: #000;
     font-weight: 500; }
 
 @media only screen and (max-width: 768px) {
@@ -538,35 +538,6 @@ object {
     padding-left: 30px; }
   .siteNavi ul li:hover {
     opacity: 0.7; }
-
-.siteNavi-toggle {
-  display: none;
-  float: right;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  z-index: 101; }
-  .siteNavi-toggle div {
-    position: relative;
-    width: 18px;
-    height: 14px;
-    margin: 0 auto;
-    margin-top: 3px; }
-  .siteNavi-toggle span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 0;
-    -webkit-transition: .35s ease-in-out;
-    -moz-transition: .35s ease-in-out;
-    transition: .35s ease-in-out; }
-  .siteNavi-toggle span:nth-child(1) {
-    top: 0; }
-  .siteNavi-toggle span:nth-child(2) {
-    top: 6px; }
-  .siteNavi-toggle span:nth-child(3) {
-    bottom: 0; }
 
 @media only screen and (max-width: 768px) {
   .siteNavi {
@@ -594,8 +565,6 @@ object {
           color: #fff; }
       .siteNavi ul li:after {
         display: none; }
-    .siteNavi-toggle {
-      display: block; }
     .siteNavi-inner {
       height: 100%;
       float: left;
@@ -605,88 +574,30 @@ object {
     .siteNavi-shadow {
       float: right;
       width: 30%;
-      height: 100%; }
-  .siteNavi-open .siteNavi {
-    -webkit-overflow-scrolling: touch;
-    opacity: 1;
-    transition-duration: 0.5s;
-    z-index: 10;
-    transform: translateX(0);
-    margin: 0 -15px; }
-    .siteNavi-open .siteNavi ul {
-      opacity: 1;
-      transition-duration: 4.0s; }
-  .siteNavi-open span:nth-child(1) {
-    top: 6px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  .siteNavi-open span:nth-child(2) {
-    opacity: 0; }
-  .siteNavi-open span:nth-child(3) {
-    bottom: 6px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg); } }
+      height: 100%; } }
 
 .hero {
+  display: inline-block;
+  position: relative;
   width: 100%;
-  color: #333;
-  vertical-align: bottom; }
-  .hero-wrapper {
-    width: 1000px;
-    margin: 0 auto;
-    height: 610px;
-    display: table; }
-  .hero-image {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    background: url(images/noImage.svg);
-    background-size: cover;
-    background-attachment: fixed; }
-    .hero-image-small {
-      display: block;
-      width: 1040px;
-      margin: 0 auto;
-      -webkit-clip-path: polygon(40px 0, 100% 0, 100% 0, 100% 460px, 1000px 100%, 0 100%, 0 100%, 0 40px);
-      clip-path: polygon(40px 0, 100% 0, 100% 0, 100% 460px, 1000px 100%, 0 100%, 0 100%, 0 40px); }
-      .hero-image-small img {
-        vertical-align: bottom; }
-    .hero-image img {
-      min-width: 100%;
-      min-height: 100%;
-      position: absolute;
-      width: auto;
-      height: auto;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%); }
-  .hero-title {
-    position: absolute; }
-    .hero-title h1 {
-      margin-bottom: 20px; }
-    .hero-title p {
-      letter-spacing: 0.5em; }
+  height: 300px;
+  overflow: hidden;
+  background: url(images/noImage.svg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .hero img {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 @media only screen and (max-width: 768px) {
-  .hero-wrapper {
-    width: 100%;
-    height: auto; }
-  .hero-visual, .hero-title {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    float: none;
-    display: block; }
-    .hero-visual h1, .hero-title h1 {
-      margin-bottom: 20px; }
-    .hero-visual p, .hero-title p {
-      letter-spacing: 0.5em; }
-  .hero-image-small {
-    width: 100%; } }
+  .hero img {
+    height: 100%; } }
 
 .siteSection {
   margin: 0 auto;
@@ -745,7 +656,7 @@ object {
   color: #fff;
   padding: 30px;
   position: absolute;
-  z-index: 9999;
+  z-index: 100;
   bottom: 100px; }
   .article-titleBlock a {
     color: #fff; }
@@ -926,9 +837,9 @@ object {
 .button {
   padding: 12px 60px;
   color: white;
-  background: #78909C;
-  border-radius: 4px;
-  display: inline-block; }
+  background: #000;
+  display: inline-block;
+  letter-spacing: 1em; }
   .button a {
     line-height: 20px; }
   .button-wrapper {
@@ -1000,8 +911,89 @@ object {
     width: 100%;
     padding: 10px 15px; } }
 
+.naviToggle {
+  display: none;
+  float: right;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 101; }
+  .naviToggle-inner {
+    position: relative;
+    width: 18px;
+    height: 14px;
+    margin: 0 auto;
+    margin-top: 3px; }
+  .naviToggle span {
+    background: #aaa;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out; }
+  .naviToggle span:nth-child(1) {
+    top: 0; }
+  .naviToggle span:nth-child(2) {
+    top: 6px; }
+  .naviToggle span:nth-child(3) {
+    bottom: 0; }
+
+@media only screen and (max-width: 768px) {
+  .naviToggle {
+    display: block; }
+    .naviToggle-open .naviToggle-block {
+      -webkit-overflow-scrolling: touch;
+      opacity: 1;
+      transition-duration: 0.5s;
+      z-index: 10;
+      transform: translateX(0);
+      margin: 0 -15px; }
+      .naviToggle-open .naviToggle-block ul {
+        opacity: 1;
+        transition-duration: 4.0s; }
+    .naviToggle-open span:nth-child(1) {
+      top: 6px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .naviToggle-open span:nth-child(2) {
+      opacity: 0; }
+    .naviToggle-open span:nth-child(3) {
+      bottom: 6px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg); } }
+
+.keyVisual {
+  position: relative;
+  width: 1040px;
+  height: 500px;
+  overflow: hidden;
+  background: url(images/noImage.svg);
+  background-size: cover;
+  margin: 0 auto; }
+  .keyVisual img {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+@media only screen and (max-width: 768px) {
+  .keyVisual {
+    height: 300px;
+    width: 100%; }
+    .keyVisual img {
+      width: auto; } }
+
 body {
-  font-family: 'Noto Sans Japanese', sans-serif;
+  font-family: 'Roboto','Noto Sans Japanese', sans-serif;
   margin-top: 60px;
   background: #fff;
   word-break: break-all;
@@ -1009,6 +1001,3 @@ body {
 
 a {
   text-decoration: none; }
-
-img {
-  vertical-align: bottom; }

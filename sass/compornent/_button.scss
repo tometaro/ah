@@ -1,9 +1,9 @@
 .button {
   padding: 12px 60px;
   color: white;
-  background: #78909C;
-  border-radius: 4px;
+  background: $black;
   display: inline-block;
+  letter-spacing: 1em;
 
   a {
     line-height: 20px;

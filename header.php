@@ -42,15 +42,15 @@
             endif; ?>
             </div><!-- .site-branding -->
 
-            <div class="siteNavi-toggle">
-                <div class="siteNavi-toggleInner">
-                    <span class="siteHeader-spMenu"></span>
-                    <span class="siteHeader-spMenu"></span>
-                    <span class="siteHeader-spMenu"></span>
+            <div class="naviToggle">
+                <div class="naviToggle-inner">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
 
-            <nav class="siteNavi siteHeader-navi" role="navigation">
+            <nav class="siteNavi siteHeader-navi naviToggle-block " role="navigation">
                 <div class="siteNavi-inner">
                     <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
                 </div>
@@ -73,7 +73,7 @@
     <?php endif; ?>
 
     <?php if(is_front_page()): ?><!-- フロントページのみで表示-->
-        <section class="hero hero-image">
+        <section class="hero">
             <div class="hero-title"></div>
             <img src="<?php header_image(); ?>" alt="" />
         </section>

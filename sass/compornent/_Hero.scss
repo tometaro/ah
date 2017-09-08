@@ -1,94 +1,31 @@
 .hero {
-    width: 100%;
-    color: #333;
-    vertical-align: bottom;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background :url(images/noImage.svg);
+  background-size: cover;
+  background-attachment: fixed;
 
-    &-wrapper {
-        width: 1000px;
-        margin: 0 auto;
-        height: 610px;
-        display: table;
-
-    }
-
-    &-image {
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
-        background :url(images/noImage.svg);
-        background-size: cover;
-        background-attachment: fixed;
-
-        &-small {
-          display: block;
-          width: 1040px;
-          margin: 0 auto;
-          -webkit-clip-path: polygon(40px 0, 100% 0, 100% 0, 100% 460px, 1000px 100%, 0 100%, 0 100%, 0 40px);
-          clip-path: polygon(40px 0, 100% 0, 100% 0, 100% 460px, 1000px 100%, 0 100%, 0 100%, 0 40px);
-
-          img {
-            vertical-align: bottom;
-
-
-          }
-        }
-
-        img {
-            min-width: 100%;
-            min-height: 100%;
-            position: absolute;
-            width: auto;
-            height: auto;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    &-title {
-        position: absolute;
-
-        h1{
-            margin-bottom: 20px;
-        }
-
-        p {
-            letter-spacing: 0.5em;
-        }
-    }
+  img {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      width: auto;
+      height: auto;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .hero {
+  .hero {
 
-        &-wrapper {
-            width: 100%;
-            height: auto;
-        }
-
-        &-visual,
-        &-title {
-            width: 100%;
-            height: auto;
-            text-align: center;
-            float: none;
-            display: block;
-
-            h1{
-                margin-bottom: 20px;
-            }
-
-            p {
-                letter-spacing: 0.5em;
-            }
-        }
-
-        &-image {
-          &-small {
-            width: 100%;
-          }
-        }
+    img {
+      height: 100%;
     }
+
+  }
 }

@@ -22,29 +22,30 @@
     }
 
     &-title {
-        font-size: 16px;
+        font-size: 22px;
+        letter-spacing: .1em;
         transition: 1s ease-in-out;
-        line-height: 20px;
+        line-height: 28px;
         float: right;
 
         a{
-            color: $blueGray-600;
+            color: $black;
         }
     }
 
     &-text {
-        width: 20px;
-        height: 20px;
+        width: 28px;
+        height: 28px;
         float: left;
     }
 
     &-spMenu {
-        background-color: $blueGray-600;
+        background-color: $black;
     }
 
     &-navi {
         a {
-            color: $blueGray-600;
+            color: $black;
             font-weight: 500;
         }
     }

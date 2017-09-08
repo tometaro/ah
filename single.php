@@ -9,27 +9,31 @@
 
 get_header(); ?>
 	<?php if(is_single()): ?><!-- 記事ページのみで表示-->
-			<section class="hero hero-image hero-image-small">
-				<div class="hero-single">
-					<header class="article-titleBlock entry-header">
-						<?php
-						if ( is_single() ) :
-							the_title( '<h1 class="article-title entry-title">', '</h1>' );
-						else :
-							the_title( '<h2 class="article-title　entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-						endif;
+			<section class="keyVisual">
 
-						if ( 'post' === get_post_type() ) : ?>
-						<div class="entry-meta">
-							<?php ah_posted_on(); ?>
-						</div><!-- .entry-meta -->
-						<?php
-						endif; ?>
-					</header><!-- .entry-header -->
+				<div class="keyVisual-wrapper">
 					<img src="<?php the_post_thumbnail('full'); ?>" alt="" />
 				</div>
+
+				<header class="article-titleBlock entry-header">
+					<?php
+					if ( is_single() ) :
+						the_title( '<h1 class="article-title entry-title">', '</h1>' );
+					else :
+						the_title( '<h2 class="article-title　entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					endif;
+
+					if ( 'post' === get_post_type() ) : ?>
+					<div class="entry-meta">
+						<?php ah_posted_on(); ?>
+					</div><!-- .entry-meta -->
+					<?php
+					endif; ?>
+				</header><!-- .entry-header -->
+
 			</section>
 	<?php endif; ?>
+
 	<div id="primary" class="siteSection-wrapper content-area">
 		<main id="main" class="siteSection-content site-main" role="main">
 			<?php
