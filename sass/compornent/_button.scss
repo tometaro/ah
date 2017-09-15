@@ -1,9 +1,10 @@
 .button {
-  padding: 12px 60px;
-  color: white;
-  background: $black;
+  padding: 12px 40px;
+  color: $white;
+  background: #999;
   display: inline-block;
   letter-spacing: 1em;
+  text-indent:1em;
 
   a {
     line-height: 20px;

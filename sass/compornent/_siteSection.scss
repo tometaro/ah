@@ -32,8 +32,8 @@
 
   &-title {
     font-size: 1.414em;
-    text-align: center;
-    margin-bottom: 25px;
+    margin: 0 25px 25px 25px;
+    color: $black;
   }
 
   &-content {
@@ -42,12 +42,25 @@
   }
 }
 
+@media only screen and (max-width: 1050px) {
+  .siteSection {
+    &-innerWrap {
+      max-width: 700px;
+    }
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .siteSection {
     width: 100%;
 
     &-inner {
     width: 100%;
+    }
+
+    &-innerWrap {
+      max-width: 700px;
     }
 
     &-wrapper {
