@@ -484,7 +484,7 @@ object {
 .siteHeader {
   position: fixed;
   width: 100%;
-  padding: 20px 20px;
+  padding: 16px 20px;
   z-index: 9999;
   width: 100%;
   top: 0;
@@ -504,15 +504,15 @@ object {
     line-height: 28px;
     float: right; }
     .siteHeader-title a {
-      color: #424242; }
+      color: #000; }
   .siteHeader-text {
     width: 28px;
     height: 28px;
     float: left; }
   .siteHeader-spMenu {
-    background-color: #424242; }
+    background-color: #000; }
   .siteHeader-navi a {
-    color: #424242;
+    color: #000;
     font-weight: 500; }
 
 @media only screen and (max-width: 768px) {
@@ -564,7 +564,7 @@ object {
         padding: 16px 16px; }
         .siteNavi ul li a {
           padding: 0;
-          color: #424242; }
+          color: #000; }
       .siteNavi ul li:after {
         display: none; }
     .siteNavi-inner {
@@ -579,14 +579,19 @@ object {
       height: 100%; } }
 
 .hero {
-  display: inline-block;
+  padding: 100px 0;
   position: relative;
   width: 100%;
-  height: 300px;
   overflow: hidden;
-  background: url(images/noImage.svg);
+  background: #000;
   background-size: cover;
   background-attachment: fixed; }
+  .hero-title {
+    color: #fff;
+    width: 1080px;
+    margin: 0 auto;
+    font-size: 24px;
+    letter-spacing: .5em; }
   .hero img {
     min-width: 100%;
     min-height: 100%;
@@ -598,6 +603,9 @@ object {
     transform: translate(-50%, -50%); }
 
 @media only screen and (max-width: 768px) {
+  .hero-title {
+    width: auto;
+    margin: 0 15px; }
   .hero img {
     height: 100%; } }
 
@@ -624,7 +632,7 @@ object {
   .siteSection-title {
     font-size: 1.414em;
     margin: 0 25px 25px 25px;
-    color: #424242; }
+    color: #000; }
   .siteSection-content {
     width: 770px;
     float: left; }
@@ -649,10 +657,10 @@ object {
 .siteFooter {
   background: #fff;
   padding: 20px;
-  color: #424242;
+  color: #000;
   border-top: 1px solid #ddd; }
   .siteFooter a {
-    color: #424242; }
+    color: #000; }
 
 @media only screen and (max-width: 768px) {
   .siteFooter {
@@ -992,7 +1000,7 @@ object {
     margin: 0 auto;
     margin-top: 7px; }
   .naviToggle span {
-    background: #424242;
+    background: #000;
     display: block;
     position: absolute;
     height: 2px;

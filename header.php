@@ -74,7 +74,7 @@
 
     <?php if(is_front_page()): ?><!-- フロントページのみで表示-->
         <section class="hero">
-            <div class="hero-title"></div>
+            <div class="hero-title"><?php bloginfo('description'); ?></div>
             <img src="<?php header_image(); ?>" alt="" />
         </section>
     <?php endif; ?>
