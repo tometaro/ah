@@ -1,24 +1,26 @@
-
 .siteHeader {
     position: fixed;
     width: 100%;
-    padding: 16px 20px;
     z-index: 9999;
-    width: 100%;
     top:0;
     transition: 1s ease-in-out;
-    background: $white;
-    border-bottom: 1px solid #ddd;
-    // box-shadow: 0 0 5px rgba(38, 50, 56, .3);
+    display: flex;
 
-    &-inner {
-        position: relative;
-        overflow: hidden;
+    *:first-child {
+      margin-right: auto;
+    }
+
+    a{
+        color: #555;
     }
 
     &-branding {
         width: auto;
-        float: left;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+
     }
 
     &-title {
@@ -26,82 +28,29 @@
         letter-spacing: .1em;
         transition: 1s ease-in-out;
         line-height: 28px;
-        float: right;
-
-        a{
-            color: $black;
-        }
     }
 
-    &-text {
+    &-logo {
         width: 28px;
         height: 28px;
-        float: left;
     }
 
     &-spMenu {
         background-color: $black;
     }
 
-    &-navi {
-        a {
-            color: $black;
-            font-weight: 500;
-        }
+    &-bg {
+      background: rgba(255,255,255,.9);
     }
 
-    // &-Bg {
-    //     background-color: $whiteBlue;
-    //     transition: 1s ease-in-out;
-
-    //        .Header-Navi {
-    //             a {
-    //             color: $gray;
-    //             font-weight: 500;
-    //         }
-    // }
-
-    //     .Header-Title {
-
-    //         a{
-    //             color: $gray;
-    //             transition: 1s ease-in-out;
-    //         }
-    //     }
-
-    //     .Header-SpMenu {
-    //         background-color: $gray;
-    //     }
-    // }
-}
+  }
 
 @media only screen and (max-width: 768px) {
     .siteHeader {
-        padding: 16px 15px;
+        padding: 0;
 
         &-title {
-            text-align: center;
+            display: none;
         }
-
+      }
     }
-
-    .siteHeader{
-
-    &-navi {
-        a {
-            color: $white ;
-        }
-    }
-
-        // &-Bg {
-        //     .Header-Navi {
-        //         a {
-        //             color: $white ;
-        //         }
-        //     }
-
-        // }
-
-    }
-
-}

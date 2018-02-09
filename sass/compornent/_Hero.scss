@@ -1,19 +1,31 @@
 .hero {
-  padding: 100px 0;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  // background :url(images/noImage.svg);
-  background: $black;
+  height: 400px;
+  background: #f2f2f2;
+  background :url(images/noImage.svg);
+  text-align: center;
   background-size: cover;
   background-attachment: fixed;
 
-  &-title {
-    color: $white;
-    width: 1080px;
+  &-white {
+    padding-top: 60px;
+    height: 100%;
+    background: rgba(255,255,255,.7);
+    display: flex;
+    align-items: center;  /* 子要素をflexboxにより中央に配置する */
+  }
+
+  &-wrap {
+    color: #444;
+    width: 1040px;
     margin: 0 auto;
-    font-size: 24px;
-    letter-spacing: .5em;
+  }
+
+  &-title {
+    font-size: 28px;
+  }
+
+  &-text {
+    font-size: 18px;
   }
 
   img {
@@ -30,8 +42,7 @@
 
 @media only screen and (max-width: 768px) {
   .hero {
-    &-title {
-      width: auto;
+    &-wrap {
       margin: 0 15px;
     }
 

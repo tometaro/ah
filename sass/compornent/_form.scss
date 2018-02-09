@@ -1,25 +1,26 @@
-// form {
-//
-//   label {
-//     font-weight: 500;
-//     margin-bottom: 10px;
-//
-//   }
-//
-//
-//
-//   p {
-//     margin-bottom: 40px;
-//   }
-//
-//   .submit {
-//     margin: 0 auto;
-//     font-size: 1em;
-//     width: 300px;
-//     padding: 20px 0;
-//     color: white;
-//     background: #78909C;
-//     border-radius: 4px;
-//     display: inline-block;
-//   }
-// }
+.widget{
+  overflow: hidden;
+}
+
+.search-submit {
+  background: #aaa;
+  color: #fff;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.search-field {
+  padding-left: 10px;
+  background: #f2f2f2;
+  height: 40px;
+}
+
+.search-form {
+  height: auto;
+}

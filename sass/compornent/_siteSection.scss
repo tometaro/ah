@@ -11,6 +11,10 @@
 
     &:nth-child(even){
         background-color: $whiteGray;
+
+        .button {
+          background: $white;
+        }
     }
   }
 
@@ -25,7 +29,7 @@
       padding: 60px 0;
       overflow: hidden;;
 
-      &-narrow{
+      &-narrow {
         width: 770px;
       }
   }
@@ -34,6 +38,7 @@
     font-size: 1.414em;
     margin: 0 25px 25px 25px;
     color: $black;
+    text-align: center;
   }
 
   &-content {

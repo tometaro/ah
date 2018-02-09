@@ -27,9 +27,7 @@
 
     img {
       vertical-align: bottom;
-      -webkit-clip-path: polygon(20px 0, 100% 0, 100% 0, 100% 160px, 280px 100%, 0 100%, 0 100%, 0 20px);
-      clip-path: polygon(20px 0, 100% 0, 100% 0, 100% 160px, 280px 100%, 0 100%, 0 100%, 0 20px);
-
+      border-radius: 4px;
     }
   }
 

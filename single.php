@@ -9,29 +9,34 @@
 
 get_header(); ?>
 	<?php if(is_single()): ?><!-- 記事ページのみで表示-->
-			<section class="keyVisual">
+		<section class="keyVisual">
+				<div class="keyVisual-vs" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>); ">
+
+			<div class="keyVisual-white">
+				<div class="keyVisual-gray">
 
 				<div class="keyVisual-wrapper">
-					<img src="<?php the_post_thumbnail('full'); ?>" alt="" />
+					<div class="article-titleBlock entry-header">
+						<?php
+						if ( is_single() ) :
+							the_title( '<h1 class="article-title entry-title">', '</h1>' );
+						else :
+							the_title( '<h2 class="article-title　entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+						endif;
+
+						if ( 'post' === get_post_type() ) : ?>
+						<div class="entry-meta">
+							<?php ah_posted_on(); ?>
+						</div><!-- .entry-meta -->
+						<?php
+						endif; ?>
+					</div><!-- .entry-header -->
+					<!-- <img src="<?php the_post_thumbnail('full'); ?>" alt="" /> -->
 				</div>
-
-				<header class="article-titleBlock entry-header">
-					<?php
-					if ( is_single() ) :
-						the_title( '<h1 class="article-title entry-title">', '</h1>' );
-					else :
-						the_title( '<h2 class="article-title　entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-					endif;
-
-					if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
-						<?php ah_posted_on(); ?>
-					</div><!-- .entry-meta -->
-					<?php
-					endif; ?>
-				</header><!-- .entry-header -->
-
-			</section>
+				</div>
+			</div>
+			</div>
+		</section>
 	<?php endif; ?>
 
 	<div id="primary" class="siteSection-wrapper content-area">

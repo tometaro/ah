@@ -1,21 +1,34 @@
 .naviToggle {
-  display: none;
-  float: right;
-  width: 20px;
-  height: 28px;
+  display: block;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   z-index: 101;
+  background: #FFF;
 
   &-inner {
       position: relative;
       width: 18px;
       height: 14px;
       margin: 0 auto;
-      margin-top: 7px;
+      margin-top: 23px;
+  }
+
+
+  &-block {
+    transform: translateX(-800);
+
+    &-shadow {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: rgba(242,242,242,.9)
+    }
   }
 
   span {
-      background: $black;
+      background: #555;
       display: block;
       position: absolute;
       height: 2px;
@@ -37,45 +50,44 @@
   span:nth-child(3) {
       bottom: 0;
   }
+
+  &-open {
+      .naviToggle-block {
+          // -webkit-overflow-scrolling: touch;
+          // opacity: 1;
+          transition-duration: 0.5s;
+          z-index: 10;
+          transform: translateX(0);
+          height: 100%;
+
+          // ul {
+          //     opacity: 1;
+          //     transition-duration: 4.0s;
+          // }
+      }
+
+      span:nth-child(1) {
+          top: 6px;
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          transform: rotate(45deg);
+      }
+
+      span:nth-child(2) {
+          opacity: 0;
+      }
+
+      span:nth-child(3) {
+          bottom: 6px;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+      }
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .naviToggle {
-    display: block;
-
-    &-open {
-        .naviToggle-block {
-            -webkit-overflow-scrolling: touch;
-            opacity: 1;
-            transition-duration: 0.5s;
-            z-index: 10;
-            transform: translateX(0);
-            margin: 0 -15px;
-            height: 100%;
-
-            ul {
-                opacity: 1;
-                transition-duration: 4.0s;
-            }
-        }
-
-        span:nth-child(1) {
-            top: 6px;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
-
-        span:nth-child(2) {
-            opacity: 0;
-        }
-
-        span:nth-child(3) {
-            bottom: 6px;
-            -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-        }
-    }
+    display: none;
   }
 }

@@ -1,22 +1,22 @@
 jQuery(function(){
   //スクロールヘッダー
   jQuery(window).scroll(function() {
-    if (jQuery(window).scrollTop() > 100) {
+    if (jQuery(window).scrollTop() > 60) {
       jQuery('.siteHeader').addClass('siteHeader-bg');
     } else {
-      jQuery('.siteHeader').removeClass('siteeader-bg');
+      jQuery('.siteHeader').removeClass('siteHeader-bg');
     }
   });
 
   //ハンバーガーメニュー
   jQuery('.naviToggle').on("click", function() {
-    jQuery('.siteHeader').toggleClass('naviToggle-open');
-    return false;
+    jQuery('.siteHeader').toggleClass('naviToggle-open'),
+    jQuery('.naviToggle-block-shadow').fadeToggle();
   });
 
   //ナビゲーション外タッチで閉じる
-  jQuery(".siteNavi-shadow").click(function() {
-    jQuery('.siteHeader').removeClass('naviToggle-open');
-    return false;
+  jQuery(".naviToggle-block-shadow").click(function() {
+    jQuery('.siteHeader').removeClass('naviToggle-open'),
+    jQuery('.naviToggle-block-shadow').fadeOut();
   });
 });

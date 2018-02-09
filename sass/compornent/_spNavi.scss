@@ -1,0 +1,50 @@
+.spNavi {
+    position: fixed;
+    z-index: 9999;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    transform: translateX(-800px);
+    height: 100%;
+    background: #fff;
+
+    ul {
+        list-style: none;
+        position: static;
+        right: 0;
+        bottom: 0;
+        padding: 0 20px;
+    }
+
+    li {
+        float: none;
+        position: static;
+        text-align: left;
+
+         a {
+            padding: 0;
+            color: #555;
+            display: block;
+            padding: 20px 0;
+            border-bottom: 1px solid #f2f2f2;
+            font-size: 13px;
+
+        }
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .spNavi {
+    display: none;
+      &-shadow {
+        display: none;
+
+      }
+
+  }
+
+}

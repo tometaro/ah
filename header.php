@@ -21,62 +21,54 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ah' ); ?></a>
+  <div id="page" class="site">
+      <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ah' ); ?></a>
 
-    <header id="masthead" class="siteHeader site-header" role="banner">
-        <div class="siteHeader-inner">
-            <div class="siteHeader-branding site-branding">
-            <?php
-            if ( is_front_page() && is_home() ) : ?>
-                <h1 class="siteHeader-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <?php else : ?>
-                <p class="siteHeader-title site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-            <?php
-            endif;
+      <header id="masthead" class="siteHeader site-header" role="banner">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="siteHeader-branding site-branding">
+          <img class="siteHeader-logo" src="<?php bloginfo('template_directory'); ?>/images/siteLogo.svg">
+          <div class="siteHeader-title">Art</div>
+        </a>
+        <nav class="siteNavi" role="navigation">
+          <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+          <div class="siteNavi-shadow"></div>
+        </nav><!-- #site-navigation -->
 
-            $description = get_bloginfo( 'description', 'display' );
-            if ( $description || is_customize_preview() ) : ?>
-                <p class="siteHeader-text site-description"><img src="<?php bloginfo('template_directory'); ?>/images/siteLogo.svg"></p>
-            <?php
-            endif; ?>
-            </div><!-- .site-branding -->
-
-            <div class="naviToggle">
-                <div class="naviToggle-inner">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-
-            <nav class="siteNavi siteHeader-navi naviToggle-block " role="navigation">
-                <div class="siteNavi-inner">
-                    <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-                </div>
-                <div class="siteNavi-shadow"></div>
-
-            </nav><!-- #site-navigation -->
+        <div class="naviToggle">
+          <div class="naviToggle-inner">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
 
-    </header><!-- #masthead -->
+        <nav class="spNavi naviToggle-block" role="navigation">
+          <div class="spNavi-inner">
+            <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+          </div>
+        </nav><!-- #site-navigation -->
+        <div class="naviToggle-block-shadow"></div>
+      </header><!-- #masthead -->
 
-    <?php if ( !is_home() && !is_front_page() ) : ?>
-    <div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
-      <div class="breadcrumbs-inner">
-        <?php if(function_exists('bcn_display'))
-        {
-        bcn_display();
-        }?>
-      </div>
-    </div>
-    <?php endif; ?>
+      <?php if(is_front_page()): ?><!-- フロントページのみで表示-->
+          <section class="hero">
+            <div class="hero-white">
+              <div class="hero-wrap">
+                <h1 class="hero-title"><?php bloginfo( 'name' ); ?></h1>
+                <p class="hero-text"><?php bloginfo('description'); ?></p>
+              </div>
+            </div>
+          </section>
+      <?php endif; ?>
 
-    <?php if(is_front_page()): ?><!-- フロントページのみで表示-->
-        <section class="hero">
-            <div class="hero-title"><?php bloginfo('description'); ?></div>
-            <img src="<?php header_image(); ?>" alt="" />
-        </section>
-    <?php endif; ?>
-
-    <div id="content" class="siteSection site-content">
+      <div id="content" class="siteSection site-content">
+        <?php if ( !is_home() && !is_front_page() ) : ?>
+          <div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
+            <div class="breadcrumbs-inner">
+              <?php if(function_exists('bcn_display'))
+              {
+              bcn_display();
+              }?>
+            </div>
+          </div>
+        <?php endif; ?>
