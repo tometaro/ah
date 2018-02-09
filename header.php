@@ -62,13 +62,3 @@
       <?php endif; ?>
 
       <div id="content" class="siteSection site-content">
-        <?php if ( !is_home() && !is_front_page() ) : ?>
-          <div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
-            <div class="breadcrumbs-inner">
-              <?php if(function_exists('bcn_display'))
-              {
-              bcn_display();
-              }?>
-            </div>
-          </div>
-        <?php endif; ?>
