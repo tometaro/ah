@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<?php if ( !is_home() && !is_front_page() ) : ?>
+	<?php wp_reset_query(); if ( !is_home() && !is_front_page() ) : ?>
 		<div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
 			<div class="breadcrumbs-inner">
 				<?php if(function_exists('bcn_display'))

@@ -24,7 +24,7 @@ get_header(); ?>
 
 								if ( 'post' === get_post_type() ) : ?>
 								<div class="entry-meta">
-									<?php ah_posted_on(); ?>
+									<?php echo get_post_time('M d, Y'); ?>
 								</div><!-- .entry-meta -->
 								<?php
 								endif; ?>

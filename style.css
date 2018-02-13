@@ -514,17 +514,11 @@ object {
     width: 770px;
     float: left; }
 
-@media only screen and (max-width: 1050px) {
-  .siteSection-innerWrap {
-    max-width: 700px; } }
-
 @media only screen and (max-width: 768px) {
   .siteSection {
     width: 100%; }
     .siteSection-inner {
       width: 100%; }
-    .siteSection-innerWrap {
-      max-width: 700px; }
     .siteSection-wrapper {
       width: 100%;
       padding: 40px 20px; }
@@ -535,7 +529,8 @@ object {
   background: #fff;
   padding: 20px;
   color: #555;
-  border-top: 1px solid #ddd; }
+  border-top: 1px solid #ddd;
+  text-align: center; }
   .siteFooter a {
     color: #555; }
 
@@ -585,38 +580,34 @@ object {
 
 .articleList {
   display: table;
-  margin: 0 auto;
-  height: auto;
-  vertical-align: middle;
-  text-align: center;
-  border: 0;
-  box-sizing: border-box;
-  letter-spacing: 0.05em; }
+  font-size: 0;
+  text-align: center; }
   .articleList li {
     display: inline-table;
     margin: 20px;
     width: 320px;
-    min-height: 200px;
     text-align: left; }
   .articleList-image {
-    background: #eee;
+    background: #eee 100%;
     height: 180px;
     width: 320px;
+    background-size: cover;
     border-radius: 4px; }
+  .articleList a {
+    display: block; }
   .articleList-title {
     line-height: 2;
     margin: 10px 0;
     font-size: 14px;
-    font-weight: 500; }
-    .articleList-title a {
-      color: #424242; }
+    font-weight: 500;
+    color: #666; }
   .articleList-time {
     color: #9E9E9E;
     font-size: 12px; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .articleList li {
-    margin: 25px 0; } }
+    margin: 25px 10px; } }
 
 .articleComment {
   background: #F5F5F5;
