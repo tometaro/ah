@@ -3,24 +3,11 @@
   font-size: 0;
   text-align: center;
 
-  // margin: 0 auto;
-  // height: auto;
-  // vertical-align: middle;
-  // border: 0;
-  // box-sizing: border-box;
-  // letter-spacing: 0.05em;
-
   li {
     display: inline-table;
-    // position: relative;
-    // top: 0;
-    // left: 0;
     margin: 20px;
     width: 320px;
-    // height: auto;
-    // min-height: 200px;
-    // background: 0 0;
-    // z-index: 0;
+
     text-align: left;
   }
 
@@ -35,10 +22,6 @@
   a {
     display: block;
   }
-    // img {
-    //   vertical-align: bottom;
-    //   border-radius: 4px;
-    // }
 
   &-title {
     line-height: 2;
