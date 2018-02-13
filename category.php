@@ -13,6 +13,19 @@
  */
 
 get_header(); ?>
+<?php if(is_category()): ?><!-- 記事ページのみで表示-->
+	<section class="keyVisual">
+		<div class="keyVisual-vs" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>); ">
+			<div class="keyVisual-white">
+				<div class="keyVisual-gray">
+					<div class="keyVisual-wrapper">
+	 					<h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
 
 	<div id="primary" class="content-area">
  		<main id="main" class="site-main" role="main">

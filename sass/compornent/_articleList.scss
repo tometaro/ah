@@ -10,25 +10,18 @@
 
   li {
     display: inline-table;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 25px;
-    width: 300px;
-    height: auto;
+    margin: 20px;
+    width: 320px;
     min-height: 200px;
-    background: 0 0;
-    border-radius: 5px;
-    z-index: 0;
     text-align: left;
   }
 
   &-image {
+    background: #eee;
+    height: 180px;
+    width: 320px;
+    border-radius: 4px;
 
-    img {
-      vertical-align: bottom;
-      border-radius: 4px;
-    }
   }
 
   &-title {

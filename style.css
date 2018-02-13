@@ -104,7 +104,7 @@ select,
 textarea {
   color: #616161;
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-size: 1rem;
   line-height: 1.5; }
   body a,
@@ -136,7 +136,7 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
+  font-size: 13.125px;
   font-size: 0.9375rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -146,7 +146,7 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
+  font-size: 13.125px;
   font-size: 0.9375rem; }
 
 abbr, acronym {
@@ -231,7 +231,7 @@ table {
     clip: auto !important;
     color: #21759b;
     display: block;
-    font-size: 14px;
+    font-size: 12.25px;
     font-size: 0.875rem;
     font-weight: bold;
     height: auto;
@@ -496,7 +496,7 @@ object {
       .siteSection-inner:nth-child(even) .button {
         background: #fff; }
   .siteSection-innerWrap {
-    max-width: 1050px;
+    max-width: 1080px;
     margin: 0 auto; }
   .siteSection-wrapper {
     width: 1040px;
@@ -527,7 +527,7 @@ object {
       max-width: 700px; }
     .siteSection-wrapper {
       width: 100%;
-      padding: 40px 15px; }
+      padding: 40px 20px; }
     .siteSection-content {
       width: 100%; } }
 
@@ -594,19 +594,14 @@ object {
   letter-spacing: 0.05em; }
   .articleList li {
     display: inline-table;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: 25px;
-    width: 300px;
-    height: auto;
+    margin: 20px;
+    width: 320px;
     min-height: 200px;
-    background: 0 0;
-    border-radius: 5px;
-    z-index: 0;
     text-align: left; }
-  .articleList-image img {
-    vertical-align: bottom;
+  .articleList-image {
+    background: #eee;
+    height: 180px;
+    width: 320px;
     border-radius: 4px; }
   .articleList-title {
     line-height: 2;
