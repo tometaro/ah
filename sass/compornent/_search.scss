@@ -15,12 +15,6 @@
     padding-left: 10px;
     color: #aaa;
 
-    &::-webkit-input-placeholder,
-    :-ms-input-placeholder,
-    ::-moz-placeholder{
-      color: #ff0000;
-    }
-
     &:focus {
       outline: 0;
     }

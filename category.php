@@ -32,8 +32,6 @@ get_header(); ?>
 
 			<div class="siteSection-inner">
 				<div class="siteSection-innerWrap">
-
-		 			<h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
 		 			<ul class="articleList">
 
 					<?php if(have_posts()): while(have_posts()):the_post(); ?>

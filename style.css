@@ -797,7 +797,6 @@ object {
     border-left: 4px solid #ddd;
     font-weight: 500; }
   .sidebar li {
-    padding: 20px 0;
     display: table;
     border-bottom: 1px solid #eee;
     width: 100%;
@@ -805,13 +804,15 @@ object {
     .sidebar li::after {
       display: table-cell;
       vertical-align: middle;
-      content: "\f105";
-      font-family: Fontawesome;
+      content: "\EA05";
+      font-family: "symbols";
       padding-right: 10px;
       color: #78909C;
       width: 5px; }
     .sidebar li a {
-      color: #424242; }
+      padding: 20px 0;
+      color: #424242;
+      display: block; }
 
 @media only screen and (max-width: 768px) {
   .sidebar {
@@ -831,10 +832,6 @@ object {
     height: 100%;
     padding-left: 10px;
     color: #aaa; }
-    .search-field::-webkit-input-placeholder,
-    .search-field :-ms-input-placeholder,
-    .search-field ::-moz-placeholder {
-      color: #ff0000; }
     .search-field:focus {
       outline: 0; }
   .search-submit {

@@ -47,15 +47,6 @@
   }
 }
 
-// @media only screen and (max-width: 1050px) {
-//   .siteSection {
-//     &-innerWrap {
-//       // max-width: 700px;
-//     }
-//   }
-// }
-
-
 @media only screen and (max-width: 768px) {
   .siteSection {
     width: 100%;
@@ -64,17 +55,10 @@
     width: 100%;
     }
 
-    // &-innerWrap {
-    //   max-width: 700px;
-    // }
-
     &-wrapper {
       width: 100%;
       padding: 40px 20px;
 
-      // &-narrow{
-      //   width: 100%;
-      // }
     }
     &-content {
       width: 100%;

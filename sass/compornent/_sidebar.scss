@@ -11,7 +11,6 @@
   }
 
   li {
-    padding: 20px 0;
     display: table;
     border-bottom :1px solid #eee;
     width: 100%;
@@ -21,15 +20,17 @@
     &::after {
       display: table-cell;
       vertical-align: middle;
-      content: "\f105";
-      font-family: Fontawesome;
+      content: "\EA05";
+      font-family: "symbols";
       padding-right: 10px;
       color: #78909C;
       width: 5px;
     }
 
     a{
+      padding: 20px 0;
       color: $darkGray;
+      display: block;
     }
   }
 
