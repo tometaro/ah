@@ -1,26 +1,34 @@
-.widget{
-  overflow: hidden;
-}
-
-.search-submit {
-  background: #aaa;
-  color: #fff;
-  height: 40px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: .7;
-  }
-}
-
-.search-field {
-  padding-left: 10px;
-  background: #f2f2f2;
-  height: 40px;
-}
-
-.search-form {
-  height: auto;
-}
+// .widget{
+//   overflow: hidden;
+// }
+//
+// .search-submit {
+//   background: #aaa;
+//   color: #fff;
+//   height: 40px;
+//   border: none;
+//   font-size: 16px;
+//   cursor: pointer;
+//
+//   &::after {
+//     content: "\EA01";
+//     font-family: "symbols";
+//     color: #78909C;
+//   }
+//
+//   &:hover {
+//     opacity: .7;
+//   }
+// }
+//
+// .search-field {
+//   padding-left: 10px;
+//   background: #fff;
+//   border: 1px solid #ddd;
+//   border-right: none;
+//   height: 40px;
+// }
+//
+// .search-form {
+//   height: auto;
+// }

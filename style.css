@@ -508,7 +508,7 @@ object {
   .siteSection-title {
     font-size: 1.414em;
     margin: 0 25px 25px 25px;
-    color: #000;
+    color: #666;
     text-align: center; }
   .siteSection-content {
     width: 770px;
@@ -587,12 +587,16 @@ object {
     margin: 20px;
     width: 320px;
     text-align: left; }
-  .articleList-image {
-    background: #eee 100%;
+  .articleList-image, .articleList-noImage {
     height: 180px;
     width: 320px;
-    background-size: cover;
     border-radius: 4px; }
+  .articleList-image {
+    background-size: cover;
+    position: absolute; }
+  .articleList-noImage {
+    background: #eee 100%;
+    display: block; }
   .articleList a {
     display: block; }
   .articleList-title {
@@ -612,14 +616,21 @@ object {
 .articleComment {
   background: #F5F5F5;
   padding: 80px 100px;
-  margin-top: 60px label;
-    margin-top-font-weight: 500;
-    margin-top-margin-bottom: 10px; }
+  margin-top: 60px;
+  border-radius: 4px; }
+  .articleComment label {
+    font-weight: 500;
+    margin-bottom: 10px; }
+  .articleComment textarea,
+  .articleComment input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px; }
+  .articleComment textarea {
+    height: 200px; }
   .articleComment input {
     display: block;
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px; }
+    padding: 10px; }
   .articleComment li {
     border-bottom: 1px solid #ddd;
     padding: 40px;
@@ -690,7 +701,7 @@ object {
 .s-arrow-top:before {
   content: "\EA04"; }
 
-.s-logo:before {
+.s-arrowLine:before {
   content: "\EA05"; }
 
 .s-setting:before {
@@ -698,6 +709,9 @@ object {
 
 .s-tel:before {
   content: "\EA07"; }
+
+.s-zoom:before {
+  content: "\EA08"; }
 
 .pagination {
   margin-top: 80px;
@@ -803,27 +817,54 @@ object {
   .sidebar {
     width: 100%; } }
 
-.search-form {
-  box-sizing: border-box;
+.search {
+  height: 44px;
   width: 100%;
-  height: 32px; }
+  border: 1px solid #ddd;
+  position: relative;
+  border-radius: 4px; }
+  .search-field {
+    width: 90%;
+    border: none;
+    float: left;
+    background: #fff;
+    height: 100%;
+    padding-left: 10px;
+    color: #aaa; }
+    .search-field::-webkit-input-placeholder,
+    .search-field :-ms-input-placeholder,
+    .search-field ::-moz-placeholder {
+      color: #ff0000; }
+    .search-field:focus {
+      outline: 0; }
+  .search-submit {
+    font-size: 24px;
+    width: 44px;
+    border: none;
+    background: none;
+    float: right;
+    height: 100%;
+    color: #aaa;
+    cursor: pointer;
+    position: absolute;
+    right: 0; }
+    .search-submit::after {
+      content: "\EA08";
+      font-family: "symbols";
+      color: #78909C;
+      display: block; }
 
-.search-field {
-  width: 70%;
-  box-sizing: border-box;
-  border: none;
-  float: left;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
+input.custom::-webkit-input-placeholder {
+  color: #aaa;
+  font-weight: 600; }
 
-.search-submit {
-  width: 30%;
-  box-sizing: border-box;
-  float: right;
-  height: 100%;
-  background: #000;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px; }
+input.custom:-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 600; }
+
+input.custom::-moz-placeholder {
+  color: #aaa;
+  font-weight: 600; }
 
 .breadcrumbs {
   font-size: 12px;
@@ -841,27 +882,6 @@ object {
   .breadcrumbs-inner {
     width: 100%;
     padding: 10px 15px; } }
-
-.widget {
-  overflow: hidden; }
-
-.search-submit {
-  background: #aaa;
-  color: #fff;
-  height: 40px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer; }
-  .search-submit:hover {
-    opacity: .7; }
-
-.search-field {
-  padding-left: 10px;
-  background: #f2f2f2;
-  height: 40px; }
-
-.search-form {
-  height: auto; }
 
 .naviToggle {
   display: block;

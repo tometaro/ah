@@ -1,25 +1,28 @@
 .articleComment {
   background: $whiteGray;
   padding: 80px 100px;
-  margin-top: 60px
-
-  // &-title {
-  //   font-weight: 500;
-  //   margin-bottom: 20px;
-  // }
+  margin-top: 60px;
+  border-radius: 4px;
 
   label {
     font-weight: 500;
     margin-bottom: 10px;
 
   }
+  textarea,
+  input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  textarea {
+    height: 200px;
+  }
 
   input {
     display: block;
-    width: 100%;
     padding: 10px;
-    border-radius: 4px;
-
   }
 
   li {

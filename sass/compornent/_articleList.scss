@@ -11,12 +11,21 @@
     text-align: left;
   }
 
-  &-image {
-    background: #eee 100%;
+  &-image,&-noImage {
     height: 180px;
     width: 320px;
-    background-size: cover;
     border-radius: 4px;
+  }
+
+  &-image {
+
+    background-size: cover;
+    position: absolute;
+  }
+
+  &-noImage {
+    background: #eee 100%;
+    display: block;
   }
 
   a {

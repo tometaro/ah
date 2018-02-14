@@ -38,6 +38,7 @@
 .s-arrow-left:before { content: "\EA02" }
 .s-arrow-right:before { content: "\EA03" }
 .s-arrow-top:before { content: "\EA04" }
-.s-logo:before { content: "\EA05" }
+.s-arrowLine:before { content: "\EA05" }
 .s-setting:before { content: "\EA06" }
 .s-tel:before { content: "\EA07" }
+.s-zoom:before { content: "\EA08" }
