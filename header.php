@@ -51,14 +51,41 @@
       </header><!-- #masthead -->
 
       <?php if(is_front_page()): ?><!-- フロントページのみで表示-->
-          <section class="hero">
-            <div class="hero-white">
-              <div class="hero-wrap">
-                <h1 class="hero-title"><?php bloginfo( 'name' ); ?></h1>
-                <p class="hero-text"><?php bloginfo('description'); ?></p>
+
+      <section class="hero">
+        <div class="hero-white">
+          <div class="hero-wrap">
+            <h1 class="hero-title"><?php bloginfo( 'name' ); ?></h1>
+            <p class="hero-text"><?php bloginfo('description'); ?></p>
+          </div>
+        </div>
+      </section>
+
+      <?php else: ?>
+
+      <section class="keyVisual">
+        <div class="keyVisual-vs" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>); ">
+          <div class="keyVisual-white">
+            <div class="keyVisual-gray keyVisual-gray-singlePage">
+              <div class="keyVisual-wrapper">
+                <?php if(is_category()): ?>
+                  <h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
+                <?php endif; ?>
+                <?php if(is_page()): ?>
+                  <h1 class="siteSection-title"><?php the_title(); ?></h1>
+                <?php endif; ?>
+                <?php if(is_single()): ?>
+                  <div class="article-titleBlock">
+                  <h1 class="article-title"><?php the_title(); ?></h1>
+                  <div class="entry-meta"><?php echo get_post_time('M d, Y'); ?></div>
+                  </div>
+                <?php endif; ?>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </section>
+
       <?php endif; ?>
 
       <div id="content" class="siteSection site-content">

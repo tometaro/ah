@@ -878,7 +878,7 @@ input.custom::-moz-placeholder {
 @media only screen and (max-width: 768px) {
   .breadcrumbs-inner {
     width: 100%;
-    padding: 10px 15px; } }
+    padding: 10px 20px; } }
 
 .naviToggle {
   display: block;
@@ -941,8 +941,7 @@ input.custom::-moz-placeholder {
 
 .keyVisual {
   height: 400px;
-  background: #f2f2f2;
-  text-align: center; }
+  background: #f2f2f2; }
   .keyVisual-gray {
     width: 100%;
     height: 100%;
@@ -951,6 +950,8 @@ input.custom::-moz-placeholder {
     display: flex;
     align-items: center;
     /* 子要素をflexboxにより中央に配置する */ }
+    .keyVisual-gray-singlePage {
+      justify-content: center; }
   .keyVisual-vs {
     width: 1040px;
     margin: 0 auto;
