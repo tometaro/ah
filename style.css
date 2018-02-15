@@ -592,10 +592,19 @@ object {
     width: 320px;
     border-radius: 4px; }
   .articleList-image {
-    background-size: cover;
-    position: absolute; }
+    position: absolute;
+    overflow: hidden; }
+  .articleList img {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .articleList-noImage {
-    background: #eee 100%;
+    position: relative;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.05);
     display: block; }
   .articleList a {
     display: block; }
@@ -618,34 +627,6 @@ object {
   padding: 80px 100px;
   margin-top: 60px;
   border-radius: 4px; }
-  .articleComment label {
-    font-weight: 500;
-    margin-bottom: 10px; }
-  .articleComment textarea,
-  .articleComment input {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 4px; }
-  .articleComment textarea {
-    height: 200px; }
-  .articleComment input {
-    display: block;
-    padding: 10px; }
-  .articleComment li {
-    border-bottom: 1px solid #ddd;
-    padding: 40px;
-    margin-bottom: 40px; }
-  .articleComment p {
-    margin-bottom: 40px; }
-  .articleComment .submit {
-    margin: 0 auto;
-    font-size: 1em;
-    width: 300px;
-    padding: 20px 0;
-    color: white;
-    background: #78909C;
-    border-radius: 4px;
-    display: inline-block; }
 
 @media only screen and (max-width: 768px) {
   .articleComment {
@@ -880,6 +861,38 @@ input.custom::-moz-placeholder {
     width: 100%;
     padding: 10px 20px; } }
 
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px; }
+
+input[type="submit"] {
+  border: none;
+  font-size: 1em;
+  width: 200px;
+  padding: 15px 0;
+  color: #fff;
+  background: #78909C;
+  border-radius: 4px;
+  display: inline-block; }
+
+label {
+  font-weight: 500;
+  margin-bottom: 10px; }
+
+textarea,
+input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px; }
+
+textarea {
+  height: 200px; }
+
+input {
+  display: block;
+  padding: 10px; }
+
 .naviToggle {
   display: block;
   width: 60px;
@@ -940,7 +953,7 @@ input.custom::-moz-placeholder {
     display: none; } }
 
 .keyVisual {
-  height: 400px;
+  height: 300px;
   background: #f2f2f2; }
   .keyVisual-gray {
     width: 100%;

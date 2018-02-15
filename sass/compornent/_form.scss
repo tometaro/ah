@@ -1,34 +1,59 @@
-// .widget{
-//   overflow: hidden;
-// }
-//
-// .search-submit {
-//   background: #aaa;
-//   color: #fff;
-//   height: 40px;
-//   border: none;
-//   font-size: 16px;
-//   cursor: pointer;
-//
-//   &::after {
-//     content: "\EA01";
-//     font-family: "symbols";
-//     color: #78909C;
-//   }
-//
-//   &:hover {
-//     opacity: .7;
-//   }
-// }
-//
-// .search-field {
-//   padding-left: 10px;
-//   background: #fff;
-//   border: 1px solid #ddd;
-//   border-right: none;
-//   height: 40px;
-// }
-//
-// .search-form {
-//   height: auto;
-// }
+input[type="text"]{
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="submit"]{
+  border: none;
+  font-size: 1em;
+  width: 200px;
+  padding: 15px 0;
+  color: #fff;
+  background: #78909C;
+  border-radius: 4px;
+  display: inline-block;
+
+}
+
+  label {
+    font-weight: 500;
+    margin-bottom: 10px;
+
+  }
+  textarea,
+  input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  input {
+    display: block;
+    padding: 10px;
+  }
+
+  // li {
+  //   border-bottom: 1px solid #ddd;
+  //   padding:40px;
+  //   margin-bottom: 40px;
+  // }
+
+  // p {
+  //   margin-bottom: 40px;
+  // }
+
+  // .submit {
+  //   margin: 0 auto;
+  //   font-size: 1em;
+  //   width: 300px;
+  //   padding: 20px 0;
+  //   color: white;
+  //   background: #78909C;
+  //   border-radius: 4px;
+  //   display: inline-block;
+  // }
