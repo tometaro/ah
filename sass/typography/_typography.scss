@@ -1,27 +1,27 @@
-// body,
-// button,
-// input,
-// select,
-// textarea {
-// 	color: $gray;
-// 	font-family: $font__main;
-// 	@include font-size(1);
-// 	line-height: $font__line-height-body;
-//
-//   a {
-//     color: $lightBlue;
-//     transition: 0.5s;
-//
-//     &:hover {
-//       opacity: .7;
-//     }
-//   }
-// }
-//
-// @import "headings";
-//
-// @import "copy";
-//
-// .widget-title {
-//   font-weight: 500;
-// }
+body,
+button,
+input,
+select,
+textarea {
+	color: $gray;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+
+  a {
+    color: $lightBlue;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+@import "headings";
+
+@import "copy";
+
+.widget-title {
+  font-weight: 500;
+}
