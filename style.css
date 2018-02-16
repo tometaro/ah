@@ -97,72 +97,6 @@ table {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-  color: #616161;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-size: 1rem;
-  line-height: 1.5; }
-  body a,
-  button a,
-  input a,
-  select a,
-  textarea a {
-    color: #0091EA;
-    transition: 0.5s; }
-    body a:hover,
-    button a:hover,
-    input a:hover,
-    select a:hover,
-    textarea a:hover {
-      opacity: .7; }
-
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
-
-dfn, cite, em, i {
-  font-style: italic; }
-
-blockquote {
-  margin: 0 1.5em; }
-
-address {
-  margin: 0 0 1.5em; }
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 13.125px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em; }
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 13.125px;
-  font-size: 0.9375rem; }
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help; }
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none; }
-
-big {
-  font-size: 125%; }
-
-.widget-title {
-  font-weight: 500; }
-
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -861,10 +795,18 @@ input.custom::-moz-placeholder {
     width: 100%;
     padding: 10px 20px; } }
 
+input,
+textarea {
+  outline: 0; }
+
+label {
+  font-weight: 500; }
+
 input[type="text"] {
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-top: 10px; }
 
 input[type="submit"] {
   border: none;
@@ -875,10 +817,6 @@ input[type="submit"] {
   background: #78909C;
   border-radius: 4px;
   display: inline-block; }
-
-label {
-  font-weight: 500;
-  margin-bottom: 10px; }
 
 textarea,
 input {
@@ -1035,9 +973,9 @@ input {
 
 body {
   font-family: 'Roboto','Noto Sans Japanese', sans-serif;
-  background: #fff;
   word-break: break-all;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  font-size: 14px; }
 
 a {
   text-decoration: none; }

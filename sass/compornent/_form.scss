@@ -1,7 +1,18 @@
+input,
+textarea {
+  outline: 0;
+}
+
+label {
+  font-weight: 500;
+}
+
 input[type="text"]{
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
+  margin-top: 10px;
+
 }
 
 input[type="submit"]{
@@ -13,14 +24,7 @@ input[type="submit"]{
   background: #78909C;
   border-radius: 4px;
   display: inline-block;
-
 }
-
-  label {
-    font-weight: 500;
-    margin-bottom: 10px;
-
-  }
   textarea,
   input {
     width: 100%;
@@ -36,24 +40,3 @@ input[type="submit"]{
     display: block;
     padding: 10px;
   }
-
-  // li {
-  //   border-bottom: 1px solid #ddd;
-  //   padding:40px;
-  //   margin-bottom: 40px;
-  // }
-
-  // p {
-  //   margin-bottom: 40px;
-  // }
-
-  // .submit {
-  //   margin: 0 auto;
-  //   font-size: 1em;
-  //   width: 300px;
-  //   padding: 20px 0;
-  //   color: white;
-  //   background: #78909C;
-  //   border-radius: 4px;
-  //   display: inline-block;
-  // }

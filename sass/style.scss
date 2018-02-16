@@ -143,16 +143,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 body {
   font-family: 'Roboto','Noto Sans Japanese', sans-serif;
-  background: $white;
   word-break:break-all;
   word-wrap: break-word;
-  // padding-top: 60px;
+  font-size: 14px;
 }
 
 a {
     text-decoration: none;
+    color: $color-text-link;
 }
-
-// .home {
-//   padding-top: 0;
-// }
