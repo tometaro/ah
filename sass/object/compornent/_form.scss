@@ -1,0 +1,39 @@
+input,
+textarea {
+  outline: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+  display: block;
+
+}
+
+textarea {
+  height: 200px;
+}
+
+input {
+  display: block;
+  padding: 10px;
+
+  &::placeholder{
+    color: #ddd;
+  }
+}
+
+label {
+  font-weight: 500;
+}
+
+
+input[type="submit"]{
+  border: none;
+  font-size: 1em;
+  width: 200px;
+  padding: 15px 0;
+  color: #fff;
+  background: #78909C;
+  display: inline-block;
+}

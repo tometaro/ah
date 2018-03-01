@@ -15,7 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/sass/icon-font/dist/css/symbols.css" >
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/sass/foundation/icon-font/dist/css/symbols.css" >
 
 <?php wp_head(); ?>
 </head>
@@ -64,25 +64,31 @@
       <?php else: ?>
 
       <section class="keyVisual">
-        <div class="keyVisual-vs" style="background-image: url(<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>); ">
+        <div class="keyVisual-vs">
           <div class="keyVisual-white">
-            <div class="keyVisual-gray keyVisual-gray-singlePage">
-              <div class="keyVisual-wrapper">
+            <div class="keyVisual-gray">
+
                 <?php if(is_category()): ?>
+                  <div class="keyVisual-wrapper keyVisual-gray-catePage">
                   <h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
+                </div>
                 <?php endif; ?>
                 <?php if(is_page()): ?>
                   <h1 class="siteSection-title"><?php the_title(); ?></h1>
                 <?php endif; ?>
                 <?php if(is_single()): ?>
+                  <div class="keyVisual-wrapper">
                   <div class="article-titleBlock">
                   <h1 class="article-title"><?php the_title(); ?></h1>
                   <div class="entry-meta"><?php echo get_post_time('M d, Y'); ?></div>
                   </div>
+                  </div>
                 <?php endif; ?>
-              </div>
             </div>
           </div>
+          <div>
+          <?php the_post_thumbnail( 'full' ); ?>
+          <div>
         </div>
       </section>
 

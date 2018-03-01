@@ -20,37 +20,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
+/*==============================================================
+# Foundation
+==============================================================*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("http://fonts.googleapis.com/earlyaccess/notosansjapanese.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -94,12 +70,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
+/* Base */
 html {
   box-sizing: border-box; }
 
@@ -110,225 +81,34 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  font-family: Hiragino Sans, sans-serif;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 2;
+  color: #666; }
 
-blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
+h1, h2, h3, h4 {
+  line-height: 1.5;
+  font-weight: 500; }
 
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em; }
+a {
+  text-decoration: none;
+  color: #aaa; }
 
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */ }
-
-figure {
-  margin: 1em 0;
-  /* Extra wide images within figure tags don't overflow the content area. */ }
-
-table {
-  margin: 0 0 1.5em;
-  width: 100%; }
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
-  height: 1px;
-  width: 1px;
   overflow: hidden; }
-  .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 12.25px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */ }
 
-/* Do not show the outline on the skip link target. */
-#content[tabindex="-1"]:focus {
-  outline: 0; }
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5em; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clear:before,
-.clear:after,
-.entry-content:before,
-.entry-content:after,
-.comment-content:before,
-.comment-content:after,
-.site-header:before,
-.site-header:after,
-.site-content:before,
-.site-content:after,
-.site-footer:before,
-.site-footer:after {
-  content: "";
-  display: table;
-  table-layout: fixed; }
-
-.clear:after,
-.entry-content:after,
-.comment-content:after,
-.site-header:after,
-.site-content:after,
-.site-footer:after {
-  clear: both; }
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none; }
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-  display: block; }
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/*--------------------------------------------------------------
-## Captions
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em; }
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%; }
-  .gallery-columns-2 .gallery-item {
-    max-width: 50%; }
-  .gallery-columns-3 .gallery-item {
-    max-width: 33.33%; }
-  .gallery-columns-4 .gallery-item {
-    max-width: 25%; }
-  .gallery-columns-5 .gallery-item {
-    max-width: 20%; }
-  .gallery-columns-6 .gallery-item {
-    max-width: 16.66%; }
-  .gallery-columns-7 .gallery-item {
-    max-width: 14.28%; }
-  .gallery-columns-8 .gallery-item {
-    max-width: 12.5%; }
-  .gallery-columns-9 .gallery-item {
-    max-width: 11.11%; }
-
-.gallery-caption {
-  display: block; }
-
-/*--------------------------------------------------------------
-# web font
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# layout
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# conpornent
---------------------------------------------------------------*/
+/*==============================================================
+# Layout
+==============================================================*/
 .siteHeader {
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 999999;
   top: 0;
   transition: 1s ease-in-out;
   display: flex; }
@@ -360,6 +140,98 @@ object {
     .siteHeader-title {
       display: none; } }
 
+.siteSection {
+  margin: 0 auto;
+  background: #fff; }
+  .siteSection-inner {
+    width: 100%;
+    background: #fff;
+    padding: 60px 0;
+    overflow: auto; }
+    .siteSection-inner:nth-child(even) {
+      background-color: #F5F5F5; }
+      .siteSection-inner:nth-child(even) .button {
+        background: #fff; }
+  .siteSection-innerWrap {
+    max-width: 1080px;
+    margin: 0 auto; }
+  .siteSection-wrapper {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 60px 0;
+    overflow: hidden; }
+    .siteSection-wrapper-narrow {
+      width: 770px; }
+  .siteSection-title {
+    font-size: 1.414em;
+    color: #666;
+    text-align: center; }
+  .siteSection-content {
+    width: 770px;
+    float: left; }
+
+@media only screen and (max-width: 768px) {
+  .siteSection {
+    width: 100%; }
+    .siteSection-inner {
+      width: 100%; }
+    .siteSection-wrapper {
+      width: 100%;
+      padding: 40px 20px; }
+    .siteSection-content {
+      width: 100%; } }
+
+.siteFooter {
+  background: #fff;
+  padding: 20px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  text-align: center; }
+  .siteFooter a {
+    color: #555; }
+
+@media only screen and (max-width: 768px) {
+  .siteFooter {
+    padding: 20px 15px; } }
+
+.sidebar {
+  width: 230px;
+  float: right; }
+  .sidebar-title {
+    font-size: 16px;
+    background: #f2f2f2;
+    padding: 5px 0 5px 14px;
+    border-left: 4px solid #ddd;
+    font-weight: 500; }
+  .sidebar li {
+    display: table;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    text-align: left; }
+    .sidebar li::after {
+      display: table-cell;
+      vertical-align: middle;
+      content: "\EA05";
+      font-family: "symbols";
+      padding-right: 10px;
+      color: #78909C;
+      width: 5px; }
+    .sidebar li a {
+      padding: 20px 0;
+      color: #424242;
+      display: block; }
+  .sidebar section {
+    margin-bottom: 30px; }
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%; } }
+
+/*==============================================================
+# Object
+==============================================================*/
+/* Component
+------------------------------------------------------------- */
 .siteNavi ul {
   list-style: none;
   font-size: 13px;
@@ -369,7 +241,7 @@ object {
   .siteNavi ul li {
     margin: 22.5px 0;
     padding: 0 20px;
-    border-left: #f2f2f2 solid 1px; }
+    border-left: #ddd solid 1px; }
   .siteNavi ul a {
     color: #555; }
   .siteNavi ul li:hover {
@@ -417,61 +289,6 @@ object {
   .hero img {
     height: 100%; } }
 
-.siteSection {
-  margin: 0 auto;
-  background: #fff; }
-  .siteSection-inner {
-    width: 100%;
-    background: #fff;
-    padding: 60px 0;
-    overflow: auto; }
-    .siteSection-inner:nth-child(even) {
-      background-color: #F5F5F5; }
-      .siteSection-inner:nth-child(even) .button {
-        background: #fff; }
-  .siteSection-innerWrap {
-    max-width: 1080px;
-    margin: 0 auto; }
-  .siteSection-wrapper {
-    width: 1040px;
-    margin: 0 auto;
-    padding: 60px 0;
-    overflow: hidden; }
-    .siteSection-wrapper-narrow {
-      width: 770px; }
-  .siteSection-title {
-    font-size: 1.414em;
-    margin: 0 25px 25px 25px;
-    color: #666;
-    text-align: center; }
-  .siteSection-content {
-    width: 770px;
-    float: left; }
-
-@media only screen and (max-width: 768px) {
-  .siteSection {
-    width: 100%; }
-    .siteSection-inner {
-      width: 100%; }
-    .siteSection-wrapper {
-      width: 100%;
-      padding: 40px 20px; }
-    .siteSection-content {
-      width: 100%; } }
-
-.siteFooter {
-  background: #fff;
-  padding: 20px;
-  color: #555;
-  border-top: 1px solid #ddd;
-  text-align: center; }
-  .siteFooter a {
-    color: #555; }
-
-@media only screen and (max-width: 768px) {
-  .siteFooter {
-    padding: 20px 15px; } }
-
 .article-titleBlock {
   text-align: left;
   color: #666;
@@ -511,6 +328,10 @@ object {
 .article p {
   line-height: 2.0;
   margin-bottom: 40px; }
+
+.article img {
+  width: 100%;
+  height: auto; }
 
 .articleList {
   display: table;
@@ -561,72 +382,13 @@ object {
   padding: 80px 100px;
   margin-top: 60px;
   border-radius: 4px; }
+  .articleComment p {
+    margin: 30px 0; }
 
 @media only screen and (max-width: 768px) {
   .articleComment {
     padding: 20px;
     margin-bottom: 40px; } }
-
-@font-face {
-  font-family: "symbols";
-  src: url("../fonts/symbols.eot");
-  src: url("../fonts/symbols.eot?#iefix") format("eot"), url("../fonts/symbols.woff2") format("woff2"), url("../fonts/symbols.woff") format("woff"), url("../fonts/symbols.ttf") format("truetype"), url("../fonts/symbols.svg#symbols") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.s:before {
-  display: inline-block;
-  font-family: "symbols";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.s-lg {
-  font-size: 1.3333333333333333em;
-  line-height: 0.75em;
-  vertical-align: -15%; }
-
-.s-2x {
-  font-size: 2em; }
-
-.s-3x {
-  font-size: 3em; }
-
-.s-4x {
-  font-size: 4em; }
-
-.s-5x {
-  font-size: 5em; }
-
-.s-fw {
-  width: 1.2857142857142858em;
-  text-align: center; }
-
-.s-arrow-bottom:before {
-  content: "\EA01"; }
-
-.s-arrow-left:before {
-  content: "\EA02"; }
-
-.s-arrow-right:before {
-  content: "\EA03"; }
-
-.s-arrow-top:before {
-  content: "\EA04"; }
-
-.s-arrowLine:before {
-  content: "\EA05"; }
-
-.s-setting:before {
-  content: "\EA06"; }
-
-.s-tel:before {
-  content: "\EA07"; }
-
-.s-zoom:before {
-  content: "\EA08"; }
 
 .pagination {
   margin-top: 80px;
@@ -702,37 +464,6 @@ object {
     text-align: center;
     margin-top: 25px; }
 
-.sidebar {
-  width: 230px;
-  float: right; }
-  .sidebar-title {
-    font-size: 16px;
-    background: #f2f2f2;
-    padding: 5px 0 5px 14px;
-    border-left: 4px solid #ddd;
-    font-weight: 500; }
-  .sidebar li {
-    display: table;
-    border-bottom: 1px solid #eee;
-    width: 100%;
-    text-align: left; }
-    .sidebar li::after {
-      display: table-cell;
-      vertical-align: middle;
-      content: "\EA05";
-      font-family: "symbols";
-      padding-right: 10px;
-      color: #78909C;
-      width: 5px; }
-    .sidebar li a {
-      padding: 20px 0;
-      color: #424242;
-      display: block; }
-
-@media only screen and (max-width: 768px) {
-  .sidebar {
-    width: 100%; } }
-
 .search {
   height: 44px;
   width: 100%;
@@ -746,7 +477,7 @@ object {
     background: #fff;
     height: 100%;
     padding-left: 10px;
-    color: #aaa; }
+    color: #666; }
     .search-field:focus {
       outline: 0; }
   .search-submit {
@@ -797,16 +528,25 @@ input.custom::-moz-placeholder {
 
 input,
 textarea {
-  outline: 0; }
-
-label {
-  font-weight: 500; }
-
-input[type="text"] {
+  outline: 0;
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-top: 10px; }
+  font-size: 14px;
+  color: #666;
+  display: block; }
+
+textarea {
+  height: 200px; }
+
+input {
+  display: block;
+  padding: 10px; }
+  input::placeholder {
+    color: #ddd; }
+
+label {
+  font-weight: 500; }
 
 input[type="submit"] {
   border: none;
@@ -815,21 +555,7 @@ input[type="submit"] {
   padding: 15px 0;
   color: #fff;
   background: #78909C;
-  border-radius: 4px;
   display: inline-block; }
-
-textarea,
-input {
-  width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px; }
-
-textarea {
-  height: 200px; }
-
-input {
-  display: block;
-  padding: 10px; }
 
 .naviToggle {
   display: block;
@@ -901,17 +627,22 @@ input {
     display: flex;
     align-items: center;
     /* 子要素をflexboxにより中央に配置する */ }
-    .keyVisual-gray-singlePage {
-      justify-content: center; }
+    .keyVisual-gray-catePage {
+      margin: 0 auto; }
   .keyVisual-vs {
     width: 1040px;
     margin: 0 auto;
     height: 100%;
     background-size: cover;
-    background-attachment: fixed; }
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden; }
   .keyVisual-white {
+    width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.7); }
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 999; }
   .keyVisual-wrapper {
     color: #444; }
   .keyVisual-title {
@@ -919,10 +650,8 @@ input {
   .keyVisual-text {
     font-size: 18px; }
   .keyVisual img {
-    min-width: 100%;
-    min-height: 100%;
     position: absolute;
-    width: auto;
+    width: 100%;
     height: auto;
     left: 50%;
     top: 50%;
@@ -936,7 +665,8 @@ input {
     .keyVisual-wrap {
       margin: 0 15px; }
     .keyVisual img {
-      height: 100%; } }
+      height: 100%;
+      width: auto; } }
 
 .spNavi {
   position: fixed;
@@ -971,11 +701,5 @@ input {
     .spNavi-shadow {
       display: none; } }
 
-body {
-  font-family: 'Roboto','Noto Sans Japanese', sans-serif;
-  word-break: break-all;
-  word-wrap: break-word;
-  font-size: 14px; }
-
-a {
-  text-decoration: none; }
+/* Utility
+------------------------------------------------------------- */

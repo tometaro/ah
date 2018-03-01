@@ -20,135 +20,82 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+/*==============================================================
+# Foundation
+==============================================================*/
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "reset";
+@import "foundation/reset";
+@import "foundation/variables";
+// @import "foundation/accessibility";
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-@import "typography/typography";
+/* Base */
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
+html {
+  box-sizing: border-box; }
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/alignments";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings";
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "modules/infinite-scroll";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/media";
-
-/*--------------------------------------------------------------
-# web font
---------------------------------------------------------------*/
-@import url('http://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
-/*--------------------------------------------------------------
-# layout
---------------------------------------------------------------*/
-// @import "layout/content-sidebar";
-
-/*--------------------------------------------------------------
-# conpornent
---------------------------------------------------------------*/
-// @import "compornent/style";
-@import "compornent/siteHeader";
-@import "compornent/siteNavi";
-@import "compornent/hero";
-@import "compornent/siteContent";
-@import "compornent/siteSection";
-@import "compornent/siteFooter";
-@import "compornent/article";
-@import "compornent/articleList";
-@import "compornent/articleComment";
-@import "icon-font/dist/css/symbols";
-@import "compornent/pagination";
-@import "compornent/button";
-@import "compornent/sidebar";
-@import "compornent/search";
-@import "compornent/breadcrumbs";
-@import "compornent/form";
-@import "compornent/naviToggle";
-@import "compornent/keyVisual";
-@import "compornent/spNavi";
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+  }
 
 body {
-  font-family: 'Roboto','Noto Sans Japanese', sans-serif;
+  font-family: Hiragino Sans, sans-serif;
   word-break:break-all;
   word-wrap: break-word;
-  // font-size: 14px;
+  font-size: 14px;
+  line-height: 2;
+  color: #666;
+}
+
+h1,h2,h3,h4 {
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 a {
-    text-decoration: none;
-    color: $color-text-link;
+  text-decoration: none;
+  color: $color-text-link;
 }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	overflow: hidden;
+}
+
+/*==============================================================
+# Layout
+==============================================================*/
+
+@import "layout/siteHeader";
+@import "layout/siteContent";
+@import "layout/siteSection";
+@import "layout/siteFooter";
+@import "layout/sidebar";
+
+/*==============================================================
+# Object
+==============================================================*/
+
+/* Component
+------------------------------------------------------------- */
+
+@import "object/compornent/siteNavi";
+@import "object/compornent/hero";
+@import "object/compornent/article";
+@import "object/compornent/articleList";
+@import "object/compornent/articleComment";
+@import "object/compornent/pagination";
+@import "object/compornent/button";
+@import "object/compornent/search";
+@import "object/compornent/breadcrumbs";
+@import "object/compornent/form";
+@import "object/compornent/naviToggle";
+@import "object/compornent/keyVisual";
+@import "object/compornent/spNavi";
+
+/* Utility
+------------------------------------------------------------- */
