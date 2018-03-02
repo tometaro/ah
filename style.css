@@ -121,16 +121,11 @@ a {
     display: flex;
     align-items: center;
     padding: 0 20px; }
-  .siteHeader-title {
-    font-size: 22px;
-    letter-spacing: .1em;
-    transition: 1s ease-in-out;
-    line-height: 28px; }
-  .siteHeader-logo {
-    width: 28px;
-    height: 28px; }
-  .siteHeader-spMenu {
-    background-color: #000; }
+  .siteHeader-logo-type {
+    height: 18px; }
+  .siteHeader-logo-mark {
+    width: 30px;
+    height: 30px; }
   .siteHeader-bg {
     background: rgba(255, 255, 255, 0.9); }
 
@@ -149,7 +144,7 @@ a {
     padding: 60px 0;
     overflow: auto; }
     .siteSection-inner:nth-child(even) {
-      background-color: #F5F5F5; }
+      background-color: #f2f2f2; }
       .siteSection-inner:nth-child(even) .button {
         background: #fff; }
   .siteSection-innerWrap {
@@ -165,7 +160,8 @@ a {
   .siteSection-title {
     font-size: 1.414em;
     color: #666;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
   .siteSection-content {
     width: 770px;
     float: left; }
@@ -218,7 +214,7 @@ a {
       width: 5px; }
     .sidebar li a {
       padding: 20px 0;
-      color: #424242;
+      color: #666;
       display: block; }
   .sidebar section {
     margin-bottom: 30px; }
@@ -240,8 +236,7 @@ a {
   display: flex; }
   .siteNavi ul li {
     margin: 22.5px 0;
-    padding: 0 20px;
-    border-left: #ddd solid 1px; }
+    padding: 0 20px; }
   .siteNavi ul a {
     color: #555; }
   .siteNavi ul li:hover {
@@ -378,7 +373,7 @@ a {
     margin: 25px 10px; } }
 
 .articleComment {
-  background: #F5F5F5;
+  background: #f2f2f2;
   padding: 80px 100px;
   margin-top: 60px;
   border-radius: 4px; }
@@ -554,7 +549,7 @@ input[type="submit"] {
   width: 200px;
   padding: 15px 0;
   color: #fff;
-  background: #78909C;
+  background: #794dff;
   display: inline-block; }
 
 .naviToggle {
@@ -563,7 +558,7 @@ input[type="submit"] {
   height: 60px;
   cursor: pointer;
   z-index: 101;
-  background: #FFF; }
+  background: #fff; }
   .naviToggle-inner {
     position: relative;
     width: 18px;
@@ -579,7 +574,7 @@ input[type="submit"] {
       height: 100%;
       background: rgba(242, 242, 242, 0.9); }
   .naviToggle span {
-    background: #555;
+    background: #794dff;
     display: block;
     position: absolute;
     height: 2px;

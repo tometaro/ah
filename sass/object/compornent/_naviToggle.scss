@@ -4,7 +4,7 @@
   height: 60px;
   cursor: pointer;
   z-index: 101;
-  background: #FFF;
+  background: $color-base;
 
   &-inner {
       position: relative;
@@ -28,7 +28,7 @@
   }
 
   span {
-      background: #555;
+      background: $color-bland;
       display: block;
       position: absolute;
       height: 2px;
