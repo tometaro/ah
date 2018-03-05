@@ -1,7 +1,8 @@
 .hero {
   height: 400px;
-  background: #f2f2f2;
-  background :url(images/noImage.svg);
+  // background: #f2f2f2;
+  // background-image: url(images/noImage.svg);
+  background: radial-gradient(#fff, #f2f2f2);
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
@@ -9,23 +10,26 @@
   &-white {
     padding-top: 60px;
     height: 100%;
-    background: rgba(255,255,255,.7);
+    // background: rgba(255,255,255,.7);
     display: flex;
     align-items: center;  /* 子要素をflexboxにより中央に配置する */
   }
 
   &-wrap {
-    color: #444;
     width: 1040px;
     margin: 0 auto;
   }
 
   &-title {
-    font-size: 28px;
+    width: 100%;
+    svg {
+      width: 200px;
+    }
   }
 
   &-text {
     font-size: 18px;
+    opacity: 0;
   }
 
   img {
@@ -37,6 +41,12 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+  }
+
+  &-logoVisul {
+    background: url(images/logo-mark.svg);
+    height: 100%;
+    width: 100%;
   }
 }
 

@@ -248,26 +248,26 @@ a {
 
 .hero {
   height: 400px;
-  background: #f2f2f2;
-  background: url(images/noImage.svg);
+  background: radial-gradient(#fff, #f2f2f2);
   text-align: center;
   background-size: cover;
   background-attachment: fixed; }
   .hero-white {
     padding-top: 60px;
     height: 100%;
-    background: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     /* 子要素をflexboxにより中央に配置する */ }
   .hero-wrap {
-    color: #444;
     width: 1040px;
     margin: 0 auto; }
   .hero-title {
-    font-size: 28px; }
+    width: 100%; }
+    .hero-title svg {
+      width: 200px; }
   .hero-text {
-    font-size: 18px; }
+    font-size: 18px;
+    opacity: 0; }
   .hero img {
     min-width: 100%;
     min-height: 100%;
@@ -277,6 +277,10 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
+  .hero-logoVisul {
+    background: url(images/logo-mark.svg);
+    height: 100%;
+    width: 100%; }
 
 @media only screen and (max-width: 768px) {
   .hero-wrap {
@@ -698,3 +702,26 @@ input[type="submit"] {
 
 /* Utility
 ------------------------------------------------------------- */
+/* Animation
+------------------------------------------------------------- */
+.st0 {
+  fill: #666;
+  stroke: #666;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  stroke-width: .11;
+  -webkit-animation: hello 4s ease-in 0s;
+  animation: hello 4s ease-in 0s; }
+
+@-webkit-keyframes hello {
+  0% {
+    stroke-dashoffset: 2000;
+    fill: transparent; }
+  40% {
+    stroke-dashoffset: 2000;
+    fill: transparent; }
+  50% {
+    fill: transparent; }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #666; } }

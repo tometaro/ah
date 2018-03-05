@@ -20,5 +20,9 @@ jQuery(function($){
     $('.naviToggle-block-shadow').fadeOut();
   });
 
-
+  $(function() {
+    setTimeout(function(){
+    $('.hero-text').animate({ opacity: "1" });
+  },3000);
+  });
 });
