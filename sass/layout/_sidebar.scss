@@ -12,7 +12,7 @@
 
   li {
     display: table;
-    border-bottom :1px solid #eee;
+    border-bottom: 1px solid $color-main;
     width: 100%;
     text-align: left;
 
@@ -22,8 +22,8 @@
       vertical-align: middle;
       content: "\EA05";
       font-family: "symbols";
-      padding-right: 10px;
-      color: #78909C;
+      // padding-right: 10px;
+      color: $color-bland;
       width: 5px;
     }
 

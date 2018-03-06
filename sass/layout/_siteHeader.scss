@@ -23,6 +23,11 @@
 
     &-logo-type {
       height: 18px;
+      fill: $color_bland;
+
+      svg {
+        height: 100%;
+      }
     }
 
     &-logo-mark {
@@ -40,7 +45,7 @@
     .siteHeader {
         padding: 0;
 
-        &-title {
+        &-logo-type {
             display: none;
         }
       }

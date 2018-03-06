@@ -41,22 +41,30 @@ html {
   }
 
 body {
-  font-family: Hiragino Sans, sans-serif;
+  font-family: Helvetica, Hiragino Sans, sans-serif;
   word-break:break-all;
   word-wrap: break-word;
   font-size: 14px;
   line-height: 2;
-  color: #666;
+  color: $color-text;
 }
 
 h1,h2,h3,h4 {
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
   color: $color-text-link;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+
+  &:hover {
+    opacity: .6;
+  }
 }
 
 /* Text meant only for screen readers. */
@@ -105,11 +113,11 @@ a {
 /* Animation
 ------------------------------------------------------------- */
 .st0{
-  fill:#666;
-  stroke:#666;
+  fill: $color_bland;
+  stroke: $color_bland;
   stroke-dasharray: 2000;
   stroke-dashoffset: 0;
-  stroke-width: .11;
+  stroke-width: .1;
   -webkit-animation: hello 4s ease-in 0s;
   animation: hello 4s ease-in 0s;
 }

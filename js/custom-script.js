@@ -22,7 +22,7 @@ jQuery(function($){
 
   $(function() {
     setTimeout(function(){
-    $('.hero-text').animate({ opacity: "1" });
-  },3000);
+      $('.hero-text').animate({ opacity: "1" }, { duration: 3000, easing: 'swing', });
+    },3000);
   });
 });

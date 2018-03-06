@@ -22,7 +22,6 @@
 
   &-submit {
     font-size: 24px;
-    width: 44px;
     border: none;
     background: none;
     float:right;
@@ -31,13 +30,18 @@
     cursor: pointer;
     position: absolute;
     right: 0;
+    display: block;
+    width: auto;
+
 
 
     &::after {
       content: "\EA08";
       font-family: "symbols";
-      color: #78909C;
+      color: $color-bland;
       display: block;
+      width: 40px;
+
     }
 
   }

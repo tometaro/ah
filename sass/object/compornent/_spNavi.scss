@@ -20,13 +20,25 @@
         float: none;
         position: static;
         text-align: left;
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid $color-main;
+
+
+        &::after {
+          display: table-cell;
+          vertical-align: middle;
+          content: "\EA05";
+          font-family: "symbols";
+          color: $color-bland;
+          width: 5px;
+        }
 
          a {
             padding: 0;
-            color: #555;
+            color: $color-text;
             display: block;
             padding: 20px 0;
-            border-bottom: 1px solid #f2f2f2;
             font-size: 13px;
 
         }

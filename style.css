@@ -81,20 +81,26 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: Hiragino Sans, sans-serif;
+  font-family: Helvetica, Hiragino Sans, sans-serif;
   word-break: break-all;
   word-wrap: break-word;
   font-size: 14px;
   line-height: 2;
-  color: #666; }
+  color: #1a1a1a; }
 
 h1, h2, h3, h4 {
   line-height: 1.5;
-  font-weight: 500; }
+  font-weight: 600; }
 
 a {
   text-decoration: none;
-  color: #aaa; }
+  color: #aaa;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease; }
+  a:hover {
+    opacity: .6; }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -122,7 +128,10 @@ a {
     align-items: center;
     padding: 0 20px; }
   .siteHeader-logo-type {
-    height: 18px; }
+    height: 18px;
+    fill: #1a1a1a; }
+    .siteHeader-logo-type svg {
+      height: 100%; }
   .siteHeader-logo-mark {
     width: 30px;
     height: 30px; }
@@ -132,7 +141,7 @@ a {
 @media only screen and (max-width: 768px) {
   .siteHeader {
     padding: 0; }
-    .siteHeader-title {
+    .siteHeader-logo-type {
       display: none; } }
 
 .siteSection {
@@ -143,6 +152,8 @@ a {
     background: #fff;
     padding: 60px 0;
     overflow: auto; }
+    .siteSection-inner .button {
+      background: #f2f2f2; }
     .siteSection-inner:nth-child(even) {
       background-color: #f2f2f2; }
       .siteSection-inner:nth-child(even) .button {
@@ -159,7 +170,6 @@ a {
       width: 770px; }
   .siteSection-title {
     font-size: 1.414em;
-    color: #666;
     text-align: center;
     margin-bottom: 20px; }
   .siteSection-content {
@@ -201,7 +211,7 @@ a {
     font-weight: 500; }
   .sidebar li {
     display: table;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f2f2f2;
     width: 100%;
     text-align: left; }
     .sidebar li::after {
@@ -209,12 +219,11 @@ a {
       vertical-align: middle;
       content: "\EA05";
       font-family: "symbols";
-      padding-right: 10px;
-      color: #78909C;
+      color: #1a1a1a;
       width: 5px; }
     .sidebar li a {
       padding: 20px 0;
-      color: #666;
+      color: #1a1a1a;
       display: block; }
   .sidebar section {
     margin-bottom: 30px; }
@@ -238,7 +247,7 @@ a {
     margin: 22.5px 0;
     padding: 0 20px; }
   .siteNavi ul a {
-    color: #555; }
+    color: #1a1a1a; }
   .siteNavi ul li:hover {
     opacity: 0.7; }
 
@@ -248,7 +257,7 @@ a {
 
 .hero {
   height: 400px;
-  background: radial-gradient(#fff, #f2f2f2);
+  background: radial-gradient(#e5e5e5, #f2f2f2);
   text-align: center;
   background-size: cover;
   background-attachment: fixed;
@@ -274,13 +283,17 @@ a {
     opacity: 0; }
   .hero-logoVisul {
     position: absolute;
-    background: url(images/logo-mark.svg) no-repeat;
+    background: url(images/logo-mark-white.svg) no-repeat;
     height: 100%;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: 9; }
+    z-index: 9;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
 
 @media only screen and (max-width: 768px) {
   .hero-wrap {
@@ -290,13 +303,14 @@ a {
 
 .article-titleBlock {
   text-align: left;
-  color: #666;
   z-index: 99999; }
-  .article-titleBlock a {
-    color: #666; }
 
 .article-title {
   font-size: 28px; }
+
+.article-time {
+  color: #999999;
+  font-size: 14px; }
 
 .article .marker {
   background: linear-gradient(transparent 65%, #B3E5FC 0%);
@@ -364,12 +378,12 @@ a {
     display: block; }
   .articleList-title {
     line-height: 2;
-    margin: 10px 0;
+    margin: 10px 0 5px 0;
     font-size: 14px;
     font-weight: 500;
-    color: #666; }
+    color: #1a1a1a; }
   .articleList-time {
-    color: #9E9E9E;
+    color: #999999;
     font-size: 12px; }
 
 @media screen and (max-width: 320px) {
@@ -401,10 +415,12 @@ a {
     font-weight: 300;
     padding-top: 1px;
     text-decoration: none;
-    background: #eee;
+    background: #f2f2f2;
     width: 40px;
     height: 40px;
-    color: #424242; }
+    color: #999999;
+    border-radius: 4px;
+    font-family: "symbols"; }
   .pagination span {
     position: absolute;
     top: -9999px;
@@ -419,17 +435,17 @@ a {
     -moz-osx-font-smoothing: grayscale;
     transform: translate(0, 0); }
   .pagination .current a {
-    background-color: #ddd;
+    background-color: #fff;
     cursor: default;
     pointer-events: none; }
   .pagination .first a::before {
-    content: "\f100"; }
+    content: "\EA02"; }
   .pagination .last a::after {
-    content: "\f101"; }
+    content: "\EA03"; }
   .pagination .previous a::before {
-    content: "\f104"; }
+    content: "\EA02"; }
   .pagination .next a::after {
-    content: "\f105"; }
+    content: "\EA03"; }
 
 @media only screen and (max-width: 500px) {
   .pagination li {
@@ -449,9 +465,9 @@ a {
     border-left-width: 0; } }
 
 .button {
-  font-size: 14px;
-  padding: 12px 40px;
-  color: #aaa;
+  padding: 8px 0;
+  width: 180px;
+  color: #999999;
   background: #f2f2f2;
   display: inline-block;
   letter-spacing: 1em;
@@ -481,7 +497,6 @@ a {
       outline: 0; }
   .search-submit {
     font-size: 24px;
-    width: 44px;
     border: none;
     background: none;
     float: right;
@@ -489,12 +504,15 @@ a {
     color: #aaa;
     cursor: pointer;
     position: absolute;
-    right: 0; }
+    right: 0;
+    display: block;
+    width: auto; }
     .search-submit::after {
       content: "\EA08";
       font-family: "symbols";
-      color: #78909C;
-      display: block; }
+      color: #1a1a1a;
+      display: block;
+      width: 40px; }
 
 input.custom::-webkit-input-placeholder {
   color: #aaa;
@@ -533,7 +551,8 @@ textarea {
   border-radius: 4px;
   font-size: 14px;
   color: #666;
-  display: block; }
+  display: block;
+  -webkit-appearance: none; }
 
 textarea {
   height: 200px; }
@@ -550,11 +569,15 @@ label {
 input[type="submit"] {
   border: none;
   font-size: 1em;
-  width: 200px;
-  padding: 15px 0;
+  width: 160px;
+  height: 44px;
   color: #fff;
-  background: #794dff;
+  background: #1a1a1a;
+  background: linear-gradient(#666, #1a1a1a);
   display: inline-block; }
+
+button {
+  padding: 0; }
 
 .naviToggle {
   display: block;
@@ -578,7 +601,7 @@ input[type="submit"] {
       height: 100%;
       background: rgba(242, 242, 242, 0.9); }
   .naviToggle span {
-    background: #794dff;
+    background: #1a1a1a;
     display: block;
     position: absolute;
     height: 2px;
@@ -642,8 +665,6 @@ input[type="submit"] {
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
     z-index: 999; }
-  .keyVisual-wrapper {
-    color: #444; }
   .keyVisual-title {
     font-size: 28px; }
   .keyVisual-text {
@@ -654,7 +675,12 @@ input[type="submit"] {
     height: auto;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
 
 @media only screen and (max-width: 768px) {
   .keyVisual {
@@ -685,13 +711,22 @@ input[type="submit"] {
   .spNavi li {
     float: none;
     position: static;
-    text-align: left; }
+    text-align: left;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2; }
+    .spNavi li::after {
+      display: table-cell;
+      vertical-align: middle;
+      content: "\EA05";
+      font-family: "symbols";
+      color: #1a1a1a;
+      width: 5px; }
     .spNavi li a {
       padding: 0;
-      color: #555;
+      color: #1a1a1a;
       display: block;
       padding: 20px 0;
-      border-bottom: 1px solid #f2f2f2;
       font-size: 13px; }
 
 @media only screen and (min-width: 768px) {
@@ -705,11 +740,11 @@ input[type="submit"] {
 /* Animation
 ------------------------------------------------------------- */
 .st0 {
-  fill: #666;
-  stroke: #666;
+  fill: #1a1a1a;
+  stroke: #1a1a1a;
   stroke-dasharray: 2000;
   stroke-dashoffset: 0;
-  stroke-width: .11;
+  stroke-width: .1;
   -webkit-animation: hello 4s ease-in 0s;
   animation: hello 4s ease-in 0s; }
 

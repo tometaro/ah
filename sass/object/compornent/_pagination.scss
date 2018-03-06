@@ -11,10 +11,13 @@
     font-weight: 300;
     padding-top: 1px;
     text-decoration:none;
-    background: #eee;
+    background: $color-main;
     width:40px;
     height:40px;
-    color: #424242;
+    color: $color-text-thin;
+    border-radius: 4px;
+    font-family: "symbols";
+
   }
 
   span {
@@ -36,15 +39,26 @@
 
   .current{
     a {
-      background-color: #ddd;
+      background-color: $color-base;
       cursor: default;
       pointer-events: none;
     }
   }
-  .first a::before { content: "\f100"; }
-  .last a::after { content: "\f101"; }
-  .previous a::before { content: "\f104"; }
-  .next a::after { content: "\f105"; }
+  .first a::before {
+    content: "\EA02";
+  }
+  .last a::after {
+
+    content: "\EA03";
+  }
+  .previous a::before {
+
+    content: "\EA02";
+  }
+  .next a::after {
+
+    content: "\EA03";
+  }
 }
 
 // @media only screen and ( max-width: 768px ) {

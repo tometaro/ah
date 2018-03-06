@@ -3,18 +3,22 @@
   &-titleBlock {
     // background: rgba(51, 51, 51, .8);
     text-align: left;;
-    color: #666;
     z-index: 99999;
 
-    a {
-      color: #666;
-    }
+    // a {
+    //   color: #666;
+    // }
 
   }
 
   &-title {
     font-size: 28px;
 
+  }
+
+  &-time {
+    color: $color-text-thin;
+    font-size: 14px;
   }
 
   .marker{
