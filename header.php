@@ -118,7 +118,7 @@
               <div class="keyVisual-wrapper">
                 <div class="article-titleBlock">
                   <h1 class="article-title"><?php the_title(); ?></h1>
-                <div class="article-time"><?php echo get_post_time('M d, Y'); ?></div>
+                  <div class="article-time"><?php echo get_post_time('M d, Y'); ?></div>
                 </div>
               </div>
               <?php endif; ?>

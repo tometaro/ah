@@ -1,6 +1,8 @@
 .keyVisual {
   height: 300px;
   background: #f2f2f2;
+  position:relative;
+
 
   &-gray {
     width: 100%;
@@ -49,14 +51,15 @@
   }
 
   img {
-      // min-width: 100%;
-      // min-height: 100%;
-      position: absolute;
-      width: 100%;
-      height: auto;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
       -webkit-filter: grayscale(100%);
       -moz-filter: grayscale(100%);
       -ms-filter: grayscale(100%);
@@ -77,11 +80,11 @@
       margin: 0 15px;
     }
 
-    img {
-      height: 100%;
-      width: auto;
-
-    }
+    // img {
+    //   height: 100%;
+    //   width: auto;
+    //
+    // }
 
   }
 }

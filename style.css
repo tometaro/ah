@@ -634,13 +634,14 @@ button {
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .naviToggle {
     display: none; } }
 
 .keyVisual {
   height: 300px;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  position: relative; }
   .keyVisual-gray {
     width: 100%;
     height: 100%;
@@ -670,9 +671,12 @@ button {
   .keyVisual-text {
     font-size: 18px; }
   .keyVisual img {
-    position: absolute;
-    width: 100%;
+    width: auto;
     height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -688,10 +692,7 @@ button {
     .keyVisual-vs {
       width: 100%; }
     .keyVisual-wrap {
-      margin: 0 15px; }
-    .keyVisual img {
-      height: 100%;
-      width: auto; } }
+      margin: 0 15px; } }
 
 .spNavi {
   position: fixed;
@@ -729,7 +730,7 @@ button {
       padding: 20px 0;
       font-size: 13px; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .spNavi {
     display: none; }
     .spNavi-shadow {
