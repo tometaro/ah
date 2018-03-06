@@ -372,7 +372,7 @@ a {
   .articleList-noImage {
     position: relative;
     z-index: 99999;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.03);
     display: block; }
   .articleList a {
     display: block; }
