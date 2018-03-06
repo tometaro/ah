@@ -11,10 +11,10 @@
     font-weight: 300;
     padding-top: 1px;
     text-decoration:none;
-    background: $color-main;
     width:40px;
     height:40px;
-    color: $color-text-thin;
+    color: $color-text;
+    border: 1px solid $color-bland;
     border-radius: 4px;
     font-family: "symbols";
 
@@ -29,17 +29,18 @@
   li {
     margin: 0 10px;
     display: inline-block;
-    font-family: Fontawesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    // font-family: Fontawesome;
+    // font-size: inherit;
+    // text-rendering: auto;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
     transform: translate(0, 0);
   }
 
   .current{
     a {
-      background-color: $color-base;
+      color: $color-main;
+      background-color: $color-bland;
       cursor: default;
       pointer-events: none;
     }

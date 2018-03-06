@@ -9,16 +9,16 @@
     padding: 60px 0;
     overflow: auto;
 
-    .button {
-      background: $color-main;
-    }
+    // .button {
+    //   background: $color-main;
+    // }
 
     &:nth-child(even){
         background-color: $color-main;
 
-        .button {
-          background: $color-base;
-        }
+        // .button {
+        //   background: $color-base;
+        // }
     }
   }
 
