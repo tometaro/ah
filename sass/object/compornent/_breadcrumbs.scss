@@ -8,10 +8,15 @@
     width: 1040px;
     margin: 0 auto;
     padding: 10px 0;
+    color: $color-text-thin;
+  }
+
+  span {
+
   }
 
   a {
-    color: #aaa;
+    color: $color-text;
   }
 }
 

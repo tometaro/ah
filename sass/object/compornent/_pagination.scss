@@ -3,14 +3,17 @@
   display: flex;
   justify-content: center;
 
+  li {
+    margin: 0 10px;
+    // display: inline-block;
+    // transform: translate(0, 0);
+  }
+
   a {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
-    padding-top: 1px;
-    text-decoration:none;
     width:40px;
     height:40px;
     color: $color-text;
@@ -18,23 +21,20 @@
     border-radius: 4px;
     font-family: "symbols";
 
+    &:hover {
+      background: $color-bland;
+      color: $color-main;
+      opacity: 1;
+
+    }
+
   }
 
   span {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  li {
-    margin: 0 10px;
-    display: inline-block;
-    // font-family: Fontawesome;
-    // font-size: inherit;
-    // text-rendering: auto;
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
+    display: none;
+    // position: absolute;
+    // top: -9999px;
+    // left: -9999px;
   }
 
   .current{
@@ -45,6 +45,7 @@
       pointer-events: none;
     }
   }
+
   .first a::before {
     content: "\EA02";
   }
@@ -91,5 +92,5 @@
     left: initial;
   }
 
-  .pagination li.previous a { border-left-width: 0; }
+  // .pagination li.previous a { border-left-width: 0; }
 }

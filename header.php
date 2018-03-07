@@ -99,35 +99,43 @@
       </section>
 
       <?php else: ?>
-
+      <?php if(!is_404()): ?>
       <section class="keyVisual">
         <div class="keyVisual-vs">
           <div class="keyVisual-white">
             <div class="keyVisual-gray">
+
               <?php if(is_category()): ?>
               <div class="keyVisual-wrapper keyVisual-gray-catePage">
                 <h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
               </div>
               <?php endif; ?>
+
+              <?php if(is_single()): ?>
+              <div class="keyVisual-wrapper">
+                <div class="article-titleBlock">
+                  <h1 class="article-title"><?php the_title(); ?></h1>
+                <div class="article-time"><?php echo the_time('Y.m.d'); ?></div>
+                </div>
+              </div>
+              <?php endif; ?>
+
               <?php if(is_page()): ?>
               <div class="keyVisual-wrapper keyVisual-gray-catePage">
                 <h1 class="siteSection-title"><?php the_title(); ?></h1>
               </div>
               <?php endif; ?>
-              <?php if(is_single()): ?>
-              <div class="keyVisual-wrapper">
-                <div class="article-titleBlock">
-                  <h1 class="article-title"><?php the_title(); ?></h1>
-                  <div class="article-time"><?php echo get_post_time('M d, Y'); ?></div>
-                </div>
-              </div>
-              <?php endif; ?>
-              </div>
+
             </div>
-          <div><?php the_post_thumbnail( 'full' ); ?><div>
+          </div>
+          <?php if(is_single()): ?>
+          <div>
+            <?php the_post_thumbnail( 'full' ); ?>
+          </div>
+          <?php endif; ?>
         </div>
       </section>
-
+      <?php endif; ?>
       <?php endif; ?>
 
       <div id="content" class="siteSection site-content">

@@ -30,11 +30,9 @@ get_header(); ?>
 					</ul>
 
 					<!--ページネーション-->
-					<div class="pagination-box right">
 					 <?php if (function_exists('responsive_pagination')) {
 					  responsive_pagination($wp_query->max_num_pages);
 					} ?>
-					</div>
 				</div>
 			</div>
 		</main><!-- #main -->

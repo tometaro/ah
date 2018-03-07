@@ -95,7 +95,7 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
-  color: #aaa;
+  color: #1a1a1a;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -168,7 +168,7 @@ a {
   .siteSection-title {
     font-size: 1.414em;
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
   .siteSection-content {
     width: 770px;
     float: left; }
@@ -202,10 +202,10 @@ a {
   float: right; }
   .sidebar-title {
     font-size: 16px;
+    border-left: 3px solid #1a1a1a;
+    padding: 10px 8px 8px 13px;
     background: #f2f2f2;
-    padding: 5px 0 5px 14px;
-    border-left: 4px solid #ddd;
-    font-weight: 500; }
+    margin-bottom: 0.5em; }
   .sidebar li {
     display: table;
     border-bottom: 1px solid #f2f2f2;
@@ -281,17 +281,12 @@ a {
     opacity: 0; }
   .hero-logoVisul {
     position: absolute;
-    background: url(images/logo-mark-white.svg) no-repeat;
+    background: url(images/logo-mark-white.svg);
     height: 100%;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    z-index: 9;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    z-index: 9; }
 
 @media only screen and (max-width: 768px) {
   .hero-wrap {
@@ -308,7 +303,7 @@ a {
 
 .article-time {
   color: #999999;
-  font-size: 14px; }
+  font-size: 12px; }
 
 .article .marker {
   background: linear-gradient(transparent 65%, #B3E5FC 0%);
@@ -317,24 +312,28 @@ a {
 
 .article h2 {
   font-size: 20px;
-  background: #f2f2f2;
-  padding: 2px 0 2px 14px;
-  border-left: 4px solid #ddd;
-  font-weight: 600; }
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e5e5e5; }
+  .article h2::after {
+    border-bottom: 3px solid #eee;
+    content: ""; }
 
-.article h3 {
+.article h3,
+.article .sidebar-title {
   font-size: 17px;
-  margin-bottom: 0.5em;
-  font-weight: 600; }
+  border-left: 3px solid #1a1a1a;
+  padding: 5px 10px;
+  background: #f2f2f2;
+  margin-bottom: 0.5em; }
 
 .article h4 {
   font-size: 14px;
-  margin-bottom: 0.6em;
-  font-weight: 600; }
+  margin-bottom: 0.6em; }
 
 .article h1, .article h2, .article h3, .article h4, .article h5 {
   margin-bottom: 1em;
-  line-height: 2.0; }
+  line-height: 2.0;
+  font-weight: 600; }
 
 .article p {
   line-height: 2.0;
@@ -382,7 +381,7 @@ a {
     color: #1a1a1a; }
   .articleList-time {
     color: #999999;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400; }
 
 @media screen and (max-width: 320px) {
@@ -406,28 +405,24 @@ a {
   margin-top: 80px;
   display: flex;
   justify-content: center; }
+  .pagination li {
+    margin: 0 10px; }
   .pagination a {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
-    padding-top: 1px;
-    text-decoration: none;
     width: 40px;
     height: 40px;
     color: #1a1a1a;
     border: 1px solid #1a1a1a;
     border-radius: 4px;
     font-family: "symbols"; }
+    .pagination a:hover {
+      background: #1a1a1a;
+      color: #f2f2f2;
+      opacity: 1; }
   .pagination span {
-    position: absolute;
-    top: -9999px;
-    left: -9999px; }
-  .pagination li {
-    margin: 0 10px;
-    display: inline-block;
-    transform: translate(0, 0); }
+    display: none; }
   .pagination .current a {
     color: #f2f2f2;
     background-color: #1a1a1a;
@@ -455,9 +450,7 @@ a {
   .pagination li.next {
     position: initial;
     top: initial;
-    left: initial; }
-  .pagination li.previous a {
-    border-left-width: 0; } }
+    left: initial; } }
 
 .button {
   padding: 8px 0;
@@ -533,9 +526,10 @@ input.custom::-moz-placeholder {
   .breadcrumbs-inner {
     width: 1040px;
     margin: 0 auto;
-    padding: 10px 0; }
+    padding: 10px 0;
+    color: #999999; }
   .breadcrumbs a {
-    color: #aaa; }
+    color: #1a1a1a; }
 
 @media only screen and (max-width: 768px) {
   .breadcrumbs-inner {
@@ -715,7 +709,7 @@ button {
     display: table;
     width: 100%;
     border-bottom: 1px solid #f2f2f2;
-    font-weight: 600; }
+    font-weight: 400; }
     .spNavi li::after {
       display: table-cell;
       vertical-align: middle;
@@ -735,6 +729,27 @@ button {
     display: none; }
     .spNavi-shadow {
       display: none; } }
+
+.error {
+  height: 400px;
+  background: radial-gradient(#e5e5e5, #f2f2f2);
+  text-align: center;
+  width: 100%;
+  position: relative; }
+  .error-title, .error-404 {
+    padding-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%; }
+  .error-title {
+    z-index: 2; }
+  .error-404 {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 600;
+    z-index: 1; }
 
 /* Utility
 ------------------------------------------------------------- */

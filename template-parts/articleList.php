@@ -5,6 +5,6 @@
       <div class="articleList-noImage"></div>
     </div>
     <div class="articleList-title"><?php the_title(); ?></div>
-    <p class="articleList-time"><?php echo get_post_time('M d, Y'); ?></p>
+    <p class="articleList-time"><?php echo the_time('Y.m.d'); ?></p>
   </a>
 </li>

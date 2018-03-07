@@ -18,7 +18,6 @@
     // background: rgba(255,255,255,.7);
     // display: flex;
     // align-items: center;  /* 子要素をflexboxにより中央に配置する */
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,32 +47,15 @@
     opacity: 0;
   }
 
-  // img {
-  //     min-width: 100%;
-  //     min-height: 100%;
-  //     position: absolute;
-  //     width: auto;
-  //     height: auto;
-  //     left: 50%;
-  //     top: 50%;
-  //     transform: translate(-50%, -50%);
-  // }
 
   &-logoVisul {
     position: absolute;
-    background: url(images/logo-mark-white.svg) no-repeat;
+    background: url(images/logo-mark-white.svg) ;
     height: 100%;
     width: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    // background-attachment: fixed;z
     z-index: 9;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    // opacity: .1;
   }
 }
 
