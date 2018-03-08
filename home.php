@@ -22,7 +22,7 @@ get_header(); ?>
 					<div class="siteSection-innerWrap">
 						<div class="siteSection-titleWrap">
 							<h2 class="siteSection-title"><?php echo $category->cat_name; ?></h2>
-							<p class="siteSection-read"><?php echo category_description(); ?></p>
+							<p class="siteSection-read"><?php echo $category->category_description; ?></p>
 						</div>
 						<ul class="articleList">
 							<?php query_posts('showposts=6&cat='.$category->cat_ID);

@@ -117,7 +117,7 @@
               <div class="keyVisual-wrapper keyVisual-gray-catePage">
                 <div class="siteSection-titleWrap">
     							<h2 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h2>
-    							<p class="siteSection-read"><?php echo category_description(); ?></p>
+    							<p class="siteSection-read"><?php echo category_description(); ?> list of articles</p>
     						</div>
               </div>
               <?php endif; ?>
