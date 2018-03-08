@@ -92,10 +92,18 @@
                 </g>
               </svg>
             </h1>
-            <p class="hero-text st0"><?php bloginfo('description'); ?></p>
+            <p class="hero-text"><?php bloginfo('description'); ?></p>
           </div>
         </div>
-        <div class="hero-logoVisul"></div>
+    <div class=" demo-1 imgloaded">
+      <div class="glitch">
+        <div class="hero-logoVisul glitch__img"></div>
+        <div class="hero-logoVisul glitch__img"></div>
+        <div class="hero-logoVisul glitch__img"></div>
+        <div class="hero-logoVisul glitch__img"></div>
+        <div class="hero-logoVisul glitch__img"></div>
+      </div>
+    </div>
       </section>
 
       <?php else: ?>

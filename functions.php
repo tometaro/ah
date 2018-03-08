@@ -200,3 +200,5 @@ function responsive_pagination($pages = '', $range = 4){
     echo '</ul>';
   }
 }
+
+register_nav_menu( 'footer-menu', 'フッターメニュー' );

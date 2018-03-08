@@ -37,6 +37,12 @@ input[type="submit"]{
   background: $color_bland;
   background: linear-gradient(#333, #1a1a1a);
   display: inline-block;
+  cursor: pointer;
+  transition: all  0.3s ease;
+
+  &:hover {
+    opacity: .7;
+  }
 
 }
 

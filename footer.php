@@ -13,6 +13,10 @@
 
 	</div><!-- #content -->
 
+	<div id="footer-menu">
+    <?php wp_nav_menu( array ( 'theme_location' => 'footer-menu' ) ); ?>
+	</div>
+
 	<?php wp_reset_query(); if ( !is_home() && !is_front_page() ) : ?>
 		<div class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
 			<div class="breadcrumbs-inner">
