@@ -167,12 +167,15 @@ a {
     overflow: hidden; }
     .siteSection-wrapper-narrow {
       width: 770px; }
+  .siteSection-titleWrap {
+    margin-bottom: 30px;
+    text-align: center; }
   .siteSection-title {
     font-size: 1.414em;
-    text-align: center;
-    padding-bottom: 10px;
-    display: inline-block;
-    margin-bottom: 30px; }
+    padding-bottom: 10px; }
+  .siteSection-read {
+    font-size: 10px;
+    color: #999; }
   .siteSection-content {
     width: 770px;
     float: left; }

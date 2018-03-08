@@ -20,7 +20,10 @@ get_header(); ?>
 			<?php $categories = get_categories(); foreach($categories as $category) :?>
 				<div class="siteSection-inner">
 					<div class="siteSection-innerWrap">
-						<h2 class="siteSection-title"><?php echo $category->cat_name; ?></h2>
+						<div class="siteSection-titleWrap">
+							<h2 class="siteSection-title"><?php echo $category->cat_name; ?></h2>
+							<p class="siteSection-read"><?php echo category_description(); ?></p>
+						</div>
 						<ul class="articleList">
 							<?php query_posts('showposts=6&cat='.$category->cat_ID);
 							if (have_posts()) : while (have_posts()) : the_post(); ?>

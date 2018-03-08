@@ -201,4 +201,8 @@ function responsive_pagination($pages = '', $range = 4){
   }
 }
 
+//フッターナビ
 register_nav_menu( 'footer-menu', 'フッターメニュー' );
+
+// pタグを非表示
+remove_filter('term_description', 'wpautop');
