@@ -31,7 +31,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* Base */
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 14px;
+}
 
 *,
 *:before,
@@ -41,7 +43,7 @@ html {
   }
 
 body {
-  font-family: 'ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,'メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-family: 'ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,'游ゴシック','Yu Gothic','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
   word-break:break-all;
   word-wrap: break-word;
   font-size: 14px;
@@ -92,6 +94,7 @@ a {
 /* Component
 ------------------------------------------------------------- */
 
+
 @import "object/compornent/siteNavi";
 @import "object/compornent/hero";
 @import "object/compornent/article";
@@ -114,30 +117,5 @@ a {
 
 /* Animation
 ------------------------------------------------------------- */
-.st0{
-  fill: $color_bland;
-  stroke: $color_bland;
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 0;
-  stroke-width: .1;
-  -webkit-animation: hello 4s ease-in 0s;
-  animation: hello 4s ease-in 0s;
-}
-
-@-webkit-keyframes hello {
-  0% {
-    stroke-dashoffset: 2000;
-    fill:transparent;
-  }
-  40% {
-    stroke-dashoffset: 2000;
-    fill:transparent;
-  }
-  50% {
-    fill:transparent;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    fill:#666;
-  }
-}
+@import "object/animation/demo1";
+@import "object/animation/stroke";

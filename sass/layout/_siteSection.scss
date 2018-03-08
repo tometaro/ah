@@ -25,6 +25,7 @@
   &-innerWrap {
     max-width: 1080px;
     margin: 0 auto;
+    text-align: center;
   }
 
   &-wrapper {
@@ -42,6 +43,8 @@
     font-size: 1.414em;
     // color: #666;
     text-align: center;
+    padding-bottom: 10px;
+    display: inline-block;
     margin-bottom: 30px;
   }
 
