@@ -2,6 +2,7 @@
   display: table;
   font-size: 0;
   text-align: center;
+  letter-spacing: normal;//firefoxカラム落ち防止
 
   li {
     display: inline-table;
@@ -40,6 +41,7 @@
 
   a {
     display: block;
+    letter-spacing: 0.1rem;
   }
 
   &-title {
