@@ -200,25 +200,47 @@ a {
   overflow: hidden; }
   .footer-wrap {
     width: 1040px;
-    margin: 0 auto; }
+    margin: 60px auto; }
   .footer-navi {
+    display: flex; }
+  .footer-block {
+    width: 100%;
+    padding-right: 20px; }
+    .footer-block li {
+      margin: 10px 0; }
+  .footer-blanding {
+    width: 100%;
     display: flex;
-    margin: 0 -20px; }
-    .footer-navi div {
-      width: 100%;
-      margin: 20px; }
-      .footer-navi div li {
-        margin: 10px 0; }
-    .footer-navi-logo {
-      display: flex;
-      align-items: center; }
+    align-items: center; }
+  .footer-logo-type {
+    height: 40px;
+    fill: #f2f2f2; }
+    .footer-logo-type svg {
+      height: 100%; }
+  .footer-logo-mark {
+    width: 50px;
+    height: 50px; }
   .footer-info {
     padding: 20px;
-    border-top: 1px solid #999999;
+    border-top: 1px solid #333;
     text-align: center;
     font-size: 0.833rem; }
   .footer a {
     color: #999999; }
+
+@media only screen and (max-width: 768px) {
+  .footer-wrap {
+    margin: 50px 0;
+    padding: 0 20px;
+    width: 100%; }
+  .footer-navi {
+    flex-wrap: wrap; }
+  .footer-block {
+    width: 50%; }
+    .footer-block:nth-child(even) {
+      padding: 0; }
+  .footer-blanding {
+    margin-top: 30px; } }
 
 .sidebar {
   width: 230px;
@@ -711,9 +733,7 @@ button {
   .keyVisual {
     padding: 0 20px; }
     .keyVisual-wrap {
-      width: 100%; }
-    .keyVisual-wrap {
-      margin: 0 15px; } }
+      width: 100%; } }
 
 .spNavi {
   position: fixed;
