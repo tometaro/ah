@@ -95,15 +95,13 @@
             <p class="hero-text"><?php bloginfo('description'); ?></p>
           </div>
         </div>
-    <div class=" demo-1 imgloaded">
-      <div class="glitch">
-        <div class="hero-logoVisul glitch__img"></div>
-        <div class="hero-logoVisul glitch__img"></div>
-        <div class="hero-logoVisul glitch__img"></div>
-        <div class="hero-logoVisul glitch__img"></div>
-        <div class="hero-logoVisul glitch__img"></div>
-      </div>
-    </div>
+        <div class="glitch imgloaded">
+          <div class="hero-logoVisul glitch__img"></div>
+          <div class="hero-logoVisul glitch__img"></div>
+          <div class="hero-logoVisul glitch__img"></div>
+          <div class="hero-logoVisul glitch__img"></div>
+          <div class="hero-logoVisul glitch__img"></div>
+        </div>
       </section>
 
       <?php else: ?>
@@ -123,7 +121,7 @@
               <div class="keyVisual-wrapper">
                 <div class="article-titleBlock">
                   <h1 class="article-title"><?php the_title(); ?></h1>
-                <div class="article-time"><?php echo the_time('Y.m.d'); ?></div>
+                  <p class="article-time"><?php echo the_time('Y.m.d'); ?></p>
                 </div>
               </div>
               <?php endif; ?>
