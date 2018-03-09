@@ -172,12 +172,12 @@ a {
     margin-bottom: 30px;
     text-align: center; }
   .siteSection-title {
-    font-size: 1.414em;
-    padding-bottom: 10px; }
+    font-size: 1.728rem; }
   .siteSection-read {
-    font-size: 10px;
+    font-size: 0.833rem;
     color: #999;
-    font-family: 'Montserrat'; }
+    font-family: 'Montserrat';
+    margin-top: 10px; }
   .siteSection-content {
     width: 770px;
     float: left; }
@@ -193,18 +193,32 @@ a {
     .siteSection-content {
       width: 100%; } }
 
-.siteFooter {
-  background: #fff;
-  padding: 20px;
-  color: #555;
-  border-top: 1px solid #ddd;
-  text-align: center; }
-  .siteFooter a {
-    color: #555; }
-
-@media only screen and (max-width: 768px) {
-  .siteFooter {
-    padding: 20px 15px; } }
+.footer {
+  font-size: 0.833rem;
+  color: #999999;
+  background: #1a1a1a;
+  overflow: hidden; }
+  .footer-wrap {
+    width: 1040px;
+    margin: 0 auto; }
+  .footer-navi {
+    display: flex;
+    margin: 0 -20px; }
+    .footer-navi div {
+      width: 100%;
+      margin: 20px; }
+      .footer-navi div li {
+        margin: 10px 0; }
+    .footer-navi-logo {
+      display: flex;
+      align-items: center; }
+  .footer-info {
+    padding: 20px;
+    border-top: 1px solid #999999;
+    text-align: center;
+    font-size: 0.833rem; }
+  .footer a {
+    color: #999999; }
 
 .sidebar {
   width: 230px;
@@ -321,28 +335,23 @@ a {
   padding: 0 2px 3px; }
 
 .article h2, .article h3, .article h4 {
-  margin-bottom: 1em;
+  margin-bottom: 2rem;
   line-height: 2.0;
   font-weight: 600; }
 
 .article h2 {
-  font-size: 20px;
+  font-size: 1.44rem;
   padding-bottom: 10px;
   border-bottom: 2px solid #e5e5e5; }
-  .article h2::after {
-    border-bottom: 3px solid #eee;
-    content: ""; }
 
 .article h3 {
-  font-size: 17px;
+  font-size: 1.2rem;
   border-left: 3px solid #1a1a1a;
   padding: 5px 10px;
-  background: #f2f2f2;
-  margin-bottom: 0.5em; }
+  background: #f2f2f2; }
 
 .article h4 {
-  font-size: 14px;
-  margin-bottom: 0.6em; }
+  font-size: 14px; }
 
 .article p {
   line-height: 2.0;
@@ -387,12 +396,11 @@ a {
   .articleList-title {
     line-height: 2;
     margin: 10px 0 5px 0;
-    font-size: 14px;
-    font-weight: 600;
-    color: #1a1a1a; }
-  .articleList-time {
+    font-size: 1rem;
+    font-weight: 600; }
+  .articleList-read {
     color: #999999;
-    font-size: 10px;
+    font-size: 0.694rem;
     font-family: 'Montserrat'; }
 
 @media screen and (max-width: 320px) {
@@ -650,7 +658,19 @@ button {
   height: 300px;
   background: #f2f2f2;
   position: relative; }
-  .keyVisual-gray {
+  .keyVisual-wrap {
+    width: 1040px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    overflow: hidden; }
+  .keyVisual-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 999; }
+  .keyVisual-gradation {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, #f2f2f2, rgba(242, 242, 242, 0), rgba(242, 242, 242, 0), #f2f2f2);
@@ -658,26 +678,19 @@ button {
     display: flex;
     align-items: center;
     /* 子要素をflexboxにより中央に配置する */ }
-    .keyVisual-gray-catePage {
+    .keyVisual-gradation-catePage {
       margin: 0 auto; }
-  .keyVisual-vs {
-    width: 1040px;
-    margin: 0 auto;
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden; }
-  .keyVisual-white {
+  .keyVisual-titleBlock {
     width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    z-index: 999; }
+    text-align: center; }
+    .keyVisual-titleBlock-left {
+      text-align: left; }
   .keyVisual-title {
-    font-size: 28px; }
-  .keyVisual-text {
-    font-size: 18px; }
+    font-size: 1.728rem; }
+  .keyVisual-read {
+    font-size: 0.833rem;
+    margin-top: 10px;
+    color: #999999; }
   .keyVisual img {
     width: auto;
     height: auto;
@@ -697,7 +710,7 @@ button {
 @media only screen and (max-width: 768px) {
   .keyVisual {
     padding: 0 20px; }
-    .keyVisual-vs {
+    .keyVisual-wrap {
       width: 100%; }
     .keyVisual-wrap {
       margin: 0 15px; } }

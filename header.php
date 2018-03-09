@@ -105,46 +105,49 @@
       </section>
 
       <?php else: ?>
-      <?php if(!is_404()): ?>
+      <?php if(!is_404() && !is_single()): ?>
       <section class="keyVisual">
-        <div class="keyVisual-vs">
-          <div class="keyVisual-white">
-            <div class="keyVisual-gray">
+          <div class="keyVisual-overlay">
+            <div class="keyVisual-gradation">
 
               <?php if(is_category()): ?>
-              <div class="keyVisual-wrapper keyVisual-gray-catePage">
-                <div class="siteSection-titleWrap">
-    							<h2 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h2>
-    							<p class="siteSection-read"><?php echo category_description(); ?> list of articles</p>
-    						</div>
-              </div>
-              <?php endif; ?>
-
-              <?php if(is_single()): ?>
-              <div class="keyVisual-wrapper">
-                <div class="article-titleBlock">
-                  <h1 class="article-title"><?php the_title(); ?></h1>
-                  <p class="article-time"><?php echo the_time('Y.m.d'); ?></p>
-                </div>
-              </div>
+              <div class="keyVisual-titleBlock">
+  							<h2 class="keyVisual-title"><?php single_cat_title(); ?>記事一覧</h2>
+  							<p class="keyVisual-read"><?php echo category_description(); ?> list of articles</p>
+  						</div>
               <?php endif; ?>
 
               <?php if(is_page()): ?>
-              <div class="keyVisual-wrapper keyVisual-gray-catePage">
-                <h1 class="siteSection-title"><?php the_title(); ?></h1>
+              <div class="keyVisual-titleBlock">
+                <h1 class="keyVisual-title"><?php the_title(); ?></h1>
+              </div>
+              <?php endif; ?>
+
+            </div>
+        </div>
+      </section>
+      <?php endif; ?>
+
+      <?php if(is_single()): ?>
+      <section class="keyVisual">
+        <div class="keyVisual-wrap">
+          <div class="keyVisual-overlay">
+            <div class="keyVisual-gradation">
+
+              <?php if(is_single()): ?>
+              <div class="keyVisual-titleBlock-left">
+                <h1 class="keyVisual-title"><?php the_title(); ?></h1>
+                <p class="keyVisual-read"><?php echo the_time('Y.m.d'); ?></p>
               </div>
               <?php endif; ?>
 
             </div>
           </div>
-          <?php if(is_single()): ?>
-          <div>
             <?php the_post_thumbnail( 'full' ); ?>
-          </div>
-          <?php endif; ?>
         </div>
       </section>
       <?php endif; ?>
+
       <?php endif; ?>
 
       <div id="content" class="siteSection site-content">

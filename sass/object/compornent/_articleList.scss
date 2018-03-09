@@ -47,18 +47,15 @@
   &-title {
     line-height: 2;
     margin: 10px 0 5px 0;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
-    color: $color-text;
   }
 
-  &-time {
+  &-read {
     color : $color-text-thin;
-    font-size: 10px;
+    font-size: 0.694rem;
     font-family: 'Montserrat';
   }
-
-
 }
 
 @media screen and (max-width: 320px) {
