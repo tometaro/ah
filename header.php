@@ -107,7 +107,7 @@
       <?php else: ?>
       <?php if(!is_404() && !is_single()): ?>
       <section class="keyVisual">
-        <div class="keyVisual-wrap">
+        <div class="keyVisual-wrap keyVisual-wrap-none">
           <div class="keyVisual-overlay">
             <div class="keyVisual-gradation">
 

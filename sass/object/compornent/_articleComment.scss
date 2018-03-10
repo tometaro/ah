@@ -1,6 +1,6 @@
 .articleComment {
   background: $color-main;
-  padding: 80px 100px;
+  padding: 40px 40px;
   margin-top: 60px;
   border-radius: 4px;
   p {
@@ -11,6 +11,7 @@
 @media only screen and (max-width: 768px) {
   .articleComment{
     padding: 20px;
-    margin-bottom: 40px;
+    margin: 40px -20px;
+    border-radius: 0;
   }
 }

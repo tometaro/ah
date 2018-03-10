@@ -169,7 +169,7 @@ a {
     .siteSection-wrapper-narrow {
       width: 770px; }
   .siteSection-titleWrap {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center; }
   .siteSection-title {
     font-size: 1.728rem; }
@@ -177,7 +177,7 @@ a {
     font-size: 0.833rem;
     color: #999;
     font-family: 'Montserrat';
-    margin-top: 10px; }
+    margin-top: 5px; }
   .siteSection-content {
     width: 770px;
     float: left; }
@@ -228,7 +228,7 @@ a {
   .footer a {
     color: #999999; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
   .footer-wrap {
     margin: 50px 0;
     padding: 0 20px;
@@ -302,27 +302,22 @@ a {
   height: 400px;
   background: radial-gradient(#e5e5e5, #f2f2f2);
   text-align: center;
-  background-size: cover;
-  background-attachment: fixed;
   width: 100%;
   position: relative; }
   .hero-white {
     padding-top: 60px;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     z-index: 99; }
-  .hero-wrap {
-    display: inline-block;
-    margin: 0 auto h1, p;
-      margin-display: inline-block; }
   .hero-title {
     width: 100%; }
     .hero-title svg {
       width: 200px; }
   .hero-text {
-    font-size: 18px;
+    font-size: 1.2rem;
     opacity: 0; }
   .hero-logoVisul {
     position: absolute;
@@ -431,7 +426,7 @@ a {
 
 .articleComment {
   background: #f2f2f2;
-  padding: 80px 100px;
+  padding: 40px 40px;
   margin-top: 60px;
   border-radius: 4px; }
   .articleComment p {
@@ -440,7 +435,8 @@ a {
 @media only screen and (max-width: 768px) {
   .articleComment {
     padding: 20px;
-    margin-bottom: 40px; } }
+    margin: 40px -20px;
+    border-radius: 0; } }
 
 .pagination {
   margin-top: 80px;
@@ -686,6 +682,8 @@ button {
     height: 100%;
     position: relative;
     overflow: hidden; }
+    .keyVisual-wrap-none {
+      width: 100%; }
   .keyVisual-overlay {
     width: 100%;
     height: 100%;
