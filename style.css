@@ -182,7 +182,7 @@ a {
     width: 770px;
     float: left; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
   .siteSection {
     width: 100%; }
     .siteSection-inner {
@@ -270,7 +270,7 @@ a {
   .sidebar section {
     margin-bottom: 30px; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
   .sidebar {
     width: 100%; } }
 
@@ -318,7 +318,8 @@ a {
       width: 200px; }
   .hero-text {
     font-size: 1.2rem;
-    opacity: 0; }
+    opacity: 0;
+    font-family: 'Montserrat'; }
   .hero-logoVisul {
     position: absolute;
     background: url(images/logo-mark-white.svg);
@@ -432,7 +433,7 @@ a {
   .articleComment p {
     margin: 30px 0; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
   .articleComment {
     padding: 20px;
     margin: 40px -20px;
@@ -727,7 +728,7 @@ button {
     -o-filter: grayscale(100%);
     filter: grayscale(100%); }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1040px) {
   .keyVisual {
     padding: 0 20px; }
     .keyVisual-wrap {
