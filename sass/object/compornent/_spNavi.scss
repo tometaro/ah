@@ -29,7 +29,7 @@
         &::after {
           display: table-cell;
           vertical-align: middle;
-          content: "\EA05";
+          content: $icon-arrowLine-right;
           font-family: "symbols";
           color: $color-bland;
           width: 5px;

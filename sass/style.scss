@@ -26,14 +26,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import "foundation/reset";
 @import "foundation/variables";
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat');
 // @import "foundation/accessibility";
 
 /* Base */
 
 html {
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: $fontSize-base;
 }
 
 *,
@@ -44,10 +44,9 @@ html {
   }
 
 body {
-  font-family: 'ヒラギノ角ゴ Pro W3',Hiragino Kaku Gothic Pro,'游ゴシック','Yu Gothic','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-family: $font-main;
   word-break:break-all;
   word-wrap: break-word;
-  font-size: 14px;
   line-height: 2;
   color: $color-text;
   letter-spacing: .1em;

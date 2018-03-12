@@ -42,7 +42,7 @@
   &-read {
    font-size: 0.833rem;
    color: #999;
-   font-family: 'Montserrat';
+   font-family: $font-sub;
    margin-top: 5px;
   }
 
@@ -54,6 +54,18 @@
 
 @media only screen and (max-width: 1040px) {
   .siteSection {
+
+    &-wrapper {
+      width: 770px;
+
+    }
+
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .siteSection {
     width: 100%;
 
     &-inner {
@@ -62,7 +74,7 @@
 
     &-wrapper {
       width: 100%;
-      padding: 40px 20px;
+      padding: 60px 20px;
 
     }
     &-content {

@@ -3,11 +3,10 @@
   float: right;
 
   &-title {
-    font-size: 17px;
-    border-left: 3px solid #1a1a1a;
+    font-size: $fontSize-M;
+    border-left: 3px solid $color-bland;
     padding: 5px 10px;
     background: #f2f2f2;
-    margin-bottom: 0.5em;
   }
 
   li {
@@ -20,9 +19,8 @@
     &::after {
       display: table-cell;
       vertical-align: middle;
-      content: "\EA05";
+      content: $icon-arrowLine-right;
       font-family: "symbols";
-      // padding-right: 10px;
       color: $color-bland;
       width: 5px;
     }
@@ -41,6 +39,12 @@
 }
 
 @media only screen and (max-width: 1040px) {
+  .sidebar {
+    width: 770px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .sidebar {
     width: 100%;
   }

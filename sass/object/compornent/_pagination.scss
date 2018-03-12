@@ -47,19 +47,19 @@
   }
 
   .first a::before {
-    content: "\EA02";
+    content: $icon-arrowTwo-left;
   }
   .last a::after {
 
-    content: "\EA03";
+    content: $arrowTwo-right;
   }
   .previous a::before {
 
-    content: "\EA02";
+    content: $icon-arrow-left;
   }
   .next a::after {
 
-    content: "\EA03";
+    content: $icon-arrow-right;
   }
 }
 
