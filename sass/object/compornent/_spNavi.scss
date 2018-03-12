@@ -14,6 +14,8 @@
         right: 0;
         bottom: 0;
         padding: 0 20px;
+        font-size: $fontSize-S;
+        font-weight: 600;
     }
 
     li {
@@ -23,8 +25,6 @@
         display: table;
         width: 100%;
         border-bottom: 1px solid $color-main;
-        font-weight: 400;
-
 
         &::after {
           display: table-cell;
@@ -40,8 +40,6 @@
             color: $color-text;
             display: block;
             padding: 15px 0;
-            font-size: 13px;
-
         }
     }
 

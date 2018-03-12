@@ -765,15 +765,16 @@ button {
     position: static;
     right: 0;
     bottom: 0;
-    padding: 0 20px; }
+    padding: 0 20px;
+    font-size: 0.833rem;
+    font-weight: 600; }
   .spNavi li {
     float: none;
     position: static;
     text-align: left;
     display: table;
     width: 100%;
-    border-bottom: 1px solid #f2f2f2;
-    font-weight: 400; }
+    border-bottom: 1px solid #f2f2f2; }
     .spNavi li::after {
       display: table-cell;
       vertical-align: middle;
@@ -785,8 +786,7 @@ button {
       padding: 0;
       color: #1a1a1a;
       display: block;
-      padding: 15px 0;
-      font-size: 13px; }
+      padding: 15px 0; }
 
 @media only screen and (min-width: 769px) {
   .spNavi {
