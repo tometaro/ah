@@ -1,11 +1,9 @@
 .siteNavi {
     ul {
-        list-style: none;
-        font-size: 13px;
-        letter-spacing: .3em;
+        font-size: $fontSize-S;
+        font-weight: 600;
         line-height: 15px;
         display: flex;
-        font-weight: 500;
 
         li {
             margin: 22.5px 0;
