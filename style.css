@@ -391,7 +391,7 @@ a {
   height: auto; }
 
 .articleList {
-  display: table;
+  display: inline-table;
   font-size: 0;
   text-align: center;
   letter-spacing: normal; }
