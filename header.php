@@ -121,6 +121,12 @@
   						</div>
               <?php endif; ?>
 
+              <?php if(is_search()): ?>
+              <div class="keyVisual-titleBlock">
+                <h2 class="keyVisual-title"><?php wp_title(); ?></h2>
+              </div>
+              <?php endif; ?>
+
               <?php if(is_page()): ?>
               <div class="keyVisual-titleBlock">
                 <h1 class="keyVisual-title"><?php the_title(); ?></h1>

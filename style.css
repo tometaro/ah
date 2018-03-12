@@ -294,8 +294,7 @@ a {
 /* Component
 ------------------------------------------------------------- */
 .siteNavi ul {
-  font-size: 0.833rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 15px;
   display: flex; }
   .siteNavi ul li {
@@ -602,7 +601,7 @@ textarea {
   -webkit-appearance: none; }
 
 textarea {
-  height: 200px; }
+  height: 150px; }
 
 input {
   display: block;
@@ -746,6 +745,10 @@ button {
     filter: grayscale(100%); }
 
 @media only screen and (max-width: 1040px) {
+  .keyVisual-wrap {
+    width: 770px; } }
+
+@media only screen and (max-width: 768px) {
   .keyVisual {
     padding: 0 20px; }
     .keyVisual-wrap {
@@ -766,8 +769,7 @@ button {
     right: 0;
     bottom: 0;
     padding: 0 20px;
-    font-size: 0.833rem;
-    font-weight: 600; }
+    font-weight: 500; }
   .spNavi li {
     float: none;
     position: static;
@@ -808,6 +810,7 @@ button {
     transform: translateY(-50%) translateX(-50%);
     width: 100%; }
   .error-title {
+    font-size: 1.728rem;
     z-index: 2; }
   .error-404 {
     color: #fff;

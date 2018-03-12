@@ -18,25 +18,22 @@ get_header(); ?>
  		<main id="main" class="site-main" role="main">
 
 			<div class="siteSection-inner">
+				<div class="siteSection-innerWrap">
+	 				<ul class="articleList">
 
-	 			<h1 class="siteSection-title"><?php single_cat_title(); ?>記事一覧</h1>
-	 			<ul class="articleList">
+					<?php if(have_posts()): while(have_posts()):the_post(); ?>
 
-				<?php if(have_posts()): while(have_posts()):the_post(); ?>
+						<?php get_template_part( 'template-parts/articleList' ); ?>
 
-					<?php get_template_part( 'template-parts/articleList' ); ?>
+					<?php endwhile; endif; ?>
 
-				<?php endwhile; endif; ?>
-
-				</ul>
+					</ul>
 
 				<!--ページネーション-->
-				<div class="pagination-box right">
 				 <?php if (function_exists('responsive_pagination')) {
 				  responsive_pagination($wp_query->max_num_pages);
 				} ?>
 				</div>
-
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
