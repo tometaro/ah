@@ -20,12 +20,12 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="articleComment comments-area">
+<div id="comments" class="comments comments-area">
 
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
-		<h2 class="articleComment-title comments-title">
+		<h2 class="comments-title">
 			<?php
 				printf( // WPCS: XSS OK.
 					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'ah' ) ),
@@ -47,7 +47,7 @@ if ( post_password_required() ) {
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
-		<ol class="articleComment-list comment-list">
+		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
 					'style'      => 'ol',
@@ -87,5 +87,9 @@ if ( post_password_required() ) {
 	);
 	comment_form($comments_args);
 	?>
+
+
+
+
 
 </div><!-- #comments -->
