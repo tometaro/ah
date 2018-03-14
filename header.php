@@ -16,7 +16,8 @@
   <meta name="robots" content="nofollow">
   <meta name="robots" content="noarchive">
   <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/icon-font/dist/css/symbols.css" >
 
@@ -123,7 +124,7 @@
 
               <?php if(is_search()): ?>
               <div class="keyVisual-titleBlock">
-                <h2 class="keyVisual-title"><?php wp_title(); ?></h2>
+                <h2 class="keyVisual-title">&prime;<?php the_search_query(); ?>&prime;の検索結果</h2>
               </div>
               <?php endif; ?>
 

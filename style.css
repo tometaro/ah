@@ -134,7 +134,7 @@ a {
     align-items: center;
     padding: 0 20px; }
   .siteHeader-logo-type {
-    height: 18px;
+    height: 20px;
     fill: #1a1a1a; }
     .siteHeader-logo-type svg {
       height: 100%; }
@@ -448,8 +448,18 @@ a {
     margin-top: 30px; }
 
 .comment article {
-  border-bottom: 1px solid #ddd;
   padding: 15px 0; }
+
+.comment-list li {
+  border-top: 1px solid #ddd; }
+
+.comment-list > li > .children {
+  margin-left: 30px; }
+  .comment-list > li > .children li {
+    border-top: 1px dotted #ddd; }
+
+.comment-list > li:last-child {
+  border-bottom: 1px solid #ddd; }
 
 .comment-meta, .comment-author {
   display: flex;
@@ -463,18 +473,26 @@ a {
 
 .comment-metadata {
   font-size: 0.833rem;
-  margin-left: 10px; }
+  margin-left: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }
   .comment-metadata a {
     color: #999999; }
 
 .comment-content p {
   margin: 10px 0; }
 
+.comment-awaiting-moderation {
+  display: none; }
+
 .reply a {
   color: #999999; }
 
+.says {
+  display: none; }
+
 @media only screen and (max-width: 768px) {
   .comments {
+    padding: 40px 20px;
     margin: 40px -20px;
     border-radius: 0; } }
 
@@ -551,12 +569,10 @@ a {
 .search {
   height: 44px;
   width: 100%;
-  border: 1px solid #ddd;
   position: relative;
   border-radius: 4px; }
   .search-field {
-    width: 90%;
-    border: none;
+    width: 100%;
     float: left;
     background: #fff;
     height: 100%;
@@ -610,6 +626,10 @@ input.custom::-moz-placeholder {
 
 @media only screen and (max-width: 1080px) {
   .breadcrumbs-inner {
+    width: 770px; } }
+
+@media only screen and (max-width: 768px) {
+  .breadcrumbs-inner {
     width: 100%;
     padding: 10px 20px; } }
 
@@ -619,10 +639,18 @@ textarea {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   color: #666;
   display: block;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease; }
+  input:focus,
+  textarea:focus {
+    border: 1px solid #999; }
 
 textarea {
   height: 150px; }

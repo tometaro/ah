@@ -18,6 +18,14 @@
 
 @media only screen and (max-width: 1080px) {
   .breadcrumbs{
+    &-inner {
+      width: 770px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .breadcrumbs{
 
     &-inner {
       width: 100%;

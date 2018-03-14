@@ -4,10 +4,20 @@ textarea {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   color: #666;
   display: block;
   -webkit-appearance: none;
+  padding: 10px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+
+  &:focus {
+    border: 1px solid #999;
+  }
 }
 
 textarea {

@@ -1,14 +1,11 @@
 .search {
   height: 44px;
   width: 100%;
-  border: 1px solid #ddd;
   position: relative;
   border-radius: 4px;
 
-
   &-field{
-    width: 90%;
-    border: none;
+    width: 100%;
     float:left;
     background: #fff;
     height: 100%;
