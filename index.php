@@ -13,8 +13,8 @@
  */
 
 get_header(); ?>
-<div class="siteSection-inner">
-	<div class="siteSection-Title">カテゴリ</div>
+<div class="section-inner">
+	<div class="section-Title">カテゴリ</div>
 
 
 	<div id="primary" class="content-area">

@@ -81,10 +81,10 @@ a {
 # Layout
 ==============================================================*/
 
-@import "layout/siteHeader";
+@import "layout/header";
 @import "layout/siteContent";
-@import "layout/siteSection";
-@import "layout/siteFooter";
+@import "layout/section";
+@import "layout/footer";
 @import "layout/sidebar";
 
 /*==============================================================
@@ -94,8 +94,7 @@ a {
 /* Component
 ------------------------------------------------------------- */
 
-
-@import "object/compornent/siteNavi";
+@import "object/compornent/navi";
 @import "object/compornent/hero";
 @import "object/compornent/article";
 @import "object/compornent/articleList";

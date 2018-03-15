@@ -1,4 +1,4 @@
-.siteHeader {
+.header {
     position: fixed;
     width: 100%;
     z-index: 999999;
@@ -10,10 +10,6 @@
       margin-right: auto;
     }
 
-    a{
-        color: #555;
-    }
-
     &-branding {
         width: auto;
         display: flex;
@@ -23,7 +19,7 @@
 
     &-logo-type {
       height: 20px;
-      fill: $color_bland;
+      fill: $color-bland;
 
       svg {
         height: 100%;
@@ -42,7 +38,7 @@
   }
 
 @media only screen and (max-width: 768px) {
-    .siteHeader {
+    .header {
         padding: 0;
 
         &-logo-type {

@@ -14,29 +14,20 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
- 		<main id="main" class="site-main" role="main">
+					<div class="section-inner">
+						<div class="section-innerWrap">
+			 				<ul class="articleList">
+							<?php if(have_posts()): while(have_posts()):the_post(); ?>
+								<?php get_template_part( 'template-parts/articleList' ); ?>
+							<?php endwhile; endif; ?>
+							</ul>
+						<!--ページネーション-->
+						 <?php if (function_exists('responsive_pagination')) {
+						  responsive_pagination($wp_query->max_num_pages);
+						} ?>
+						</div>
+					</div>
 
-			<div class="siteSection-inner">
-				<div class="siteSection-innerWrap">
-	 				<ul class="articleList">
-
-					<?php if(have_posts()): while(have_posts()):the_post(); ?>
-
-						<?php get_template_part( 'template-parts/articleList' ); ?>
-
-					<?php endwhile; endif; ?>
-
-					</ul>
-
-				<!--ページネーション-->
-				 <?php if (function_exists('responsive_pagination')) {
-				  responsive_pagination($wp_query->max_num_pages);
-				} ?>
-				</div>
-			</div>
-		</main><!-- #main -->
-	</div><!-- #primary -->
 <?php
 
 get_footer();

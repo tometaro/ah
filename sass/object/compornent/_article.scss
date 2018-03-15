@@ -31,14 +31,14 @@
   h2 {
     font-size: 1.44rem;
     padding-bottom: 10px;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid $color-border;
   }
 
   h3 {
     font-size: 1.2rem;
-    border-left: 3px solid #1a1a1a;
+    border-left: 3px solid $color-bland;
     padding: 5px 10px;
-    background: #f2f2f2;
+    background: $color-sub;
   }
 
   h4 {

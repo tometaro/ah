@@ -9,8 +9,6 @@
 
 get_header(); ?>
 
-	<div id="primary" class="siteSection-wrapper content-area">
-		<main id="main" class="siteSection-content site-main" role="main">
 			<?php
 			if ( have_posts() ) : ?>
 
@@ -41,9 +39,7 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', 'none' );
 
 			endif; ?>
-		</main><!-- #main -->
 		<?php get_sidebar();?>
-	</div><!-- #primary -->
 
 <?php
 get_footer();

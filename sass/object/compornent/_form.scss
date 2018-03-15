@@ -29,7 +29,7 @@ input {
   padding: 10px;
 
   &::placeholder{
-    color: #ddd;
+    color: $color-text-thin;
   }
 }
 
@@ -44,8 +44,8 @@ input[type="submit"]{
   width: 160px;
   height: 44px;
   color: #fff;
-  background: $color_bland;
-  background: linear-gradient(#333, #1a1a1a);
+  background: $color-bland;
+  background: linear-gradient(#303030, $color-bland);
   display: inline-block;
   cursor: pointer;
   transition: all  0.3s ease;

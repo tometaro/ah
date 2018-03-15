@@ -30,7 +30,7 @@
 
   &-logo-type {
     height: 40px;
-    fill: $color_main;
+    fill: $color-base;
 
     svg {
       height: 100%;
@@ -44,7 +44,7 @@
 
   &-info {
     padding: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid $color-border-deep;
     text-align: center;
     font-size: 0.833rem;
   }

@@ -6,12 +6,12 @@
     font-size: $fontSize-M;
     border-left: 3px solid $color-bland;
     padding: 5px 10px;
-    background: #f2f2f2;
+    background: $color-sub;
   }
 
   li {
     display: table;
-    border-bottom: 1px solid $color-main;
+    border-bottom: 1px solid $color-sub;
     width: 100%;
     text-align: left;
 

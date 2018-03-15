@@ -23,7 +23,7 @@
 
     &:hover {
       background: $color-bland;
-      color: $color-main;
+      color: $color-sub;
       opacity: 1;
 
     }
@@ -39,7 +39,7 @@
 
   .current{
     a {
-      color: $color-main;
+      color: $color-sub;
       background-color: $color-bland;
       cursor: default;
       pointer-events: none;

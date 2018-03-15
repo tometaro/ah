@@ -2,21 +2,21 @@ jQuery(function($){
   //スクロールヘッダー
   $(window).scroll(function() {
     if ($(window).scrollTop() > 60) {
-      $('.siteHeader').addClass('siteHeader-bg');
+      $('.header').addClass('header-bg');
     } else {
-      $('.siteHeader').removeClass('siteHeader-bg');
+      $('.header').removeClass('header-bg');
     }
   });
 
   //ハンバーガーメニュー
   $('.naviToggle').on("click", function() {
-    $('.siteHeader').toggleClass('naviToggle-open'),
+    $('.header').toggleClass('naviToggle-open'),
     $('.naviToggle-block-shadow').fadeToggle();
   });
 
   //ナビゲーション外タッチで閉じる
   $(".naviToggle-block-shadow").click(function() {
-    $('.siteHeader').removeClass('naviToggle-open'),
+    $('.header').removeClass('naviToggle-open'),
     $('.naviToggle-block-shadow').fadeOut();
   });
 
