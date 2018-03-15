@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*==============================================================
 # Foundation
 ==============================================================*/
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -256,6 +256,7 @@ a {
   float: right; }
   .sidebar-title {
     font-size: 1.2rem;
+    font-size: 1.2rem;
     border-left: 3px solid #202020;
     padding: 5px 10px;
     background: #efefef; }
@@ -377,9 +378,6 @@ a {
   padding: 5px 10px;
   background: #efefef; }
 
-.article h4 {
-  font-size: 14px; }
-
 .article p {
   line-height: 2.0;
   margin-bottom: 40px; }
@@ -495,7 +493,7 @@ a {
     border-radius: 0; } }
 
 .pagination {
-  margin-top: 80px;
+  margin-top: 60px;
   display: flex;
   justify-content: center; }
   .pagination li {

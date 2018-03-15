@@ -29,20 +29,16 @@
   }
 
   h2 {
-    font-size: 1.44rem;
+    font-size: $fontSize-L;
     padding-bottom: 10px;
     border-bottom: 2px solid $color-border;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: $fontSize-M;
     border-left: 3px solid $color-bland;
     padding: 5px 10px;
     background: $color-sub;
-  }
-
-  h4 {
-    font-size: 14px;
   }
 
   p {
