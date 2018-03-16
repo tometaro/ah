@@ -13,23 +13,32 @@
  */
 
 get_header(); ?>
-
-					<div class="section-wrapper section-wrapper-narrow">
-
-					<?php
-					while ( have_posts() ) : the_post();
-
-						get_template_part( 'template-parts/content', 'page' );
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-
-					endwhile; // End of the loop.
-					?>
-
+	<div class="keyVisual">
+		<div class="keyVisual-wrap keyVisual-wrap-none">
+			<div class="keyVisual-overlay">
+				<div class="keyVisual-gradation">
+					<div class="keyVisual-titleBlock">
+						<h1 class="keyVisual-title"><?php the_title(); ?></h1>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="section-wrapper section-wrapper-narrow">
+			<?php
+			while ( have_posts() ) : the_post();
 
+				get_template_part( 'template-parts/content', 'page' );
+
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+
+			endwhile; // End of the loop.
+			?>
+		</div>
+	</div>
 <?php
 get_footer();

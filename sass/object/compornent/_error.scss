@@ -6,7 +6,7 @@
   position: relative;
 
   &-title,
-    &-404 {
+    &-block {
     padding-top: 60px;
     position: absolute;
     top: 50%;
@@ -25,5 +25,14 @@
     font-size: 150px;
     font-weight: 600;
     z-index: 1;
+    line-height: 1;
+  }
+
+  &-small {
+    color: $color-base;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 2rem;
+    margin-right: -2rem;
   }
 }

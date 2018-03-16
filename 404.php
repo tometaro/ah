@@ -8,11 +8,14 @@
  */
 
 get_header(); ?>
-
-	<section class="error">
-		<h1 class="error-title">Not Found</h1>
-		<p class="error-404">404</p>
-	</section>
-
+	<div class="section">
+		<div class="error">
+			<h1 class="error-title">Not Found</h1>
+			<div class="error-block">
+				<p class="error-404">404</p>
+				<p class="error-small">ERROR</p>
+			</div>
+		</div>
+	</div>
 <?php
 get_footer();

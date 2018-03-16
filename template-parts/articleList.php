@@ -1,4 +1,4 @@
-<li>
+<li class="fadeIn">
   <a href="<?php the_permalink(); ?>">
     <div class="article-wrap">
       <div class="articleList-image"><?php the_post_thumbnail( 'large' ); ?></div>

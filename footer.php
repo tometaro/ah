@@ -10,8 +10,6 @@
  */
 
 ?>
-
-			</div><!-- #content -->
 		</main>
 
 		<?php wp_reset_query(); if ( !is_home() && !is_front_page() ) : ?>
