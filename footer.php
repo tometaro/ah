@@ -27,10 +27,10 @@
 			<div class="footer-wrap">
 				<div class="footer-navi">
 					<div class="footer-block">
-						<?php wp_nav_menu(); ?>
+						<?php wp_nav_menu(array('menu' => 'footermenu1')); ?>
 					</div>
 					<div class="footer-block">
-						<?php wp_nav_menu(); ?>
+						<?php wp_nav_menu(array('menu' => 'footermenu2')); ?>
 					</div>
 					<div class="footer-blanding">
 						<img class="footer-logo-mark" src="<?php bloginfo('template_directory'); ?>/images/logo-mark-white.svg">
