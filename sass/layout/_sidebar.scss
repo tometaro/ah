@@ -16,14 +16,12 @@
     // text-align: left;
 
     a{
-      padding: 15px 0;
+      padding: 15px 24px 15px 0;
       color: $color-text;
       display: block;
       position: relative;
 
       &::after {
-        // display: table-cell;
-        // vertical-align: middle;
         content: $icon-arrowLine-right;
         font-family: "symbols";
         color: $color-bland;
